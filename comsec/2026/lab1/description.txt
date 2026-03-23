@@ -1,0 +1,16 @@
+libraries used: sys, json, pycryptodome
+
+Usage:
+python3 PasswordManager.py init <master_password>
+python3 PasswordManager.py put <master_password> <address> <password>
+python3 PasswordManager.py get <master_password> <address>
+
+Security requirements:
+
+    - Confidentiality of passwords and addresses:
+        The password manger has confidentiality of passwords and addresses because of the randomized salt and nonce on each encryption.
+        The attacker cannot determine any information about the passwords or addresses (except the amount of address password pairs), because of the padding which makes them fixed size.
+        The attacker cannot determine whether a password has been reused in general or for a specific address or whether two passwords are the same.
+
+    - Integrity of addresses and passwords:
+        The entire file is encrypted using AES - GCM, which is Galois/Counter mode, which has a nonce for randomization and a tag for an integrity check, therefore any tampering with the file will corrupt it.

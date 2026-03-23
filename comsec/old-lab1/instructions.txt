@@ -1,0 +1,22 @@
+Instructions ----------
+
+Position yourself in the folder which has the PasswordManager.py file.
+Then the execution is as follows:
+
+1. initialize the password manager using this command:
+	$ python3 .\PasswordManager.py init [masterPassword]
+
+2. store an address password pair using this command:
+	$ python3 .\PasswordManager.py put [masterPassword] [address] [password]
+
+3. get an address password pair
+	$ python3 .\PasswordManager.py get [masterPassword] [address]
+
+
+Description ----------
+
+The password manager has confidentiality of passwords and addresses. 
+The attacker cannot determine any information about the amount of passwords, the length nor the amount of addresses. 
+That is because each encryption is done by appending a random string of bytes, which means the encryption is probabilistic. 
+The encryption also uses tagging to secure that the ciphertext hasn't been modified during transit. Therefore the integrity of both the passwords and addresses is secured.
+It uses PBKDF2 to make authentication more secure, reducing vulnerability to brute-force attacks.

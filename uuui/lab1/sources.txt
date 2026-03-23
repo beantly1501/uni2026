@@ -1,0 +1,15 @@
+- python standard library
+https://docs.python.org/3/library/index.html
+
+- how to optimize list lookups
+
+https://datapoints.hashnode.dev/pythondictionarylookups01
+https://stackoverflow.com/questions/2701173/most-efficient-way-for-a-lookup-search-in-a-huge-list-python
+
+- algorithms
+https://en.wikipedia.org/wiki/Breadth-first_search
+https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm#Practical_optimizations_and_infinite_graphs
+https://en.wikipedia.org/wiki/A*_search_algorithm
+
+- consistent and optimal heuristics
+https://www.youtube.com/watch?v=Dqy-43JHte8
