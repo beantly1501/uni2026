@@ -1,0 +1,235 @@
+1234567890
+================
+
+=== UNARCHIVE AND STRUCTURE ===
+OK!
+
+=== COMPILE ===
+Skipping (python)
+
+=== EVALUATION ===
+
+== A-STAR ==
+  Passed 7 / 7 tests.
+
+== BFS ==
+  Passed 5 / 6 tests.
+
+- Failed test: BFS
+- Command run: python solution.py --ss 3x3_puzzle.txt --alg bfs
+Execution failed with error:
+Traceback (most recent call last):
+  File "solution.py", line 286, in <module>
+    main()
+  File "solution.py", line 276, in main
+    stateSpace, initialState, goalStateNames, heuristicsFile =  dataLoading(args.ss, args.h)
+  File "solution.py", line 80, in dataLoading
+    with open(stateSpaceFile) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '3x3_puzzle.txt'
+
+
+== HEURISTIC-CONSISTENT ==
+  Passed 0 / 10 tests.
+
+- Failed test: HEURISTIC-CONSISTENT test_case_1_heuristic.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT test_case_1_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT istra_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_heuristic.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT ai_fail.txt
+- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT ai_pass.txt
+- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-consistent 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-consistent: expected one argument
+
+
+== HEURISTIC-OPTIMISTIC ==
+  Passed 0 / 10 tests.
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC istra_pessimistic_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_pessimistic_heuristic.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC istra_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_heuristic.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_3_heuristic.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_3_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC ai_fail.txt
+- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC ai_pass.txt
+- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-optimistic 
+Execution failed with error:
+usage: solution.py [-h] --ss SS --alg ALG [--h H]
+                   [--check-optimistic CHECK_OPTIMISTIC]
+                   [--check-consistent CHECK_CONSISTENT]
+solution.py: error: argument --check-optimistic: expected one argument
+
+
+== UCS ==
+  Passed 5 / 6 tests.
+
+- Failed test: UCS
+- Command run: python solution.py --ss 3x3_puzzle.txt --alg ucs
+Execution failed with error:
+Traceback (most recent call last):
+  File "solution.py", line 286, in <module>
+    main()
+  File "solution.py", line 276, in main
+    stateSpace, initialState, goalStateNames, heuristicsFile =  dataLoading(args.ss, args.h)
+  File "solution.py", line 80, in dataLoading
+    with open(stateSpaceFile) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '3x3_puzzle.txt'
+
+
+=== TOTAL RESULTS ===
+17 / 39 tests passed. (43.59%)
+

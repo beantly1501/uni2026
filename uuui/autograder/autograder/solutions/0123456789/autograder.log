@@ -12,8 +12,8 @@ Skipping (python)
 == A-STAR ==
   Passed 0 / 7 tests.
 
-- Failed test: A-STAR test_case_2_heuristic.txt
-- Command run: python solution.py --ss test_case_2.txt --alg astar --h test_case_2_heuristic.txt
+- Failed test: A-STAR test_case_1_heuristic.txt
+- Command run: python solution.py --ss test_case_1.txt --alg astar --h test_case_1_heuristic.txt
 Mismatch with field: FOUND_SOLUTION
 -> Obtained output:
 
@@ -23,60 +23,16 @@ Mismatch with field: TOTAL_COST
 -> Obtained output:
 
 -> Expected output:
-90.0
+54.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
-# A-STAR test_case_2_heuristic.txt
+# A-STAR test_case_1_heuristic.txt
 [FOUND_SOLUTION]: yes
-[STATES_VISITED]: 15
-[PATH_LENGTH]: 3
-[TOTAL_COST]: 90.0
-[PATH]: A => H => Z
-
-- Failed test: A-STAR ai_fail.txt
-- Command run: python solution.py --ss ai.txt --alg astar --h ai_fail.txt
-Mismatch with field: FOUND_SOLUTION
--> Obtained output:
-
--> Expected output:
-yes
-Mismatch with field: TOTAL_COST
--> Obtained output:
-
--> Expected output:
-21.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# A-STAR ai_fail.txt
-[FOUND_SOLUTION]: yes
-[STATES_VISITED]: 6
-[PATH_LENGTH]: 3
-[TOTAL_COST]: 21.0
-[PATH]: enroll_artificial_intelligence => fail_lab => fail_course
-
-- Failed test: A-STAR ai_pass.txt
-- Command run: python solution.py --ss ai.txt --alg astar --h ai_pass.txt
-Mismatch with field: FOUND_SOLUTION
--> Obtained output:
-
--> Expected output:
-yes
-Mismatch with field: TOTAL_COST
--> Obtained output:
-
--> Expected output:
-17.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# A-STAR ai_pass.txt
-[FOUND_SOLUTION]: yes
-[STATES_VISITED]: 4
-[PATH_LENGTH]: 4
-[TOTAL_COST]: 17.0
-[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course
+[STATES_VISITED]: 12
+[PATH_LENGTH]: 5
+[TOTAL_COST]: 54.0
+[PATH]: A => D => H => E => O
 
 - Failed test: A-STAR istra_heuristic.txt
 - Command run: python solution.py --ss istra.txt --alg astar --h istra_heuristic.txt
@@ -144,8 +100,8 @@ Solving lab 1 assignment...
 [TOTAL_COST]: 208.0
 [PATH]: A => E => F => G => M => B => Y
 
-- Failed test: A-STAR test_case_1_heuristic.txt
-- Command run: python solution.py --ss test_case_1.txt --alg astar --h test_case_1_heuristic.txt
+- Failed test: A-STAR ai_fail.txt
+- Command run: python solution.py --ss ai.txt --alg astar --h ai_fail.txt
 Mismatch with field: FOUND_SOLUTION
 -> Obtained output:
 
@@ -155,63 +111,85 @@ Mismatch with field: TOTAL_COST
 -> Obtained output:
 
 -> Expected output:
-54.0
+21.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
-# A-STAR test_case_1_heuristic.txt
-[FOUND_SOLUTION]: yes
-[STATES_VISITED]: 12
-[PATH_LENGTH]: 5
-[TOTAL_COST]: 54.0
-[PATH]: A => D => H => E => O
-
-== BFS ==
-  Passed 0 / 6 tests.
-
-- Failed test: BFS
-- Command run: python solution.py --ss test_case_2.txt --alg bfs
-Mismatch with field: FOUND_SOLUTION
--> Obtained output:
-
--> Expected output:
-yes
-Mismatch with field: PATH_LENGTH
--> Obtained output:
-
--> Expected output:
-3
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# BFS
-[FOUND_SOLUTION]: yes
-[STATES_VISITED]: 11
-[PATH_LENGTH]: 3
-[TOTAL_COST]: 90.0
-[PATH]: A => H => Z
-
-- Failed test: BFS
-- Command run: python solution.py --ss ai.txt --alg bfs
-Mismatch with field: FOUND_SOLUTION
--> Obtained output:
-
--> Expected output:
-yes
-Mismatch with field: PATH_LENGTH
--> Obtained output:
-
--> Expected output:
-3
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# BFS
+# A-STAR ai_fail.txt
 [FOUND_SOLUTION]: yes
 [STATES_VISITED]: 6
 [PATH_LENGTH]: 3
 [TOTAL_COST]: 21.0
 [PATH]: enroll_artificial_intelligence => fail_lab => fail_course
+
+- Failed test: A-STAR ai_pass.txt
+- Command run: python solution.py --ss ai.txt --alg astar --h ai_pass.txt
+Mismatch with field: FOUND_SOLUTION
+-> Obtained output:
+
+-> Expected output:
+yes
+Mismatch with field: TOTAL_COST
+-> Obtained output:
+
+-> Expected output:
+17.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# A-STAR ai_pass.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 4
+[PATH_LENGTH]: 4
+[TOTAL_COST]: 17.0
+[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course
+
+- Failed test: A-STAR test_case_2_heuristic.txt
+- Command run: python solution.py --ss test_case_2.txt --alg astar --h test_case_2_heuristic.txt
+Mismatch with field: FOUND_SOLUTION
+-> Obtained output:
+
+-> Expected output:
+yes
+Mismatch with field: TOTAL_COST
+-> Obtained output:
+
+-> Expected output:
+90.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# A-STAR test_case_2_heuristic.txt
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 15
+[PATH_LENGTH]: 3
+[TOTAL_COST]: 90.0
+[PATH]: A => H => Z
+
+== BFS ==
+  Passed 0 / 6 tests.
+
+- Failed test: BFS
+- Command run: python solution.py --ss test_case_1.txt --alg bfs
+Mismatch with field: FOUND_SOLUTION
+-> Obtained output:
+
+-> Expected output:
+yes
+Mismatch with field: PATH_LENGTH
+-> Obtained output:
+
+-> Expected output:
+5
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# BFS
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 15
+[PATH_LENGTH]: 5
+[TOTAL_COST]: 54.0
+[PATH]: A => D => H => E => O
 
 - Failed test: BFS
 - Command run: python solution.py --ss istra.txt --alg bfs
@@ -258,7 +236,7 @@ Solving lab 1 assignment...
 [PATH]: A => E => F => C => L => Y
 
 - Failed test: BFS
-- Command run: python solution.py --ss test_case_1.txt --alg bfs
+- Command run: python solution.py --ss ai.txt --alg bfs
 Mismatch with field: FOUND_SOLUTION
 -> Obtained output:
 
@@ -268,16 +246,16 @@ Mismatch with field: PATH_LENGTH
 -> Obtained output:
 
 -> Expected output:
-5
+3
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
 # BFS
 [FOUND_SOLUTION]: yes
-[STATES_VISITED]: 15
-[PATH_LENGTH]: 5
-[TOTAL_COST]: 54.0
-[PATH]: A => D => H => E => O
+[STATES_VISITED]: 6
+[PATH_LENGTH]: 3
+[TOTAL_COST]: 21.0
+[PATH]: enroll_artificial_intelligence => fail_lab => fail_course
 
 - Failed test: BFS
 - Command run: python solution.py --ss 3x3_puzzle.txt --alg bfs
@@ -301,734 +279,30 @@ Solving lab 1 assignment...
 [TOTAL_COST]: 30.0
 [PATH]: 876_543_21x => 876_543_2x1 => 876_543_x21 => 876_x43_521 => x76_843_521 => 7x6_843_521 => 746_8x3_521 => 746_83x_521 => 746_831_52x => 746_831_5x2 => 746_831_x52 => 746_x31_852 => x46_731_852 => 4x6_731_852 => 436_7x1_852 => 436_71x_852 => 43x_716_852 => 4x3_716_852 => 413_7x6_852 => 413_756_8x2 => 413_756_82x => 413_75x_826 => 413_7x5_826 => 413_725_8x6 => 413_725_x86 => 413_x25_786 => x13_425_786 => 1x3_425_786 => 123_4x5_786 => 123_45x_786 => 123_456_78x
 
+- Failed test: BFS
+- Command run: python solution.py --ss test_case_2.txt --alg bfs
+Mismatch with field: FOUND_SOLUTION
+-> Obtained output:
+
+-> Expected output:
+yes
+Mismatch with field: PATH_LENGTH
+-> Obtained output:
+
+-> Expected output:
+3
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# BFS
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 11
+[PATH_LENGTH]: 3
+[TOTAL_COST]: 90.0
+[PATH]: A => H => Z
+
 == HEURISTIC-CONSISTENT ==
   Passed 0 / 10 tests.
-
-- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic.txt
-- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(F) <= h(A) + c: 14.0 <= 7.0 + 14.0
-[OK] h(H) <= h(P) + c: 7.0 <= 16.0 + 16.0
-[OK] h(E) <= h(G) + c: 17.0 <= 14.0 + 26.0
-[OK] h(P) <= h(H) + c: 16.0 <= 7.0 + 16.0
-[OK] h(H) <= h(B) + c: 7.0 <= 19.0 + 19.0
-[OK] h(P) <= h(W) + c: 16.0 <= 38.0 + 38.0
-[OK] h(R) <= h(Y) + c: 56.0 <= 37.0 + 66.0
-[OK] h(B) <= h(N) + c: 19.0 <= 27.0 + 27.0
-[OK] h(W) <= h(Q) + c: 38.0 <= 48.0 + 76.0
-[OK] h(X) <= h(R) + c: 14.0 <= 56.0 + 72.0
-[OK] h(S) <= h(P) + c: 26.0 <= 16.0 + 38.0
-[OK] h(G) <= h(X) + c: 14.0 <= 14.0 + 14.0
-[OK] h(B) <= h(R) + c: 19.0 <= 56.0 + 57.0
-[OK] h(H) <= h(A) + c: 7.0 <= 7.0 + 7.0
-[OK] h(R) <= h(D) + c: 56.0 <= 22.0 + 58.0
-[OK] h(J) <= h(A) + c: 31.0 <= 7.0 + 31.0
-[OK] h(U) <= h(R) + c: 69.0 <= 56.0 + 69.0
-[OK] h(M) <= h(K) + c: 28.0 <= 17.0 + 28.0
-[OK] h(D) <= h(R) + c: 22.0 <= 56.0 + 58.0
-[OK] h(D) <= h(C) + c: 22.0 <= 22.0 + 22.0
-[OK] h(R) <= h(K) + c: 56.0 <= 17.0 + 56.0
-[OK] h(L) <= h(D) + c: 33.0 <= 22.0 + 33.0
-[OK] h(E) <= h(P) + c: 17.0 <= 16.0 + 39.0
-[OK] h(N) <= h(I) + c: 27.0 <= 32.0 + 32.0
-[OK] h(N) <= h(B) + c: 27.0 <= 19.0 + 27.0
-[OK] h(N) <= h(M) + c: 27.0 <= 28.0 + 42.0
-[OK] h(J) <= h(P) + c: 31.0 <= 16.0 + 44.0
-[OK] h(I) <= h(N) + c: 32.0 <= 27.0 + 32.0
-[OK] h(V) <= h(H) + c: 23.0 <= 7.0 + 23.0
-[OK] h(B) <= h(C) + c: 19.0 <= 22.0 + 26.0
-[OK] h(I) <= h(O) + c: 32.0 <= 34.0 + 34.0
-[OK] h(H) <= h(T) + c: 7.0 <= 28.0 + 28.0
-[OK] h(H) <= h(S) + c: 7.0 <= 26.0 + 26.0
-[OK] h(X) <= h(G) + c: 14.0 <= 14.0 + 14.0
-[OK] h(K) <= h(N) + c: 17.0 <= 27.0 + 41.0
-[OK] h(B) <= h(M) + c: 19.0 <= 28.0 + 29.0
-[OK] h(E) <= h(K) + c: 17.0 <= 17.0 + 17.0
-[OK] h(G) <= h(Q) + c: 14.0 <= 48.0 + 48.0
-[OK] h(H) <= h(Z) + c: 7.0 <= 0.0 + 83.0
-[OK] h(C) <= h(B) + c: 22.0 <= 19.0 + 26.0
-[OK] h(S) <= h(H) + c: 26.0 <= 7.0 + 26.0
-[OK] h(R) <= h(B) + c: 56.0 <= 19.0 + 57.0
-[OK] h(G) <= h(U) + c: 14.0 <= 69.0 + 74.0
-[OK] h(R) <= h(X) + c: 56.0 <= 14.0 + 72.0
-[OK] h(P) <= h(K) + c: 16.0 <= 17.0 + 38.0
-[OK] h(P) <= h(Y) + c: 16.0 <= 37.0 + 74.0
-[OK] h(T) <= h(H) + c: 28.0 <= 7.0 + 28.0
-[OK] h(H) <= h(N) + c: 7.0 <= 27.0 + 29.0
-[OK] h(K) <= h(R) + c: 17.0 <= 56.0 + 56.0
-[OK] h(U) <= h(G) + c: 69.0 <= 14.0 + 74.0
-[OK] h(M) <= h(B) + c: 28.0 <= 19.0 + 29.0
-[OK] h(N) <= h(H) + c: 27.0 <= 7.0 + 29.0
-[OK] h(H) <= h(V) + c: 7.0 <= 23.0 + 23.0
-[OK] h(A) <= h(H) + c: 7.0 <= 7.0 + 7.0
-[OK] h(Q) <= h(G) + c: 48.0 <= 14.0 + 48.0
-[OK] h(K) <= h(E) + c: 17.0 <= 17.0 + 17.0
-[OK] h(O) <= h(Y) + c: 34.0 <= 37.0 + 37.0
-[OK] h(D) <= h(L) + c: 22.0 <= 33.0 + 33.0
-[OK] h(C) <= h(D) + c: 22.0 <= 22.0 + 22.0
-[OK] h(A) <= h(F) + c: 7.0 <= 14.0 + 14.0
-[OK] h(Y) <= h(R) + c: 37.0 <= 56.0 + 66.0
-[OK] h(O) <= h(I) + c: 34.0 <= 32.0 + 34.0
-[OK] h(R) <= h(U) + c: 56.0 <= 69.0 + 69.0
-[OK] h(P) <= h(S) + c: 16.0 <= 26.0 + 38.0
-[OK] h(Y) <= h(P) + c: 37.0 <= 16.0 + 74.0
-[OK] h(B) <= h(H) + c: 19.0 <= 7.0 + 19.0
-[OK] h(M) <= h(N) + c: 28.0 <= 27.0 + 42.0
-[OK] h(N) <= h(K) + c: 27.0 <= 17.0 + 41.0
-[OK] h(W) <= h(P) + c: 38.0 <= 16.0 + 38.0
-[OK] h(P) <= h(E) + c: 16.0 <= 17.0 + 39.0
-[OK] h(Z) <= h(H) + c: 0.0 <= 7.0 + 83.0
-[OK] h(Y) <= h(O) + c: 37.0 <= 34.0 + 37.0
-[OK] h(P) <= h(J) + c: 16.0 <= 31.0 + 44.0
-[OK] h(Q) <= h(V) + c: 48.0 <= 23.0 + 54.0
-[OK] h(G) <= h(E) + c: 14.0 <= 17.0 + 26.0
-[OK] h(Q) <= h(W) + c: 48.0 <= 38.0 + 76.0
-[OK] h(K) <= h(M) + c: 17.0 <= 28.0 + 28.0
-[OK] h(A) <= h(J) + c: 7.0 <= 31.0 + 31.0
-[OK] h(V) <= h(Q) + c: 23.0 <= 48.0 + 54.0
-[OK] h(K) <= h(P) + c: 17.0 <= 16.0 + 38.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT test_case_2_heuristic.txt
-[CONDITION]: [OK] h(A) <= h(F) + c: 7.0 <= 14.0 + 14.0
-[CONDITION]: [OK] h(A) <= h(H) + c: 7.0 <= 7.0 + 7.0
-[CONDITION]: [OK] h(A) <= h(J) + c: 7.0 <= 31.0 + 31.0
-[CONDITION]: [OK] h(B) <= h(C) + c: 19.0 <= 22.0 + 26.0
-[CONDITION]: [OK] h(B) <= h(H) + c: 19.0 <= 7.0 + 19.0
-[CONDITION]: [OK] h(B) <= h(M) + c: 19.0 <= 28.0 + 29.0
-[CONDITION]: [OK] h(B) <= h(N) + c: 19.0 <= 27.0 + 27.0
-[CONDITION]: [OK] h(B) <= h(R) + c: 19.0 <= 56.0 + 57.0
-[CONDITION]: [OK] h(C) <= h(B) + c: 22.0 <= 19.0 + 26.0
-...
-[CONDITION]: [OK] h(V) <= h(Q) + c: 23.0 <= 48.0 + 54.0
-[CONDITION]: [OK] h(W) <= h(P) + c: 38.0 <= 16.0 + 38.0
-[CONDITION]: [OK] h(W) <= h(Q) + c: 38.0 <= 48.0 + 76.0
-[CONDITION]: [OK] h(X) <= h(G) + c: 14.0 <= 14.0 + 14.0
-[CONDITION]: [OK] h(X) <= h(R) + c: 14.0 <= 56.0 + 72.0
-[CONDITION]: [OK] h(Y) <= h(O) + c: 37.0 <= 34.0 + 37.0
-[CONDITION]: [OK] h(Y) <= h(P) + c: 37.0 <= 16.0 + 74.0
-[CONDITION]: [OK] h(Y) <= h(R) + c: 37.0 <= 56.0 + 66.0
-[CONDITION]: [OK] h(Z) <= h(H) + c: 0.0 <= 7.0 + 83.0
-[CONCLUSION]: Heuristic is consistent.
-
-- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic_nonopt.txt
-- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is not consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[ERR] h(P) <= h(E) + c: 84.0 <= 38.0 + 39.0
-[OK] h(N) <= h(H) + c: 35.0 <= 85.0 + 29.0
-[OK] h(R) <= h(Y) + c: 79.0 <= 65.0 + 66.0
-[OK] h(S) <= h(P) + c: 43.0 <= 84.0 + 38.0
-[OK] h(K) <= h(P) + c: 43.0 <= 84.0 + 38.0
-[ERR] h(H) <= h(B) + c: 85.0 <= 50.0 + 19.0
-[OK] h(K) <= h(N) + c: 43.0 <= 35.0 + 41.0
-[OK] h(X) <= h(G) + c: 43.0 <= 94.0 + 14.0
-[OK] h(C) <= h(D) + c: 18.0 <= 65.0 + 22.0
-[OK] h(Q) <= h(W) + c: 82.0 <= 80.0 + 76.0
-[ERR] h(G) <= h(E) + c: 94.0 <= 38.0 + 26.0
-[OK] h(Q) <= h(G) + c: 82.0 <= 94.0 + 48.0
-[OK] h(E) <= h(K) + c: 38.0 <= 43.0 + 17.0
-[ERR] h(G) <= h(X) + c: 94.0 <= 43.0 + 14.0
-[OK] h(M) <= h(K) + c: 43.0 <= 43.0 + 28.0
-[OK] h(O) <= h(I) + c: 42.0 <= 26.0 + 34.0
-[OK] h(S) <= h(H) + c: 43.0 <= 85.0 + 26.0
-[OK] h(V) <= h(Q) + c: 59.0 <= 82.0 + 54.0
-[OK] h(I) <= h(O) + c: 26.0 <= 42.0 + 34.0
-[OK] h(W) <= h(P) + c: 80.0 <= 84.0 + 38.0
-[OK] h(R) <= h(B) + c: 79.0 <= 50.0 + 57.0
-[OK] h(G) <= h(U) + c: 94.0 <= 81.0 + 74.0
-[OK] h(J) <= h(P) + c: 61.0 <= 84.0 + 44.0
-[OK] h(F) <= h(A) + c: 4.0 <= 41.0 + 14.0
-[ERR] h(H) <= h(A) + c: 85.0 <= 41.0 + 7.0
-[OK] h(U) <= h(R) + c: 81.0 <= 79.0 + 69.0
-[OK] h(O) <= h(Y) + c: 42.0 <= 65.0 + 37.0
-[ERR] h(P) <= h(S) + c: 84.0 <= 43.0 + 38.0
-[OK] h(K) <= h(R) + c: 43.0 <= 79.0 + 56.0
-[OK] h(V) <= h(H) + c: 59.0 <= 85.0 + 23.0
-[OK] h(N) <= h(M) + c: 35.0 <= 43.0 + 42.0
-[OK] h(R) <= h(K) + c: 79.0 <= 43.0 + 56.0
-[OK] h(K) <= h(E) + c: 43.0 <= 38.0 + 17.0
-[OK] h(Y) <= h(R) + c: 65.0 <= 79.0 + 66.0
-[OK] h(B) <= h(M) + c: 50.0 <= 43.0 + 29.0
-[ERR] h(B) <= h(C) + c: 50.0 <= 18.0 + 26.0
-[ERR] h(A) <= h(F) + c: 41.0 <= 4.0 + 14.0
-[OK] h(M) <= h(N) + c: 43.0 <= 35.0 + 42.0
-[OK] h(B) <= h(R) + c: 50.0 <= 79.0 + 57.0
-[OK] h(E) <= h(P) + c: 38.0 <= 84.0 + 39.0
-[OK] h(X) <= h(R) + c: 43.0 <= 79.0 + 72.0
-[ERR] h(H) <= h(S) + c: 85.0 <= 43.0 + 26.0
-[OK] h(P) <= h(W) + c: 84.0 <= 80.0 + 38.0
-[ERR] h(D) <= h(L) + c: 65.0 <= 27.0 + 33.0
-[OK] h(N) <= h(B) + c: 35.0 <= 50.0 + 27.0
-[OK] h(Y) <= h(O) + c: 65.0 <= 42.0 + 37.0
-[OK] h(P) <= h(J) + c: 84.0 <= 61.0 + 44.0
-[OK] h(T) <= h(H) + c: 19.0 <= 85.0 + 28.0
-[OK] h(P) <= h(Y) + c: 84.0 <= 65.0 + 74.0
-[OK] h(R) <= h(X) + c: 79.0 <= 43.0 + 72.0
-[OK] h(D) <= h(R) + c: 65.0 <= 79.0 + 58.0
-[OK] h(M) <= h(B) + c: 43.0 <= 50.0 + 29.0
-[OK] h(R) <= h(U) + c: 79.0 <= 81.0 + 69.0
-[OK] h(C) <= h(B) + c: 18.0 <= 50.0 + 26.0
-[ERR] h(D) <= h(C) + c: 65.0 <= 18.0 + 22.0
-[OK] h(H) <= h(P) + c: 85.0 <= 84.0 + 16.0
-[OK] h(L) <= h(D) + c: 27.0 <= 65.0 + 33.0
-[OK] h(G) <= h(Q) + c: 94.0 <= 82.0 + 48.0
-[OK] h(J) <= h(A) + c: 61.0 <= 41.0 + 31.0
-[ERR] h(H) <= h(V) + c: 85.0 <= 59.0 + 23.0
-[OK] h(A) <= h(J) + c: 41.0 <= 61.0 + 31.0
-[OK] h(B) <= h(N) + c: 50.0 <= 35.0 + 27.0
-[OK] h(B) <= h(H) + c: 50.0 <= 85.0 + 19.0
-[ERR] h(H) <= h(Z) + c: 85.0 <= 0.0 + 83.0
-[ERR] h(H) <= h(N) + c: 85.0 <= 35.0 + 29.0
-[OK] h(Q) <= h(V) + c: 82.0 <= 59.0 + 54.0
-[ERR] h(H) <= h(T) + c: 85.0 <= 19.0 + 28.0
-[OK] h(Y) <= h(P) + c: 65.0 <= 84.0 + 74.0
-[OK] h(A) <= h(H) + c: 41.0 <= 85.0 + 7.0
-[OK] h(N) <= h(I) + c: 35.0 <= 26.0 + 32.0
-[OK] h(I) <= h(N) + c: 26.0 <= 35.0 + 32.0
-[OK] h(P) <= h(H) + c: 84.0 <= 85.0 + 16.0
-[OK] h(E) <= h(G) + c: 38.0 <= 94.0 + 26.0
-[OK] h(W) <= h(Q) + c: 80.0 <= 82.0 + 76.0
-[OK] h(R) <= h(D) + c: 79.0 <= 65.0 + 58.0
-[OK] h(N) <= h(K) + c: 35.0 <= 43.0 + 41.0
-[OK] h(K) <= h(M) + c: 43.0 <= 43.0 + 28.0
-[OK] h(U) <= h(G) + c: 81.0 <= 94.0 + 74.0
-[OK] h(Z) <= h(H) + c: 0.0 <= 85.0 + 83.0
-[ERR] h(P) <= h(K) + c: 84.0 <= 43.0 + 38.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT test_case_2_heuristic_nonopt.txt
-[CONDITION]: [ERR] h(A) <= h(F) + c: 41.0 <= 4.0 + 14.0
-[CONDITION]: [OK] h(A) <= h(H) + c: 41.0 <= 85.0 + 7.0
-[CONDITION]: [OK] h(A) <= h(J) + c: 41.0 <= 61.0 + 31.0
-[CONDITION]: [ERR] h(B) <= h(C) + c: 50.0 <= 18.0 + 26.0
-[CONDITION]: [OK] h(B) <= h(H) + c: 50.0 <= 85.0 + 19.0
-[CONDITION]: [OK] h(B) <= h(M) + c: 50.0 <= 43.0 + 29.0
-[CONDITION]: [OK] h(B) <= h(N) + c: 50.0 <= 35.0 + 27.0
-[CONDITION]: [OK] h(B) <= h(R) + c: 50.0 <= 79.0 + 57.0
-[CONDITION]: [OK] h(C) <= h(B) + c: 18.0 <= 50.0 + 26.0
-...
-[CONDITION]: [OK] h(V) <= h(Q) + c: 59.0 <= 82.0 + 54.0
-[CONDITION]: [OK] h(W) <= h(P) + c: 80.0 <= 84.0 + 38.0
-[CONDITION]: [OK] h(W) <= h(Q) + c: 80.0 <= 82.0 + 76.0
-[CONDITION]: [OK] h(X) <= h(G) + c: 43.0 <= 94.0 + 14.0
-[CONDITION]: [OK] h(X) <= h(R) + c: 43.0 <= 79.0 + 72.0
-[CONDITION]: [OK] h(Y) <= h(O) + c: 65.0 <= 42.0 + 37.0
-[CONDITION]: [OK] h(Y) <= h(P) + c: 65.0 <= 84.0 + 74.0
-[CONDITION]: [OK] h(Y) <= h(R) + c: 65.0 <= 79.0 + 66.0
-[CONDITION]: [OK] h(Z) <= h(H) + c: 0.0 <= 85.0 + 83.0
-[CONCLUSION]: Heuristic is not consistent.
-
-- Failed test: HEURISTIC-CONSISTENT ai_fail.txt
-- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is not consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[ERR] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 1.0 + 1.0
-[OK] h(fail_lab) <= h(fail_lab) + c: 1.0 <= 1.0 + 1.0
-[ERR] h(complete_lab) <= h(fail_continuous) + c: 10.0 <= 6.0 + 1.0
-[OK] h(complete_lab) <= h(pass_continuous) + c: 10.0 <= 20.0 + 12.0
-[OK] h(fail_continuous) <= h(pass_exam) + c: 6.0 <= 1.0 + 16.0
-[ERR] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 10.0 + 4.0
-[OK] h(fail_lab) <= h(complete_lab) + c: 1.0 <= 10.0 + 4.0
-[ERR] h(pass_continuous) <= h(pass_course) + c: 20.0 <= 0.0 + 1.0
-[OK] h(fail_lab) <= h(fail_course) + c: 1.0 <= 0.0 + 20.0
-[OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[OK] h(fail_continuous) <= h(fail_exam) + c: 6.0 <= 5.0 + 1.0
-[OK] h(fail_exam) <= h(fail_course) + c: 5.0 <= 0.0 + 20.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT ai_fail.txt
-[CONDITION]: [ERR] h(complete_lab) <= h(fail_continuous) + c: 10.0 <= 6.0 + 1.0
-[CONDITION]: [OK] h(complete_lab) <= h(pass_continuous) + c: 10.0 <= 20.0 + 12.0
-[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 10.0 + 4.0
-[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 1.0 + 1.0
-[CONDITION]: [OK] h(fail_continuous) <= h(fail_exam) + c: 6.0 <= 5.0 + 1.0
-[CONDITION]: [OK] h(fail_continuous) <= h(pass_exam) + c: 6.0 <= 1.0 + 16.0
-[CONDITION]: [OK] h(fail_exam) <= h(fail_course) + c: 5.0 <= 0.0 + 20.0
-[CONDITION]: [OK] h(fail_lab) <= h(complete_lab) + c: 1.0 <= 10.0 + 4.0
-[CONDITION]: [OK] h(fail_lab) <= h(fail_course) + c: 1.0 <= 0.0 + 20.0
-[CONDITION]: [OK] h(fail_lab) <= h(fail_lab) + c: 1.0 <= 1.0 + 1.0
-[CONDITION]: [ERR] h(pass_continuous) <= h(pass_course) + c: 20.0 <= 0.0 + 1.0
-[CONDITION]: [OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[CONCLUSION]: Heuristic is not consistent.
-
-- Failed test: HEURISTIC-CONSISTENT ai_pass.txt
-- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(fail_lab) <= h(fail_course) + c: 17.0 <= 0.0 + 20.0
-[OK] h(fail_exam) <= h(fail_course) + c: 20.0 <= 0.0 + 20.0
-[OK] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
-[OK] h(complete_lab) <= h(pass_continuous) + c: 13.0 <= 1.0 + 12.0
-[OK] h(fail_continuous) <= h(pass_exam) + c: 17.0 <= 1.0 + 16.0
-[OK] h(complete_lab) <= h(fail_continuous) + c: 13.0 <= 17.0 + 1.0
-[OK] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
-[OK] h(fail_lab) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
-[OK] h(pass_continuous) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[OK] h(fail_lab) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
-[OK] h(fail_continuous) <= h(fail_exam) + c: 17.0 <= 20.0 + 1.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT ai_pass.txt
-[CONDITION]: [OK] h(complete_lab) <= h(fail_continuous) + c: 13.0 <= 17.0 + 1.0
-[CONDITION]: [OK] h(complete_lab) <= h(pass_continuous) + c: 13.0 <= 1.0 + 12.0
-[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
-[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
-[CONDITION]: [OK] h(fail_continuous) <= h(fail_exam) + c: 17.0 <= 20.0 + 1.0
-[CONDITION]: [OK] h(fail_continuous) <= h(pass_exam) + c: 17.0 <= 1.0 + 16.0
-[CONDITION]: [OK] h(fail_exam) <= h(fail_course) + c: 20.0 <= 0.0 + 20.0
-[CONDITION]: [OK] h(fail_lab) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
-[CONDITION]: [OK] h(fail_lab) <= h(fail_course) + c: 17.0 <= 0.0 + 20.0
-[CONDITION]: [OK] h(fail_lab) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
-[CONDITION]: [OK] h(pass_continuous) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[CONDITION]: [OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
-[CONCLUSION]: Heuristic is consistent.
-
-- Failed test: HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
-- Command run: python solution.py --ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is not consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
-[OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
-[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0
-[OK] h(Grožnjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0
-[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
-[OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
-[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0
-[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0
-[OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
-[OK] h(Lupoglav) <= h(Opatija) + c: 35.0 <= 26.0 + 29.0
-[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 35.0 + 42.0
-[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
-[OK] h(Pazin) <= h(Baderna) + c: 40.0 <= 25.0 + 19.0
-[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0
-[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
-[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0
-[OK] h(Motovun) <= h(Grožnjan) + c: 12.0 <= 17.0 + 15.0
-[OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0
-[OK] h(Grožnjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0
-[OK] h(Grožnjan) <= h(Višnjan) + c: 17.0 <= 20.0 + 19.0
-[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
-[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0
-[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0
-[OK] h(Pazin) <= h(Žminj) + c: 40.0 <= 27.0 + 17.0
-[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
-[ERR] h(Pazin) <= h(Motovun) + c: 40.0 <= 12.0 + 20.0
-[OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
-[OK] h(Poreč) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0
-[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0
-[OK] h(Lupoglav) <= h(Labin) + c: 35.0 <= 35.0 + 42.0
-[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0
-[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0
-[OK] h(Pazin) <= h(Lupoglav) + c: 40.0 <= 35.0 + 23.0
-[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 40.0 + 20.0
-[OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
-[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
-[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
-[OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
-[OK] h(Kanfanar) <= h(Žminj) + c: 30.0 <= 27.0 + 6.0
-[ERR] h(Lupoglav) <= h(Buzet) + c: 35.0 <= 0.0 + 15.0
-[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 35.0 + 29.0
-[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0
-[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
-[OK] h(Lupoglav) <= h(Pazin) + c: 35.0 <= 40.0 + 23.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
-[CONDITION]: [OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
-[CONDITION]: [OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0
-[CONDITION]: [OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
-[CONDITION]: [OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
-[CONDITION]: [OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
-[CONDITION]: [OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
-[CONDITION]: [OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
-[CONDITION]: [OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
-[CONDITION]: [OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0
-...
-[CONDITION]: [OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
-[CONDITION]: [OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
-[CONDITION]: [OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
-[CONDITION]: [OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
-[CONDITION]: [OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
-[CONDITION]: [OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
-[CONDITION]: [OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
-[CONDITION]: [OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
-[CONDITION]: [OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0
-[CONCLUSION]: Heuristic is not consistent.
-
-- Failed test: HEURISTIC-CONSISTENT istra_heuristic.txt
-- Command run: python solution.py --ss istra.txt --h istra_heuristic.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
-[OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
-[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0
-[OK] h(Lupoglav) <= h(Buzet) + c: 13.0 <= 0.0 + 15.0
-[OK] h(Grožnjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0
-[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
-[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 13.0 + 42.0
-[OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
-[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0
-[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0
-[OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
-[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
-[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0
-[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
-[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0
-[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 17.0 + 19.0
-[OK] h(Motovun) <= h(Grožnjan) + c: 12.0 <= 17.0 + 15.0
-[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 17.0 + 20.0
-[OK] h(Pazin) <= h(Motovun) + c: 17.0 <= 12.0 + 20.0
-[OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 17.0 + 17.0
-[OK] h(Lupoglav) <= h(Opatija) + c: 13.0 <= 26.0 + 29.0
-[OK] h(Grožnjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0
-[OK] h(Grožnjan) <= h(Višnjan) + c: 17.0 <= 20.0 + 19.0
-[OK] h(Pazin) <= h(Baderna) + c: 17.0 <= 25.0 + 19.0
-[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
-[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0
-[OK] h(Pazin) <= h(Žminj) + c: 17.0 <= 27.0 + 17.0
-[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0
-[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
-[OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
-[OK] h(Poreč) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0
-[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 13.0 + 15.0
-[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0
-[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 13.0 + 29.0
-[OK] h(Pazin) <= h(Lupoglav) + c: 17.0 <= 13.0 + 23.0
-[OK] h(Lupoglav) <= h(Pazin) + c: 13.0 <= 17.0 + 23.0
-[OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
-[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
-[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
-[OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
-[OK] h(Kanfanar) <= h(Žminj) + c: 30.0 <= 27.0 + 6.0
-[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0
-[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
-[OK] h(Lupoglav) <= h(Labin) + c: 13.0 <= 35.0 + 42.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT istra_heuristic.txt
-[CONDITION]: [OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
-[CONDITION]: [OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 17.0 + 19.0
-[CONDITION]: [OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
-[CONDITION]: [OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
-[CONDITION]: [OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
-[CONDITION]: [OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
-[CONDITION]: [OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
-[CONDITION]: [OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
-[CONDITION]: [OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 13.0 + 15.0
-...
-[CONDITION]: [OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
-[CONDITION]: [OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
-[CONDITION]: [OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
-[CONDITION]: [OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
-[CONDITION]: [OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
-[CONDITION]: [OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
-[CONDITION]: [OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
-[CONDITION]: [OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
-[CONDITION]: [OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 17.0 + 17.0
-[CONCLUSION]: Heuristic is consistent.
-
-- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic.txt
-- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(C) <= h(L) + c: 33.0 <= 44.0 + 44.0
-[OK] h(F) <= h(S) + c: 46.0 <= 30.0 + 50.0
-[OK] h(O) <= h(P) + c: 35.0 <= 35.0 + 50.0
-[OK] h(K) <= h(X) + c: 41.0 <= 35.0 + 60.0
-[OK] h(X) <= h(K) + c: 35.0 <= 41.0 + 60.0
-[OK] h(D) <= h(Y) + c: 21.0 <= 0.0 + 67.0
-[OK] h(P) <= h(O) + c: 35.0 <= 35.0 + 50.0
-[OK] h(P) <= h(M) + c: 35.0 <= 4.0 + 47.0
-[OK] h(K) <= h(U) + c: 41.0 <= 41.0 + 41.0
-[OK] h(S) <= h(X) + c: 30.0 <= 35.0 + 62.0
-[OK] h(O) <= h(G) + c: 35.0 <= 35.0 + 41.0
-[OK] h(G) <= h(K) + c: 35.0 <= 41.0 + 44.0
-[OK] h(Y) <= h(D) + c: 0.0 <= 21.0 + 67.0
-[OK] h(M) <= h(P) + c: 4.0 <= 35.0 + 47.0
-[OK] h(B) <= h(R) + c: 4.0 <= 26.0 + 39.0
-[OK] h(F) <= h(C) + c: 46.0 <= 33.0 + 56.0
-[OK] h(B) <= h(M) + c: 4.0 <= 4.0 + 4.0
-[OK] h(I) <= h(B) + c: 14.0 <= 4.0 + 14.0
-[OK] h(T) <= h(R) + c: 30.0 <= 26.0 + 46.0
-[OK] h(T) <= h(S) + c: 30.0 <= 30.0 + 30.0
-[OK] h(Y) <= h(N) + c: 0.0 <= 41.0 + 59.0
-[OK] h(H) <= h(G) + c: 27.0 <= 35.0 + 35.0
-[OK] h(G) <= h(O) + c: 35.0 <= 35.0 + 41.0
-[OK] h(Q) <= h(J) + c: 36.0 <= 36.0 + 36.0
-[OK] h(N) <= h(M) + c: 41.0 <= 4.0 + 41.0
-[OK] h(Q) <= h(T) + c: 36.0 <= 30.0 + 39.0
-[OK] h(C) <= h(W) + c: 33.0 <= 33.0 + 33.0
-[OK] h(B) <= h(H) + c: 4.0 <= 27.0 + 27.0
-[OK] h(Y) <= h(L) + c: 0.0 <= 44.0 + 64.0
-[OK] h(G) <= h(F) + c: 35.0 <= 46.0 + 46.0
-[OK] h(H) <= h(B) + c: 27.0 <= 4.0 + 27.0
-[OK] h(P) <= h(B) + c: 35.0 <= 4.0 + 35.0
-[OK] h(F) <= h(E) + c: 46.0 <= 3.0 + 49.0
-[OK] h(M) <= h(N) + c: 4.0 <= 41.0 + 41.0
-[OK] h(B) <= h(I) + c: 4.0 <= 14.0 + 14.0
-[OK] h(S) <= h(F) + c: 30.0 <= 46.0 + 50.0
-[OK] h(B) <= h(Y) + c: 4.0 <= 0.0 + 62.0
-[OK] h(X) <= h(Y) + c: 35.0 <= 0.0 + 76.0
-[OK] h(R) <= h(B) + c: 26.0 <= 4.0 + 39.0
-[OK] h(X) <= h(V) + c: 35.0 <= 39.0 + 62.0
-[OK] h(J) <= h(Q) + c: 36.0 <= 36.0 + 36.0
-[OK] h(D) <= h(S) + c: 21.0 <= 30.0 + 46.0
-[OK] h(A) <= h(E) + c: 3.0 <= 3.0 + 3.0
-[OK] h(Y) <= h(B) + c: 0.0 <= 4.0 + 62.0
-[OK] h(Q) <= h(C) + c: 36.0 <= 33.0 + 38.0
-[OK] h(N) <= h(Y) + c: 41.0 <= 0.0 + 59.0
-[OK] h(M) <= h(B) + c: 4.0 <= 4.0 + 4.0
-[OK] h(E) <= h(F) + c: 3.0 <= 46.0 + 49.0
-[OK] h(K) <= h(G) + c: 41.0 <= 35.0 + 44.0
-[OK] h(P) <= h(G) + c: 35.0 <= 35.0 + 45.0
-[OK] h(U) <= h(K) + c: 41.0 <= 41.0 + 41.0
-[OK] h(L) <= h(Y) + c: 44.0 <= 0.0 + 64.0
-[OK] h(L) <= h(C) + c: 44.0 <= 33.0 + 44.0
-[OK] h(X) <= h(S) + c: 35.0 <= 30.0 + 62.0
-[OK] h(I) <= h(C) + c: 14.0 <= 33.0 + 44.0
-[OK] h(C) <= h(F) + c: 33.0 <= 46.0 + 56.0
-[OK] h(X) <= h(O) + c: 35.0 <= 35.0 + 35.0
-[OK] h(V) <= h(R) + c: 39.0 <= 26.0 + 39.0
-[OK] h(G) <= h(M) + c: 35.0 <= 4.0 + 44.0
-[OK] h(M) <= h(G) + c: 4.0 <= 35.0 + 44.0
-[OK] h(R) <= h(I) + c: 26.0 <= 14.0 + 26.0
-[OK] h(S) <= h(T) + c: 30.0 <= 30.0 + 30.0
-[OK] h(C) <= h(I) + c: 33.0 <= 14.0 + 44.0
-[OK] h(R) <= h(M) + c: 26.0 <= 4.0 + 28.0
-[OK] h(G) <= h(H) + c: 35.0 <= 27.0 + 35.0
-[OK] h(T) <= h(Q) + c: 30.0 <= 36.0 + 39.0
-[OK] h(B) <= h(P) + c: 4.0 <= 35.0 + 35.0
-[OK] h(F) <= h(G) + c: 46.0 <= 35.0 + 46.0
-[OK] h(O) <= h(X) + c: 35.0 <= 35.0 + 35.0
-[OK] h(P) <= h(U) + c: 35.0 <= 41.0 + 60.0
-[OK] h(T) <= h(I) + c: 30.0 <= 14.0 + 34.0
-[OK] h(P) <= h(S) + c: 35.0 <= 30.0 + 38.0
-[OK] h(R) <= h(T) + c: 26.0 <= 30.0 + 46.0
-[OK] h(W) <= h(C) + c: 33.0 <= 33.0 + 33.0
-[OK] h(S) <= h(P) + c: 30.0 <= 35.0 + 38.0
-[OK] h(E) <= h(A) + c: 3.0 <= 3.0 + 3.0
-[OK] h(C) <= h(R) + c: 33.0 <= 26.0 + 42.0
-[OK] h(I) <= h(R) + c: 14.0 <= 26.0 + 26.0
-[OK] h(D) <= h(B) + c: 21.0 <= 4.0 + 21.0
-[OK] h(R) <= h(V) + c: 26.0 <= 39.0 + 39.0
-[OK] h(R) <= h(C) + c: 26.0 <= 33.0 + 42.0
-[OK] h(Y) <= h(X) + c: 0.0 <= 35.0 + 76.0
-[OK] h(M) <= h(R) + c: 4.0 <= 26.0 + 28.0
-[OK] h(S) <= h(D) + c: 30.0 <= 21.0 + 46.0
-[OK] h(C) <= h(Q) + c: 33.0 <= 36.0 + 38.0
-[OK] h(U) <= h(P) + c: 41.0 <= 35.0 + 60.0
-[OK] h(V) <= h(X) + c: 39.0 <= 35.0 + 62.0
-[OK] h(I) <= h(T) + c: 14.0 <= 30.0 + 34.0
-[OK] h(G) <= h(P) + c: 35.0 <= 35.0 + 45.0
-[OK] h(B) <= h(D) + c: 4.0 <= 21.0 + 21.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT test_case_3_heuristic.txt
-[CONDITION]: [OK] h(A) <= h(E) + c: 3.0 <= 3.0 + 3.0
-[CONDITION]: [OK] h(B) <= h(D) + c: 4.0 <= 21.0 + 21.0
-[CONDITION]: [OK] h(B) <= h(H) + c: 4.0 <= 27.0 + 27.0
-[CONDITION]: [OK] h(B) <= h(I) + c: 4.0 <= 14.0 + 14.0
-[CONDITION]: [OK] h(B) <= h(M) + c: 4.0 <= 4.0 + 4.0
-[CONDITION]: [OK] h(B) <= h(P) + c: 4.0 <= 35.0 + 35.0
-[CONDITION]: [OK] h(B) <= h(R) + c: 4.0 <= 26.0 + 39.0
-[CONDITION]: [OK] h(B) <= h(Y) + c: 4.0 <= 0.0 + 62.0
-[CONDITION]: [OK] h(C) <= h(F) + c: 33.0 <= 46.0 + 56.0
-...
-[CONDITION]: [OK] h(X) <= h(O) + c: 35.0 <= 35.0 + 35.0
-[CONDITION]: [OK] h(X) <= h(S) + c: 35.0 <= 30.0 + 62.0
-[CONDITION]: [OK] h(X) <= h(V) + c: 35.0 <= 39.0 + 62.0
-[CONDITION]: [OK] h(X) <= h(Y) + c: 35.0 <= 0.0 + 76.0
-[CONDITION]: [OK] h(Y) <= h(B) + c: 0.0 <= 4.0 + 62.0
-[CONDITION]: [OK] h(Y) <= h(D) + c: 0.0 <= 21.0 + 67.0
-[CONDITION]: [OK] h(Y) <= h(L) + c: 0.0 <= 44.0 + 64.0
-[CONDITION]: [OK] h(Y) <= h(N) + c: 0.0 <= 41.0 + 59.0
-[CONDITION]: [OK] h(Y) <= h(X) + c: 0.0 <= 35.0 + 76.0
-[CONCLUSION]: Heuristic is consistent.
-
-- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic_nonopt.txt
-- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-consistent 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is not consistent.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(R) <= h(V) + c: 40.0 <= 53.0 + 39.0
-[ERR] h(L) <= h(Y) + c: 70.0 <= 0.0 + 64.0
-[OK] h(Q) <= h(J) + c: 50.0 <= 39.0 + 36.0
-[OK] h(R) <= h(B) + c: 40.0 <= 68.0 + 39.0
-[OK] h(Y) <= h(N) + c: 0.0 <= 62.0 + 59.0
-[OK] h(R) <= h(I) + c: 40.0 <= 53.0 + 26.0
-[OK] h(B) <= h(P) + c: 68.0 <= 67.0 + 35.0
-[OK] h(S) <= h(F) + c: 57.0 <= 60.0 + 50.0
-[OK] h(P) <= h(G) + c: 67.0 <= 53.0 + 45.0
-[OK] h(D) <= h(B) + c: 64.0 <= 68.0 + 21.0
-[OK] h(T) <= h(R) + c: 76.0 <= 40.0 + 46.0
-[OK] h(F) <= h(G) + c: 60.0 <= 53.0 + 46.0
-[OK] h(T) <= h(I) + c: 76.0 <= 53.0 + 34.0
-[OK] h(C) <= h(I) + c: 48.0 <= 53.0 + 44.0
-[OK] h(S) <= h(T) + c: 57.0 <= 76.0 + 30.0
-[OK] h(S) <= h(P) + c: 57.0 <= 67.0 + 38.0
-[OK] h(O) <= h(P) + c: 53.0 <= 67.0 + 50.0
-[OK] h(N) <= h(M) + c: 62.0 <= 70.0 + 41.0
-[OK] h(L) <= h(C) + c: 70.0 <= 48.0 + 44.0
-[OK] h(C) <= h(F) + c: 48.0 <= 60.0 + 56.0
-[OK] h(O) <= h(X) + c: 53.0 <= 78.0 + 35.0
-[OK] h(I) <= h(R) + c: 53.0 <= 40.0 + 26.0
-[OK] h(M) <= h(N) + c: 70.0 <= 62.0 + 41.0
-[OK] h(P) <= h(B) + c: 67.0 <= 68.0 + 35.0
-[OK] h(H) <= h(B) + c: 49.0 <= 68.0 + 27.0
-[OK] h(X) <= h(S) + c: 78.0 <= 57.0 + 62.0
-[OK] h(U) <= h(P) + c: 61.0 <= 67.0 + 60.0
-[OK] h(C) <= h(W) + c: 48.0 <= 44.0 + 33.0
-[OK] h(R) <= h(C) + c: 40.0 <= 48.0 + 42.0
-[OK] h(D) <= h(S) + c: 64.0 <= 57.0 + 46.0
-[OK] h(T) <= h(Q) + c: 76.0 <= 50.0 + 39.0
-[OK] h(D) <= h(Y) + c: 64.0 <= 0.0 + 67.0
-[OK] h(R) <= h(M) + c: 40.0 <= 70.0 + 28.0
-[OK] h(A) <= h(E) + c: 23.0 <= 54.0 + 3.0
-[OK] h(G) <= h(H) + c: 53.0 <= 49.0 + 35.0
-[OK] h(G) <= h(F) + c: 53.0 <= 60.0 + 46.0
-[OK] h(O) <= h(G) + c: 53.0 <= 53.0 + 41.0
-[OK] h(F) <= h(E) + c: 60.0 <= 54.0 + 49.0
-[OK] h(G) <= h(K) + c: 53.0 <= 42.0 + 44.0
-[OK] h(X) <= h(K) + c: 78.0 <= 42.0 + 60.0
-[OK] h(Q) <= h(C) + c: 50.0 <= 48.0 + 38.0
-[OK] h(B) <= h(D) + c: 68.0 <= 64.0 + 21.0
-[ERR] h(B) <= h(Y) + c: 68.0 <= 0.0 + 62.0
-[OK] h(I) <= h(T) + c: 53.0 <= 76.0 + 34.0
-[OK] h(G) <= h(O) + c: 53.0 <= 53.0 + 41.0
-[OK] h(K) <= h(U) + c: 42.0 <= 61.0 + 41.0
-[ERR] h(E) <= h(A) + c: 54.0 <= 23.0 + 3.0
-[OK] h(P) <= h(U) + c: 67.0 <= 61.0 + 60.0
-[OK] h(M) <= h(G) + c: 70.0 <= 53.0 + 44.0
-[OK] h(H) <= h(G) + c: 49.0 <= 53.0 + 35.0
-[OK] h(P) <= h(S) + c: 67.0 <= 57.0 + 38.0
-[OK] h(C) <= h(Q) + c: 48.0 <= 50.0 + 38.0
-[OK] h(F) <= h(C) + c: 60.0 <= 48.0 + 56.0
-[OK] h(V) <= h(R) + c: 53.0 <= 40.0 + 39.0
-[OK] h(K) <= h(X) + c: 42.0 <= 78.0 + 60.0
-[OK] h(C) <= h(R) + c: 48.0 <= 40.0 + 42.0
-[OK] h(X) <= h(V) + c: 78.0 <= 53.0 + 62.0
-[ERR] h(M) <= h(R) + c: 70.0 <= 40.0 + 28.0
-[OK] h(S) <= h(X) + c: 57.0 <= 78.0 + 62.0
-[OK] h(Y) <= h(L) + c: 0.0 <= 70.0 + 64.0
-[ERR] h(N) <= h(Y) + c: 62.0 <= 0.0 + 59.0
-[OK] h(B) <= h(H) + c: 68.0 <= 49.0 + 27.0
-[OK] h(M) <= h(P) + c: 70.0 <= 67.0 + 47.0
-[OK] h(Q) <= h(T) + c: 50.0 <= 76.0 + 39.0
-[OK] h(E) <= h(F) + c: 54.0 <= 60.0 + 49.0
-[OK] h(G) <= h(M) + c: 53.0 <= 70.0 + 44.0
-[OK] h(S) <= h(D) + c: 57.0 <= 64.0 + 46.0
-[ERR] h(X) <= h(Y) + c: 78.0 <= 0.0 + 76.0
-[OK] h(P) <= h(M) + c: 67.0 <= 70.0 + 47.0
-[OK] h(P) <= h(O) + c: 67.0 <= 53.0 + 50.0
-[OK] h(B) <= h(R) + c: 68.0 <= 40.0 + 39.0
-[OK] h(F) <= h(S) + c: 60.0 <= 57.0 + 50.0
-[OK] h(C) <= h(L) + c: 48.0 <= 70.0 + 44.0
-[OK] h(G) <= h(P) + c: 53.0 <= 67.0 + 45.0
-[OK] h(V) <= h(X) + c: 53.0 <= 78.0 + 62.0
-[OK] h(X) <= h(O) + c: 78.0 <= 53.0 + 35.0
-[OK] h(B) <= h(M) + c: 68.0 <= 70.0 + 4.0
-[OK] h(U) <= h(K) + c: 61.0 <= 42.0 + 41.0
-[OK] h(Y) <= h(D) + c: 0.0 <= 64.0 + 67.0
-[OK] h(R) <= h(T) + c: 40.0 <= 76.0 + 46.0
-[OK] h(Y) <= h(X) + c: 0.0 <= 78.0 + 76.0
-[OK] h(T) <= h(S) + c: 76.0 <= 57.0 + 30.0
-[OK] h(I) <= h(B) + c: 53.0 <= 68.0 + 14.0
-[OK] h(M) <= h(B) + c: 70.0 <= 68.0 + 4.0
-[OK] h(Y) <= h(B) + c: 0.0 <= 68.0 + 62.0
-[ERR] h(B) <= h(I) + c: 68.0 <= 53.0 + 14.0
-[OK] h(W) <= h(C) + c: 44.0 <= 48.0 + 33.0
-[OK] h(I) <= h(C) + c: 53.0 <= 48.0 + 44.0
-[OK] h(K) <= h(G) + c: 42.0 <= 53.0 + 44.0
-[OK] h(J) <= h(Q) + c: 39.0 <= 50.0 + 36.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-CONSISTENT test_case_3_heuristic_nonopt.txt
-[CONDITION]: [OK] h(A) <= h(E) + c: 23.0 <= 54.0 + 3.0
-[CONDITION]: [OK] h(B) <= h(D) + c: 68.0 <= 64.0 + 21.0
-[CONDITION]: [OK] h(B) <= h(H) + c: 68.0 <= 49.0 + 27.0
-[CONDITION]: [ERR] h(B) <= h(I) + c: 68.0 <= 53.0 + 14.0
-[CONDITION]: [OK] h(B) <= h(M) + c: 68.0 <= 70.0 + 4.0
-[CONDITION]: [OK] h(B) <= h(P) + c: 68.0 <= 67.0 + 35.0
-[CONDITION]: [OK] h(B) <= h(R) + c: 68.0 <= 40.0 + 39.0
-[CONDITION]: [ERR] h(B) <= h(Y) + c: 68.0 <= 0.0 + 62.0
-[CONDITION]: [OK] h(C) <= h(F) + c: 48.0 <= 60.0 + 56.0
-...
-[CONDITION]: [OK] h(X) <= h(O) + c: 78.0 <= 53.0 + 35.0
-[CONDITION]: [OK] h(X) <= h(S) + c: 78.0 <= 57.0 + 62.0
-[CONDITION]: [OK] h(X) <= h(V) + c: 78.0 <= 53.0 + 62.0
-[CONDITION]: [ERR] h(X) <= h(Y) + c: 78.0 <= 0.0 + 76.0
-[CONDITION]: [OK] h(Y) <= h(B) + c: 0.0 <= 68.0 + 62.0
-[CONDITION]: [OK] h(Y) <= h(D) + c: 0.0 <= 64.0 + 67.0
-[CONDITION]: [OK] h(Y) <= h(L) + c: 0.0 <= 70.0 + 64.0
-[CONDITION]: [OK] h(Y) <= h(N) + c: 0.0 <= 62.0 + 59.0
-[CONDITION]: [OK] h(Y) <= h(X) + c: 0.0 <= 78.0 + 76.0
-[CONCLUSION]: Heuristic is not consistent.
 
 - Failed test: HEURISTIC-CONSISTENT test_case_1_heuristic.txt
 - Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic.txt --check-consistent 
@@ -1041,44 +315,44 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(A) <= h(F) + c: 1.0 <= 1.0 + 1.0
+[OK] h(B) <= h(E) + c: 7.0 <= 7.0 + 7.0
+[OK] h(C) <= h(K) + c: 8.0 <= 10.0 + 15.0
+[OK] h(D) <= h(F) + c: 6.0 <= 1.0 + 17.0
 [OK] h(J) <= h(F) + c: 15.0 <= 1.0 + 15.0
-[OK] h(C) <= h(D) + c: 8.0 <= 6.0 + 18.0
-[OK] h(H) <= h(D) + c: 12.0 <= 6.0 + 16.0
-[OK] h(C) <= h(I) + c: 8.0 <= 9.0 + 14.0
-[OK] h(E) <= h(O) + c: 7.0 <= 0.0 + 11.0
-[OK] h(B) <= h(I) + c: 7.0 <= 9.0 + 9.0
-[OK] h(I) <= h(C) + c: 9.0 <= 8.0 + 14.0
-[OK] h(D) <= h(G) + c: 6.0 <= 13.0 + 13.0
-[OK] h(E) <= h(H) + c: 7.0 <= 12.0 + 12.0
-[OK] h(G) <= h(D) + c: 13.0 <= 6.0 + 13.0
-[OK] h(I) <= h(B) + c: 9.0 <= 7.0 + 9.0
-[OK] h(M) <= h(D) + c: 6.0 <= 6.0 + 6.0
+[OK] h(O) <= h(E) + c: 0.0 <= 7.0 + 11.0
 [OK] h(D) <= h(A) + c: 6.0 <= 1.0 + 15.0
 [OK] h(I) <= h(E) + c: 9.0 <= 7.0 + 13.0
+[OK] h(E) <= h(O) + c: 7.0 <= 0.0 + 11.0
+[OK] h(L) <= h(D) + c: 10.0 <= 6.0 + 10.0
+[OK] h(I) <= h(K) + c: 9.0 <= 10.0 + 10.0
+[OK] h(E) <= h(H) + c: 7.0 <= 12.0 + 12.0
+[OK] h(F) <= h(D) + c: 1.0 <= 6.0 + 17.0
+[OK] h(C) <= h(D) + c: 8.0 <= 6.0 + 18.0
+[OK] h(N) <= h(K) + c: 11.0 <= 10.0 + 11.0
+[OK] h(I) <= h(B) + c: 9.0 <= 7.0 + 9.0
+[OK] h(F) <= h(J) + c: 1.0 <= 15.0 + 15.0
+[OK] h(D) <= h(C) + c: 6.0 <= 8.0 + 18.0
+[OK] h(D) <= h(M) + c: 6.0 <= 6.0 + 6.0
+[OK] h(A) <= h(F) + c: 1.0 <= 1.0 + 1.0
+[OK] h(D) <= h(L) + c: 6.0 <= 10.0 + 10.0
+[OK] h(D) <= h(G) + c: 6.0 <= 13.0 + 13.0
+[OK] h(G) <= h(D) + c: 13.0 <= 6.0 + 13.0
+[OK] h(I) <= h(C) + c: 9.0 <= 8.0 + 14.0
+[OK] h(K) <= h(C) + c: 10.0 <= 8.0 + 15.0
 [OK] h(C) <= h(B) + c: 8.0 <= 7.0 + 8.0
-[OK] h(D) <= h(F) + c: 6.0 <= 1.0 + 17.0
 [OK] h(E) <= h(I) + c: 7.0 <= 9.0 + 13.0
+[OK] h(B) <= h(I) + c: 7.0 <= 9.0 + 9.0
 [OK] h(D) <= h(H) + c: 6.0 <= 12.0 + 16.0
 [OK] h(F) <= h(A) + c: 1.0 <= 1.0 + 1.0
-[OK] h(D) <= h(L) + c: 6.0 <= 10.0 + 10.0
-[OK] h(I) <= h(K) + c: 9.0 <= 10.0 + 10.0
 [OK] h(B) <= h(C) + c: 7.0 <= 8.0 + 8.0
-[OK] h(D) <= h(C) + c: 6.0 <= 8.0 + 18.0
-[OK] h(K) <= h(I) + c: 10.0 <= 9.0 + 10.0
-[OK] h(F) <= h(D) + c: 1.0 <= 6.0 + 17.0
-[OK] h(L) <= h(D) + c: 10.0 <= 6.0 + 10.0
-[OK] h(E) <= h(B) + c: 7.0 <= 7.0 + 7.0
-[OK] h(F) <= h(J) + c: 1.0 <= 15.0 + 15.0
-[OK] h(K) <= h(N) + c: 10.0 <= 11.0 + 11.0
 [OK] h(H) <= h(E) + c: 12.0 <= 7.0 + 12.0
-[OK] h(O) <= h(E) + c: 0.0 <= 7.0 + 11.0
-[OK] h(C) <= h(K) + c: 8.0 <= 10.0 + 15.0
+[OK] h(C) <= h(I) + c: 8.0 <= 9.0 + 14.0
+[OK] h(E) <= h(B) + c: 7.0 <= 7.0 + 7.0
+[OK] h(M) <= h(D) + c: 6.0 <= 6.0 + 6.0
+[OK] h(K) <= h(I) + c: 10.0 <= 9.0 + 10.0
+[OK] h(K) <= h(N) + c: 10.0 <= 11.0 + 11.0
 [OK] h(A) <= h(D) + c: 1.0 <= 6.0 + 15.0
-[OK] h(D) <= h(M) + c: 6.0 <= 6.0 + 6.0
-[OK] h(K) <= h(C) + c: 10.0 <= 8.0 + 15.0
-[OK] h(B) <= h(E) + c: 7.0 <= 7.0 + 7.0
-[OK] h(N) <= h(K) + c: 11.0 <= 10.0 + 11.0
+[OK] h(H) <= h(D) + c: 12.0 <= 6.0 + 16.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
@@ -1115,44 +389,44 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(J) <= h(F) + c: 14.0 <= 24.0 + 15.0
-[ERR] h(F) <= h(A) + c: 24.0 <= 0.0 + 1.0
-[OK] h(G) <= h(D) + c: 13.0 <= 26.0 + 13.0
-[OK] h(D) <= h(F) + c: 26.0 <= 24.0 + 17.0
+[ERR] h(C) <= h(I) + c: 25.0 <= 5.0 + 14.0
+[ERR] h(E) <= h(H) + c: 21.0 <= 7.0 + 12.0
+[OK] h(A) <= h(D) + c: 0.0 <= 26.0 + 15.0
+[OK] h(B) <= h(E) + c: 11.0 <= 21.0 + 7.0
+[OK] h(H) <= h(D) + c: 7.0 <= 26.0 + 16.0
+[OK] h(B) <= h(C) + c: 11.0 <= 25.0 + 8.0
+[ERR] h(E) <= h(I) + c: 21.0 <= 5.0 + 13.0
 [OK] h(I) <= h(E) + c: 5.0 <= 21.0 + 13.0
 [OK] h(C) <= h(D) + c: 25.0 <= 26.0 + 18.0
-[ERR] h(E) <= h(H) + c: 21.0 <= 7.0 + 12.0
-[OK] h(I) <= h(K) + c: 5.0 <= 19.0 + 10.0
-[OK] h(A) <= h(F) + c: 0.0 <= 24.0 + 1.0
-[ERR] h(E) <= h(O) + c: 21.0 <= 0.0 + 11.0
-[ERR] h(C) <= h(B) + c: 25.0 <= 11.0 + 8.0
 [ERR] h(D) <= h(A) + c: 26.0 <= 0.0 + 15.0
-[OK] h(L) <= h(D) + c: 8.0 <= 26.0 + 10.0
-[OK] h(A) <= h(D) + c: 0.0 <= 26.0 + 15.0
-[ERR] h(K) <= h(I) + c: 19.0 <= 5.0 + 10.0
-[ERR] h(E) <= h(I) + c: 21.0 <= 5.0 + 13.0
-[OK] h(I) <= h(B) + c: 5.0 <= 11.0 + 9.0
-[OK] h(F) <= h(J) + c: 24.0 <= 14.0 + 15.0
-[ERR] h(D) <= h(L) + c: 26.0 <= 8.0 + 10.0
-[OK] h(B) <= h(I) + c: 11.0 <= 5.0 + 9.0
-[OK] h(K) <= h(N) + c: 19.0 <= 19.0 + 11.0
-[OK] h(B) <= h(E) + c: 11.0 <= 21.0 + 7.0
-[OK] h(K) <= h(C) + c: 19.0 <= 25.0 + 15.0
-[OK] h(H) <= h(D) + c: 7.0 <= 26.0 + 16.0
-[ERR] h(C) <= h(I) + c: 25.0 <= 5.0 + 14.0
-[ERR] h(E) <= h(B) + c: 21.0 <= 11.0 + 7.0
-[OK] h(F) <= h(D) + c: 24.0 <= 26.0 + 17.0
+[ERR] h(E) <= h(O) + c: 21.0 <= 0.0 + 11.0
 [OK] h(N) <= h(K) + c: 19.0 <= 19.0 + 11.0
 [OK] h(I) <= h(C) + c: 5.0 <= 25.0 + 14.0
-[ERR] h(D) <= h(H) + c: 26.0 <= 7.0 + 16.0
-[OK] h(C) <= h(K) + c: 25.0 <= 19.0 + 15.0
-[OK] h(H) <= h(E) + c: 7.0 <= 21.0 + 12.0
-[OK] h(D) <= h(C) + c: 26.0 <= 25.0 + 18.0
-[OK] h(M) <= h(D) + c: 13.0 <= 26.0 + 6.0
-[ERR] h(D) <= h(M) + c: 26.0 <= 13.0 + 6.0
-[OK] h(B) <= h(C) + c: 11.0 <= 25.0 + 8.0
-[OK] h(O) <= h(E) + c: 0.0 <= 21.0 + 11.0
+[ERR] h(C) <= h(B) + c: 25.0 <= 11.0 + 8.0
 [OK] h(D) <= h(G) + c: 26.0 <= 13.0 + 13.0
+[OK] h(D) <= h(F) + c: 26.0 <= 24.0 + 17.0
+[OK] h(O) <= h(E) + c: 0.0 <= 21.0 + 11.0
+[OK] h(B) <= h(I) + c: 11.0 <= 5.0 + 9.0
+[ERR] h(F) <= h(A) + c: 24.0 <= 0.0 + 1.0
+[OK] h(C) <= h(K) + c: 25.0 <= 19.0 + 15.0
+[ERR] h(D) <= h(H) + c: 26.0 <= 7.0 + 16.0
+[ERR] h(K) <= h(I) + c: 19.0 <= 5.0 + 10.0
+[OK] h(A) <= h(F) + c: 0.0 <= 24.0 + 1.0
+[OK] h(K) <= h(N) + c: 19.0 <= 19.0 + 11.0
+[ERR] h(E) <= h(B) + c: 21.0 <= 11.0 + 7.0
+[OK] h(G) <= h(D) + c: 13.0 <= 26.0 + 13.0
+[OK] h(L) <= h(D) + c: 8.0 <= 26.0 + 10.0
+[OK] h(I) <= h(K) + c: 5.0 <= 19.0 + 10.0
+[OK] h(I) <= h(B) + c: 5.0 <= 11.0 + 9.0
+[OK] h(D) <= h(C) + c: 26.0 <= 25.0 + 18.0
+[OK] h(F) <= h(J) + c: 24.0 <= 14.0 + 15.0
+[OK] h(J) <= h(F) + c: 14.0 <= 24.0 + 15.0
+[OK] h(H) <= h(E) + c: 7.0 <= 21.0 + 12.0
+[OK] h(F) <= h(D) + c: 24.0 <= 26.0 + 17.0
+[OK] h(M) <= h(D) + c: 13.0 <= 26.0 + 6.0
+[ERR] h(D) <= h(L) + c: 26.0 <= 8.0 + 10.0
+[ERR] h(D) <= h(M) + c: 26.0 <= 13.0 + 6.0
+[OK] h(K) <= h(C) + c: 19.0 <= 25.0 + 15.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
@@ -1178,11 +452,737 @@ Solving lab 1 assignment...
 [CONDITION]: [OK] h(O) <= h(E) + c: 0.0 <= 21.0 + 11.0
 [CONCLUSION]: Heuristic is not consistent.
 
+- Failed test: HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_pessimistic_heuristic.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is not consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
+[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
+[OK] h(Poreč) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0
+[OK] h(Pazin) <= h(Lupoglav) + c: 40.0 <= 35.0 + 23.0
+[ERR] h(Pazin) <= h(Motovun) + c: 40.0 <= 12.0 + 20.0
+[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
+[OK] h(Kanfanar) <= h(Žminj) + c: 30.0 <= 27.0 + 6.0
+[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
+[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
+[OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0
+[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
+[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
+[OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
+[OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
+[OK] h(Lupoglav) <= h(Pazin) + c: 35.0 <= 40.0 + 23.0
+[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0
+[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0
+[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0
+[OK] h(Motovun) <= h(Grožnjan) + c: 12.0 <= 17.0 + 15.0
+[OK] h(Lupoglav) <= h(Opatija) + c: 35.0 <= 26.0 + 29.0
+[ERR] h(Lupoglav) <= h(Buzet) + c: 35.0 <= 0.0 + 15.0
+[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0
+[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
+[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0
+[OK] h(Pazin) <= h(Žminj) + c: 40.0 <= 27.0 + 17.0
+[OK] h(Lupoglav) <= h(Labin) + c: 35.0 <= 35.0 + 42.0
+[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0
+[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 40.0 + 20.0
+[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 35.0 + 42.0
+[OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
+[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0
+[OK] h(Grožnjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0
+[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0
+[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0
+[OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
+[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 35.0 + 29.0
+[OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
+[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0
+[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0
+[OK] h(Pazin) <= h(Baderna) + c: 40.0 <= 25.0 + 19.0
+[OK] h(Grožnjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0
+[OK] h(Grožnjan) <= h(Višnjan) + c: 17.0 <= 20.0 + 19.0
+[OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
+[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT istra_pessimistic_heuristic.txt
+[CONDITION]: [OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 40.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
+[CONDITION]: [OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
+[CONDITION]: [OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
+[CONDITION]: [OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
+[CONDITION]: [OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
+[CONDITION]: [OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
+[CONDITION]: [OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 35.0 + 15.0
+...
+[CONDITION]: [OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
+[CONDITION]: [OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
+[CONDITION]: [OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
+[CONDITION]: [OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
+[CONDITION]: [OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 40.0 + 17.0
+[CONCLUSION]: Heuristic is not consistent.
+
+- Failed test: HEURISTIC-CONSISTENT istra_heuristic.txt
+- Command run: python solution.py --ss istra.txt --h istra_heuristic.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
+[OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
+[OK] h(Poreč) <= h(Baderna) + c: 32.0 <= 25.0 + 14.0
+[OK] h(Pazin) <= h(Lupoglav) + c: 17.0 <= 13.0 + 23.0
+[OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
+[OK] h(Kanfanar) <= h(Žminj) + c: 30.0 <= 27.0 + 6.0
+[OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 17.0 + 19.0
+[OK] h(Lupoglav) <= h(Labin) + c: 13.0 <= 35.0 + 42.0
+[OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
+[OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
+[OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
+[OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
+[OK] h(Motovun) <= h(Pazin) + c: 12.0 <= 17.0 + 20.0
+[OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
+[OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
+[OK] h(Pazin) <= h(Baderna) + c: 17.0 <= 25.0 + 19.0
+[OK] h(Medulin) <= h(Pula) + c: 61.0 <= 57.0 + 9.0
+[OK] h(Motovun) <= h(Grožnjan) + c: 12.0 <= 17.0 + 15.0
+[OK] h(Kanfanar) <= h(Vodnjan) + c: 30.0 <= 47.0 + 29.0
+[OK] h(Kanfanar) <= h(Rovinj) + c: 30.0 <= 40.0 + 18.0
+[OK] h(Pula) <= h(Barban) + c: 57.0 <= 35.0 + 28.0
+[OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
+[OK] h(Lupoglav) <= h(Buzet) + c: 13.0 <= 0.0 + 15.0
+[OK] h(Lupoglav) <= h(Pazin) + c: 13.0 <= 17.0 + 23.0
+[OK] h(Labin) <= h(Barban) + c: 35.0 <= 35.0 + 15.0
+[OK] h(Lupoglav) <= h(Opatija) + c: 13.0 <= 26.0 + 29.0
+[OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
+[OK] h(Motovun) <= h(Buzet) + c: 12.0 <= 0.0 + 18.0
+[OK] h(Grožnjan) <= h(Buje) + c: 17.0 <= 21.0 + 8.0
+[OK] h(Buzet) <= h(Motovun) + c: 0.0 <= 12.0 + 18.0
+[OK] h(Pula) <= h(Medulin) + c: 57.0 <= 61.0 + 9.0
+[OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
+[OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 13.0 + 15.0
+[OK] h(Pazin) <= h(Motovun) + c: 17.0 <= 12.0 + 20.0
+[OK] h(Labin) <= h(Lupoglav) + c: 35.0 <= 13.0 + 42.0
+[OK] h(Pazin) <= h(Žminj) + c: 17.0 <= 27.0 + 17.0
+[OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
+[OK] h(Kanfanar) <= h(Baderna) + c: 30.0 <= 25.0 + 19.0
+[OK] h(Opatija) <= h(Lupoglav) + c: 26.0 <= 13.0 + 29.0
+[OK] h(Grožnjan) <= h(Motovun) + c: 17.0 <= 12.0 + 15.0
+[OK] h(Grožnjan) <= h(Višnjan) + c: 17.0 <= 20.0 + 19.0
+[OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 17.0 + 17.0
+[OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
+[OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT istra_heuristic.txt
+[CONDITION]: [OK] h(Baderna) <= h(Kanfanar) + c: 25.0 <= 30.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Pazin) + c: 25.0 <= 17.0 + 19.0
+[CONDITION]: [OK] h(Baderna) <= h(Poreč) + c: 25.0 <= 32.0 + 14.0
+[CONDITION]: [OK] h(Baderna) <= h(Višnjan) + c: 25.0 <= 20.0 + 13.0
+[CONDITION]: [OK] h(Barban) <= h(Labin) + c: 35.0 <= 35.0 + 15.0
+[CONDITION]: [OK] h(Barban) <= h(Pula) + c: 35.0 <= 57.0 + 28.0
+[CONDITION]: [OK] h(Buje) <= h(Grožnjan) + c: 21.0 <= 17.0 + 8.0
+[CONDITION]: [OK] h(Buje) <= h(Umag) + c: 21.0 <= 31.0 + 13.0
+[CONDITION]: [OK] h(Buzet) <= h(Lupoglav) + c: 0.0 <= 13.0 + 15.0
+...
+[CONDITION]: [OK] h(Pula) <= h(Vodnjan) + c: 57.0 <= 47.0 + 12.0
+[CONDITION]: [OK] h(Rovinj) <= h(Kanfanar) + c: 40.0 <= 30.0 + 18.0
+[CONDITION]: [OK] h(Umag) <= h(Buje) + c: 31.0 <= 21.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Baderna) + c: 20.0 <= 25.0 + 13.0
+[CONDITION]: [OK] h(Višnjan) <= h(Grožnjan) + c: 20.0 <= 17.0 + 19.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Kanfanar) + c: 47.0 <= 30.0 + 29.0
+[CONDITION]: [OK] h(Vodnjan) <= h(Pula) + c: 47.0 <= 57.0 + 12.0
+[CONDITION]: [OK] h(Žminj) <= h(Kanfanar) + c: 27.0 <= 30.0 + 6.0
+[CONDITION]: [OK] h(Žminj) <= h(Pazin) + c: 27.0 <= 17.0 + 17.0
+[CONCLUSION]: Heuristic is consistent.
+
+- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(G) <= h(F) + c: 35.0 <= 46.0 + 46.0
+[OK] h(Q) <= h(J) + c: 36.0 <= 36.0 + 36.0
+[OK] h(P) <= h(B) + c: 35.0 <= 4.0 + 35.0
+[OK] h(M) <= h(N) + c: 4.0 <= 41.0 + 41.0
+[OK] h(J) <= h(Q) + c: 36.0 <= 36.0 + 36.0
+[OK] h(Y) <= h(X) + c: 0.0 <= 35.0 + 76.0
+[OK] h(Q) <= h(T) + c: 36.0 <= 30.0 + 39.0
+[OK] h(P) <= h(G) + c: 35.0 <= 35.0 + 45.0
+[OK] h(R) <= h(I) + c: 26.0 <= 14.0 + 26.0
+[OK] h(X) <= h(Y) + c: 35.0 <= 0.0 + 76.0
+[OK] h(M) <= h(G) + c: 4.0 <= 35.0 + 44.0
+[OK] h(E) <= h(F) + c: 3.0 <= 46.0 + 49.0
+[OK] h(O) <= h(P) + c: 35.0 <= 35.0 + 50.0
+[OK] h(Y) <= h(N) + c: 0.0 <= 41.0 + 59.0
+[OK] h(V) <= h(R) + c: 39.0 <= 26.0 + 39.0
+[OK] h(X) <= h(V) + c: 35.0 <= 39.0 + 62.0
+[OK] h(T) <= h(R) + c: 30.0 <= 26.0 + 46.0
+[OK] h(F) <= h(E) + c: 46.0 <= 3.0 + 49.0
+[OK] h(S) <= h(X) + c: 30.0 <= 35.0 + 62.0
+[OK] h(F) <= h(S) + c: 46.0 <= 30.0 + 50.0
+[OK] h(B) <= h(P) + c: 4.0 <= 35.0 + 35.0
+[OK] h(R) <= h(B) + c: 26.0 <= 4.0 + 39.0
+[OK] h(C) <= h(W) + c: 33.0 <= 33.0 + 33.0
+[OK] h(D) <= h(Y) + c: 21.0 <= 0.0 + 67.0
+[OK] h(U) <= h(P) + c: 41.0 <= 35.0 + 60.0
+[OK] h(B) <= h(R) + c: 4.0 <= 26.0 + 39.0
+[OK] h(S) <= h(F) + c: 30.0 <= 46.0 + 50.0
+[OK] h(C) <= h(I) + c: 33.0 <= 14.0 + 44.0
+[OK] h(S) <= h(D) + c: 30.0 <= 21.0 + 46.0
+[OK] h(H) <= h(B) + c: 27.0 <= 4.0 + 27.0
+[OK] h(E) <= h(A) + c: 3.0 <= 3.0 + 3.0
+[OK] h(C) <= h(F) + c: 33.0 <= 46.0 + 56.0
+[OK] h(C) <= h(R) + c: 33.0 <= 26.0 + 42.0
+[OK] h(P) <= h(M) + c: 35.0 <= 4.0 + 47.0
+[OK] h(M) <= h(P) + c: 4.0 <= 35.0 + 47.0
+[OK] h(A) <= h(E) + c: 3.0 <= 3.0 + 3.0
+[OK] h(N) <= h(M) + c: 41.0 <= 4.0 + 41.0
+[OK] h(H) <= h(G) + c: 27.0 <= 35.0 + 35.0
+[OK] h(Y) <= h(D) + c: 0.0 <= 21.0 + 67.0
+[OK] h(P) <= h(O) + c: 35.0 <= 35.0 + 50.0
+[OK] h(K) <= h(X) + c: 41.0 <= 35.0 + 60.0
+[OK] h(N) <= h(Y) + c: 41.0 <= 0.0 + 59.0
+[OK] h(K) <= h(G) + c: 41.0 <= 35.0 + 44.0
+[OK] h(G) <= h(H) + c: 35.0 <= 27.0 + 35.0
+[OK] h(I) <= h(B) + c: 14.0 <= 4.0 + 14.0
+[OK] h(T) <= h(Q) + c: 30.0 <= 36.0 + 39.0
+[OK] h(B) <= h(H) + c: 4.0 <= 27.0 + 27.0
+[OK] h(B) <= h(Y) + c: 4.0 <= 0.0 + 62.0
+[OK] h(B) <= h(D) + c: 4.0 <= 21.0 + 21.0
+[OK] h(D) <= h(B) + c: 21.0 <= 4.0 + 21.0
+[OK] h(G) <= h(K) + c: 35.0 <= 41.0 + 44.0
+[OK] h(X) <= h(S) + c: 35.0 <= 30.0 + 62.0
+[OK] h(Q) <= h(C) + c: 36.0 <= 33.0 + 38.0
+[OK] h(L) <= h(Y) + c: 44.0 <= 0.0 + 64.0
+[OK] h(B) <= h(M) + c: 4.0 <= 4.0 + 4.0
+[OK] h(L) <= h(C) + c: 44.0 <= 33.0 + 44.0
+[OK] h(B) <= h(I) + c: 4.0 <= 14.0 + 14.0
+[OK] h(P) <= h(S) + c: 35.0 <= 30.0 + 38.0
+[OK] h(O) <= h(G) + c: 35.0 <= 35.0 + 41.0
+[OK] h(R) <= h(T) + c: 26.0 <= 30.0 + 46.0
+[OK] h(P) <= h(U) + c: 35.0 <= 41.0 + 60.0
+[OK] h(F) <= h(G) + c: 46.0 <= 35.0 + 46.0
+[OK] h(U) <= h(K) + c: 41.0 <= 41.0 + 41.0
+[OK] h(W) <= h(C) + c: 33.0 <= 33.0 + 33.0
+[OK] h(C) <= h(Q) + c: 33.0 <= 36.0 + 38.0
+[OK] h(V) <= h(X) + c: 39.0 <= 35.0 + 62.0
+[OK] h(M) <= h(R) + c: 4.0 <= 26.0 + 28.0
+[OK] h(F) <= h(C) + c: 46.0 <= 33.0 + 56.0
+[OK] h(R) <= h(M) + c: 26.0 <= 4.0 + 28.0
+[OK] h(S) <= h(T) + c: 30.0 <= 30.0 + 30.0
+[OK] h(G) <= h(M) + c: 35.0 <= 4.0 + 44.0
+[OK] h(Y) <= h(L) + c: 0.0 <= 44.0 + 64.0
+[OK] h(I) <= h(C) + c: 14.0 <= 33.0 + 44.0
+[OK] h(I) <= h(T) + c: 14.0 <= 30.0 + 34.0
+[OK] h(X) <= h(O) + c: 35.0 <= 35.0 + 35.0
+[OK] h(D) <= h(S) + c: 21.0 <= 30.0 + 46.0
+[OK] h(T) <= h(I) + c: 30.0 <= 14.0 + 34.0
+[OK] h(C) <= h(L) + c: 33.0 <= 44.0 + 44.0
+[OK] h(O) <= h(X) + c: 35.0 <= 35.0 + 35.0
+[OK] h(G) <= h(O) + c: 35.0 <= 35.0 + 41.0
+[OK] h(G) <= h(P) + c: 35.0 <= 35.0 + 45.0
+[OK] h(X) <= h(K) + c: 35.0 <= 41.0 + 60.0
+[OK] h(K) <= h(U) + c: 41.0 <= 41.0 + 41.0
+[OK] h(R) <= h(C) + c: 26.0 <= 33.0 + 42.0
+[OK] h(I) <= h(R) + c: 14.0 <= 26.0 + 26.0
+[OK] h(S) <= h(P) + c: 30.0 <= 35.0 + 38.0
+[OK] h(T) <= h(S) + c: 30.0 <= 30.0 + 30.0
+[OK] h(M) <= h(B) + c: 4.0 <= 4.0 + 4.0
+[OK] h(R) <= h(V) + c: 26.0 <= 39.0 + 39.0
+[OK] h(Y) <= h(B) + c: 0.0 <= 4.0 + 62.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT test_case_3_heuristic.txt
+[CONDITION]: [OK] h(A) <= h(E) + c: 3.0 <= 3.0 + 3.0
+[CONDITION]: [OK] h(B) <= h(D) + c: 4.0 <= 21.0 + 21.0
+[CONDITION]: [OK] h(B) <= h(H) + c: 4.0 <= 27.0 + 27.0
+[CONDITION]: [OK] h(B) <= h(I) + c: 4.0 <= 14.0 + 14.0
+[CONDITION]: [OK] h(B) <= h(M) + c: 4.0 <= 4.0 + 4.0
+[CONDITION]: [OK] h(B) <= h(P) + c: 4.0 <= 35.0 + 35.0
+[CONDITION]: [OK] h(B) <= h(R) + c: 4.0 <= 26.0 + 39.0
+[CONDITION]: [OK] h(B) <= h(Y) + c: 4.0 <= 0.0 + 62.0
+[CONDITION]: [OK] h(C) <= h(F) + c: 33.0 <= 46.0 + 56.0
+...
+[CONDITION]: [OK] h(X) <= h(O) + c: 35.0 <= 35.0 + 35.0
+[CONDITION]: [OK] h(X) <= h(S) + c: 35.0 <= 30.0 + 62.0
+[CONDITION]: [OK] h(X) <= h(V) + c: 35.0 <= 39.0 + 62.0
+[CONDITION]: [OK] h(X) <= h(Y) + c: 35.0 <= 0.0 + 76.0
+[CONDITION]: [OK] h(Y) <= h(B) + c: 0.0 <= 4.0 + 62.0
+[CONDITION]: [OK] h(Y) <= h(D) + c: 0.0 <= 21.0 + 67.0
+[CONDITION]: [OK] h(Y) <= h(L) + c: 0.0 <= 44.0 + 64.0
+[CONDITION]: [OK] h(Y) <= h(N) + c: 0.0 <= 41.0 + 59.0
+[CONDITION]: [OK] h(Y) <= h(X) + c: 0.0 <= 35.0 + 76.0
+[CONCLUSION]: Heuristic is consistent.
+
+- Failed test: HEURISTIC-CONSISTENT test_case_3_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_3.txt --h test_case_3_heuristic_nonopt.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is not consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(B) <= h(H) + c: 68.0 <= 49.0 + 27.0
+[OK] h(M) <= h(P) + c: 70.0 <= 67.0 + 47.0
+[OK] h(M) <= h(B) + c: 70.0 <= 68.0 + 4.0
+[OK] h(I) <= h(T) + c: 53.0 <= 76.0 + 34.0
+[OK] h(Q) <= h(C) + c: 50.0 <= 48.0 + 38.0
+[OK] h(U) <= h(K) + c: 61.0 <= 42.0 + 41.0
+[OK] h(Y) <= h(B) + c: 0.0 <= 68.0 + 62.0
+[OK] h(C) <= h(R) + c: 48.0 <= 40.0 + 42.0
+[OK] h(Y) <= h(L) + c: 0.0 <= 70.0 + 64.0
+[OK] h(T) <= h(S) + c: 76.0 <= 57.0 + 30.0
+[OK] h(H) <= h(G) + c: 49.0 <= 53.0 + 35.0
+[OK] h(P) <= h(M) + c: 67.0 <= 70.0 + 47.0
+[ERR] h(E) <= h(A) + c: 54.0 <= 23.0 + 3.0
+[OK] h(J) <= h(Q) + c: 39.0 <= 50.0 + 36.0
+[OK] h(G) <= h(H) + c: 53.0 <= 49.0 + 35.0
+[OK] h(D) <= h(Y) + c: 64.0 <= 0.0 + 67.0
+[OK] h(R) <= h(M) + c: 40.0 <= 70.0 + 28.0
+[OK] h(F) <= h(S) + c: 60.0 <= 57.0 + 50.0
+[OK] h(G) <= h(M) + c: 53.0 <= 70.0 + 44.0
+[OK] h(R) <= h(V) + c: 40.0 <= 53.0 + 39.0
+[OK] h(X) <= h(S) + c: 78.0 <= 57.0 + 62.0
+[OK] h(G) <= h(O) + c: 53.0 <= 53.0 + 41.0
+[OK] h(A) <= h(E) + c: 23.0 <= 54.0 + 3.0
+[OK] h(C) <= h(I) + c: 48.0 <= 53.0 + 44.0
+[OK] h(B) <= h(R) + c: 68.0 <= 40.0 + 39.0
+[OK] h(M) <= h(N) + c: 70.0 <= 62.0 + 41.0
+[OK] h(M) <= h(G) + c: 70.0 <= 53.0 + 44.0
+[OK] h(R) <= h(B) + c: 40.0 <= 68.0 + 39.0
+[OK] h(T) <= h(R) + c: 76.0 <= 40.0 + 46.0
+[OK] h(R) <= h(I) + c: 40.0 <= 53.0 + 26.0
+[OK] h(S) <= h(T) + c: 57.0 <= 76.0 + 30.0
+[ERR] h(B) <= h(I) + c: 68.0 <= 53.0 + 14.0
+[OK] h(C) <= h(F) + c: 48.0 <= 60.0 + 56.0
+[OK] h(G) <= h(K) + c: 53.0 <= 42.0 + 44.0
+[ERR] h(M) <= h(R) + c: 70.0 <= 40.0 + 28.0
+[OK] h(Y) <= h(D) + c: 0.0 <= 64.0 + 67.0
+[OK] h(E) <= h(F) + c: 54.0 <= 60.0 + 49.0
+[OK] h(S) <= h(F) + c: 57.0 <= 60.0 + 50.0
+[OK] h(R) <= h(T) + c: 40.0 <= 76.0 + 46.0
+[OK] h(F) <= h(C) + c: 60.0 <= 48.0 + 56.0
+[OK] h(C) <= h(W) + c: 48.0 <= 44.0 + 33.0
+[ERR] h(N) <= h(Y) + c: 62.0 <= 0.0 + 59.0
+[OK] h(C) <= h(Q) + c: 48.0 <= 50.0 + 38.0
+[OK] h(I) <= h(C) + c: 53.0 <= 48.0 + 44.0
+[OK] h(V) <= h(R) + c: 53.0 <= 40.0 + 39.0
+[OK] h(D) <= h(S) + c: 64.0 <= 57.0 + 46.0
+[OK] h(K) <= h(X) + c: 42.0 <= 78.0 + 60.0
+[OK] h(X) <= h(V) + c: 78.0 <= 53.0 + 62.0
+[OK] h(I) <= h(B) + c: 53.0 <= 68.0 + 14.0
+[OK] h(H) <= h(B) + c: 49.0 <= 68.0 + 27.0
+[OK] h(S) <= h(X) + c: 57.0 <= 78.0 + 62.0
+[OK] h(Y) <= h(N) + c: 0.0 <= 62.0 + 59.0
+[OK] h(P) <= h(U) + c: 67.0 <= 61.0 + 60.0
+[OK] h(O) <= h(P) + c: 53.0 <= 67.0 + 50.0
+[OK] h(K) <= h(G) + c: 42.0 <= 53.0 + 44.0
+[OK] h(P) <= h(B) + c: 67.0 <= 68.0 + 35.0
+[OK] h(F) <= h(G) + c: 60.0 <= 53.0 + 46.0
+[OK] h(Q) <= h(T) + c: 50.0 <= 76.0 + 39.0
+[OK] h(Q) <= h(J) + c: 50.0 <= 39.0 + 36.0
+[OK] h(B) <= h(P) + c: 68.0 <= 67.0 + 35.0
+[OK] h(F) <= h(E) + c: 60.0 <= 54.0 + 49.0
+[OK] h(X) <= h(O) + c: 78.0 <= 53.0 + 35.0
+[OK] h(P) <= h(S) + c: 67.0 <= 57.0 + 38.0
+[OK] h(V) <= h(X) + c: 53.0 <= 78.0 + 62.0
+[ERR] h(X) <= h(Y) + c: 78.0 <= 0.0 + 76.0
+[OK] h(U) <= h(P) + c: 61.0 <= 67.0 + 60.0
+[OK] h(G) <= h(F) + c: 53.0 <= 60.0 + 46.0
+[OK] h(R) <= h(C) + c: 40.0 <= 48.0 + 42.0
+[ERR] h(B) <= h(Y) + c: 68.0 <= 0.0 + 62.0
+[OK] h(O) <= h(G) + c: 53.0 <= 53.0 + 41.0
+[OK] h(S) <= h(D) + c: 57.0 <= 64.0 + 46.0
+[OK] h(O) <= h(X) + c: 53.0 <= 78.0 + 35.0
+[OK] h(X) <= h(K) + c: 78.0 <= 42.0 + 60.0
+[OK] h(P) <= h(O) + c: 67.0 <= 53.0 + 50.0
+[OK] h(L) <= h(C) + c: 70.0 <= 48.0 + 44.0
+[OK] h(C) <= h(L) + c: 48.0 <= 70.0 + 44.0
+[OK] h(T) <= h(Q) + c: 76.0 <= 50.0 + 39.0
+[OK] h(I) <= h(R) + c: 53.0 <= 40.0 + 26.0
+[OK] h(W) <= h(C) + c: 44.0 <= 48.0 + 33.0
+[OK] h(T) <= h(I) + c: 76.0 <= 53.0 + 34.0
+[OK] h(Y) <= h(X) + c: 0.0 <= 78.0 + 76.0
+[OK] h(S) <= h(P) + c: 57.0 <= 67.0 + 38.0
+[OK] h(G) <= h(P) + c: 53.0 <= 67.0 + 45.0
+[OK] h(K) <= h(U) + c: 42.0 <= 61.0 + 41.0
+[OK] h(P) <= h(G) + c: 67.0 <= 53.0 + 45.0
+[ERR] h(L) <= h(Y) + c: 70.0 <= 0.0 + 64.0
+[OK] h(D) <= h(B) + c: 64.0 <= 68.0 + 21.0
+[OK] h(B) <= h(M) + c: 68.0 <= 70.0 + 4.0
+[OK] h(N) <= h(M) + c: 62.0 <= 70.0 + 41.0
+[OK] h(B) <= h(D) + c: 68.0 <= 64.0 + 21.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT test_case_3_heuristic_nonopt.txt
+[CONDITION]: [OK] h(A) <= h(E) + c: 23.0 <= 54.0 + 3.0
+[CONDITION]: [OK] h(B) <= h(D) + c: 68.0 <= 64.0 + 21.0
+[CONDITION]: [OK] h(B) <= h(H) + c: 68.0 <= 49.0 + 27.0
+[CONDITION]: [ERR] h(B) <= h(I) + c: 68.0 <= 53.0 + 14.0
+[CONDITION]: [OK] h(B) <= h(M) + c: 68.0 <= 70.0 + 4.0
+[CONDITION]: [OK] h(B) <= h(P) + c: 68.0 <= 67.0 + 35.0
+[CONDITION]: [OK] h(B) <= h(R) + c: 68.0 <= 40.0 + 39.0
+[CONDITION]: [ERR] h(B) <= h(Y) + c: 68.0 <= 0.0 + 62.0
+[CONDITION]: [OK] h(C) <= h(F) + c: 48.0 <= 60.0 + 56.0
+...
+[CONDITION]: [OK] h(X) <= h(O) + c: 78.0 <= 53.0 + 35.0
+[CONDITION]: [OK] h(X) <= h(S) + c: 78.0 <= 57.0 + 62.0
+[CONDITION]: [OK] h(X) <= h(V) + c: 78.0 <= 53.0 + 62.0
+[CONDITION]: [ERR] h(X) <= h(Y) + c: 78.0 <= 0.0 + 76.0
+[CONDITION]: [OK] h(Y) <= h(B) + c: 0.0 <= 68.0 + 62.0
+[CONDITION]: [OK] h(Y) <= h(D) + c: 0.0 <= 64.0 + 67.0
+[CONDITION]: [OK] h(Y) <= h(L) + c: 0.0 <= 70.0 + 64.0
+[CONDITION]: [OK] h(Y) <= h(N) + c: 0.0 <= 62.0 + 59.0
+[CONDITION]: [OK] h(Y) <= h(X) + c: 0.0 <= 78.0 + 76.0
+[CONCLUSION]: Heuristic is not consistent.
+
+- Failed test: HEURISTIC-CONSISTENT ai_fail.txt
+- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is not consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[OK] h(complete_lab) <= h(pass_continuous) + c: 10.0 <= 20.0 + 12.0
+[ERR] h(complete_lab) <= h(fail_continuous) + c: 10.0 <= 6.0 + 1.0
+[OK] h(fail_continuous) <= h(pass_exam) + c: 6.0 <= 1.0 + 16.0
+[OK] h(fail_lab) <= h(fail_lab) + c: 1.0 <= 1.0 + 1.0
+[OK] h(fail_continuous) <= h(fail_exam) + c: 6.0 <= 5.0 + 1.0
+[OK] h(fail_lab) <= h(complete_lab) + c: 1.0 <= 10.0 + 4.0
+[OK] h(fail_exam) <= h(fail_course) + c: 5.0 <= 0.0 + 20.0
+[ERR] h(pass_continuous) <= h(pass_course) + c: 20.0 <= 0.0 + 1.0
+[ERR] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 1.0 + 1.0
+[OK] h(fail_lab) <= h(fail_course) + c: 1.0 <= 0.0 + 20.0
+[ERR] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 10.0 + 4.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT ai_fail.txt
+[CONDITION]: [ERR] h(complete_lab) <= h(fail_continuous) + c: 10.0 <= 6.0 + 1.0
+[CONDITION]: [OK] h(complete_lab) <= h(pass_continuous) + c: 10.0 <= 20.0 + 12.0
+[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 10.0 + 4.0
+[CONDITION]: [ERR] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 1.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(fail_exam) + c: 6.0 <= 5.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(pass_exam) + c: 6.0 <= 1.0 + 16.0
+[CONDITION]: [OK] h(fail_exam) <= h(fail_course) + c: 5.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(complete_lab) + c: 1.0 <= 10.0 + 4.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_course) + c: 1.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_lab) + c: 1.0 <= 1.0 + 1.0
+[CONDITION]: [ERR] h(pass_continuous) <= h(pass_course) + c: 20.0 <= 0.0 + 1.0
+[CONDITION]: [OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[CONCLUSION]: Heuristic is not consistent.
+
+- Failed test: HEURISTIC-CONSISTENT ai_pass.txt
+- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[OK] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
+[OK] h(fail_lab) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
+[OK] h(complete_lab) <= h(fail_continuous) + c: 13.0 <= 17.0 + 1.0
+[OK] h(fail_exam) <= h(fail_course) + c: 20.0 <= 0.0 + 20.0
+[OK] h(pass_continuous) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[OK] h(complete_lab) <= h(pass_continuous) + c: 13.0 <= 1.0 + 12.0
+[OK] h(fail_continuous) <= h(fail_exam) + c: 17.0 <= 20.0 + 1.0
+[OK] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
+[OK] h(fail_continuous) <= h(pass_exam) + c: 17.0 <= 1.0 + 16.0
+[OK] h(fail_lab) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
+[OK] h(fail_lab) <= h(fail_course) + c: 17.0 <= 0.0 + 20.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT ai_pass.txt
+[CONDITION]: [OK] h(complete_lab) <= h(fail_continuous) + c: 13.0 <= 17.0 + 1.0
+[CONDITION]: [OK] h(complete_lab) <= h(pass_continuous) + c: 13.0 <= 1.0 + 12.0
+[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
+[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(fail_exam) + c: 17.0 <= 20.0 + 1.0
+[CONDITION]: [OK] h(fail_continuous) <= h(pass_exam) + c: 17.0 <= 1.0 + 16.0
+[CONDITION]: [OK] h(fail_exam) <= h(fail_course) + c: 20.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(complete_lab) + c: 17.0 <= 13.0 + 4.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_course) + c: 17.0 <= 0.0 + 20.0
+[CONDITION]: [OK] h(fail_lab) <= h(fail_lab) + c: 17.0 <= 17.0 + 1.0
+[CONDITION]: [OK] h(pass_continuous) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[CONDITION]: [OK] h(pass_exam) <= h(pass_course) + c: 1.0 <= 0.0 + 1.0
+[CONCLUSION]: Heuristic is consistent.
+
+- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(M) <= h(N) + c: 28.0 <= 27.0 + 42.0
+[OK] h(B) <= h(M) + c: 19.0 <= 28.0 + 29.0
+[OK] h(O) <= h(I) + c: 34.0 <= 32.0 + 34.0
+[OK] h(S) <= h(P) + c: 26.0 <= 16.0 + 38.0
+[OK] h(K) <= h(N) + c: 17.0 <= 27.0 + 41.0
+[OK] h(E) <= h(G) + c: 17.0 <= 14.0 + 26.0
+[OK] h(G) <= h(E) + c: 14.0 <= 17.0 + 26.0
+[OK] h(G) <= h(U) + c: 14.0 <= 69.0 + 74.0
+[OK] h(N) <= h(M) + c: 27.0 <= 28.0 + 42.0
+[OK] h(W) <= h(Q) + c: 38.0 <= 48.0 + 76.0
+[OK] h(P) <= h(Y) + c: 16.0 <= 37.0 + 74.0
+[OK] h(N) <= h(I) + c: 27.0 <= 32.0 + 32.0
+[OK] h(T) <= h(H) + c: 28.0 <= 7.0 + 28.0
+[OK] h(B) <= h(N) + c: 19.0 <= 27.0 + 27.0
+[OK] h(L) <= h(D) + c: 33.0 <= 22.0 + 33.0
+[OK] h(D) <= h(L) + c: 22.0 <= 33.0 + 33.0
+[OK] h(K) <= h(P) + c: 17.0 <= 16.0 + 38.0
+[OK] h(V) <= h(H) + c: 23.0 <= 7.0 + 23.0
+[OK] h(H) <= h(V) + c: 7.0 <= 23.0 + 23.0
+[OK] h(H) <= h(N) + c: 7.0 <= 27.0 + 29.0
+[OK] h(M) <= h(K) + c: 28.0 <= 17.0 + 28.0
+[OK] h(Z) <= h(H) + c: 0.0 <= 7.0 + 83.0
+[OK] h(Y) <= h(P) + c: 37.0 <= 16.0 + 74.0
+[OK] h(E) <= h(P) + c: 17.0 <= 16.0 + 39.0
+[OK] h(M) <= h(B) + c: 28.0 <= 19.0 + 29.0
+[OK] h(R) <= h(K) + c: 56.0 <= 17.0 + 56.0
+[OK] h(O) <= h(Y) + c: 34.0 <= 37.0 + 37.0
+[OK] h(B) <= h(R) + c: 19.0 <= 56.0 + 57.0
+[OK] h(X) <= h(R) + c: 14.0 <= 56.0 + 72.0
+[OK] h(K) <= h(R) + c: 17.0 <= 56.0 + 56.0
+[OK] h(H) <= h(B) + c: 7.0 <= 19.0 + 19.0
+[OK] h(B) <= h(C) + c: 19.0 <= 22.0 + 26.0
+[OK] h(P) <= h(H) + c: 16.0 <= 7.0 + 16.0
+[OK] h(B) <= h(H) + c: 19.0 <= 7.0 + 19.0
+[OK] h(A) <= h(F) + c: 7.0 <= 14.0 + 14.0
+[OK] h(R) <= h(U) + c: 56.0 <= 69.0 + 69.0
+[OK] h(P) <= h(E) + c: 16.0 <= 17.0 + 39.0
+[OK] h(A) <= h(J) + c: 7.0 <= 31.0 + 31.0
+[OK] h(S) <= h(H) + c: 26.0 <= 7.0 + 26.0
+[OK] h(P) <= h(J) + c: 16.0 <= 31.0 + 44.0
+[OK] h(C) <= h(B) + c: 22.0 <= 19.0 + 26.0
+[OK] h(U) <= h(G) + c: 69.0 <= 14.0 + 74.0
+[OK] h(H) <= h(Z) + c: 7.0 <= 0.0 + 83.0
+[OK] h(Q) <= h(V) + c: 48.0 <= 23.0 + 54.0
+[OK] h(K) <= h(M) + c: 17.0 <= 28.0 + 28.0
+[OK] h(V) <= h(Q) + c: 23.0 <= 48.0 + 54.0
+[OK] h(A) <= h(H) + c: 7.0 <= 7.0 + 7.0
+[OK] h(K) <= h(E) + c: 17.0 <= 17.0 + 17.0
+[OK] h(P) <= h(K) + c: 16.0 <= 17.0 + 38.0
+[OK] h(H) <= h(S) + c: 7.0 <= 26.0 + 26.0
+[OK] h(H) <= h(A) + c: 7.0 <= 7.0 + 7.0
+[OK] h(Q) <= h(W) + c: 48.0 <= 38.0 + 76.0
+[OK] h(J) <= h(P) + c: 31.0 <= 16.0 + 44.0
+[OK] h(J) <= h(A) + c: 31.0 <= 7.0 + 31.0
+[OK] h(P) <= h(W) + c: 16.0 <= 38.0 + 38.0
+[OK] h(N) <= h(B) + c: 27.0 <= 19.0 + 27.0
+[OK] h(R) <= h(Y) + c: 56.0 <= 37.0 + 66.0
+[OK] h(H) <= h(P) + c: 7.0 <= 16.0 + 16.0
+[OK] h(Y) <= h(R) + c: 37.0 <= 56.0 + 66.0
+[OK] h(U) <= h(R) + c: 69.0 <= 56.0 + 69.0
+[OK] h(H) <= h(T) + c: 7.0 <= 28.0 + 28.0
+[OK] h(E) <= h(K) + c: 17.0 <= 17.0 + 17.0
+[OK] h(I) <= h(N) + c: 32.0 <= 27.0 + 32.0
+[OK] h(R) <= h(D) + c: 56.0 <= 22.0 + 58.0
+[OK] h(C) <= h(D) + c: 22.0 <= 22.0 + 22.0
+[OK] h(N) <= h(H) + c: 27.0 <= 7.0 + 29.0
+[OK] h(F) <= h(A) + c: 14.0 <= 7.0 + 14.0
+[OK] h(I) <= h(O) + c: 32.0 <= 34.0 + 34.0
+[OK] h(G) <= h(X) + c: 14.0 <= 14.0 + 14.0
+[OK] h(R) <= h(X) + c: 56.0 <= 14.0 + 72.0
+[OK] h(W) <= h(P) + c: 38.0 <= 16.0 + 38.0
+[OK] h(D) <= h(R) + c: 22.0 <= 56.0 + 58.0
+[OK] h(N) <= h(K) + c: 27.0 <= 17.0 + 41.0
+[OK] h(P) <= h(S) + c: 16.0 <= 26.0 + 38.0
+[OK] h(R) <= h(B) + c: 56.0 <= 19.0 + 57.0
+[OK] h(Q) <= h(G) + c: 48.0 <= 14.0 + 48.0
+[OK] h(Y) <= h(O) + c: 37.0 <= 34.0 + 37.0
+[OK] h(G) <= h(Q) + c: 14.0 <= 48.0 + 48.0
+[OK] h(X) <= h(G) + c: 14.0 <= 14.0 + 14.0
+[OK] h(D) <= h(C) + c: 22.0 <= 22.0 + 22.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT test_case_2_heuristic.txt
+[CONDITION]: [OK] h(A) <= h(F) + c: 7.0 <= 14.0 + 14.0
+[CONDITION]: [OK] h(A) <= h(H) + c: 7.0 <= 7.0 + 7.0
+[CONDITION]: [OK] h(A) <= h(J) + c: 7.0 <= 31.0 + 31.0
+[CONDITION]: [OK] h(B) <= h(C) + c: 19.0 <= 22.0 + 26.0
+[CONDITION]: [OK] h(B) <= h(H) + c: 19.0 <= 7.0 + 19.0
+[CONDITION]: [OK] h(B) <= h(M) + c: 19.0 <= 28.0 + 29.0
+[CONDITION]: [OK] h(B) <= h(N) + c: 19.0 <= 27.0 + 27.0
+[CONDITION]: [OK] h(B) <= h(R) + c: 19.0 <= 56.0 + 57.0
+[CONDITION]: [OK] h(C) <= h(B) + c: 22.0 <= 19.0 + 26.0
+...
+[CONDITION]: [OK] h(V) <= h(Q) + c: 23.0 <= 48.0 + 54.0
+[CONDITION]: [OK] h(W) <= h(P) + c: 38.0 <= 16.0 + 38.0
+[CONDITION]: [OK] h(W) <= h(Q) + c: 38.0 <= 48.0 + 76.0
+[CONDITION]: [OK] h(X) <= h(G) + c: 14.0 <= 14.0 + 14.0
+[CONDITION]: [OK] h(X) <= h(R) + c: 14.0 <= 56.0 + 72.0
+[CONDITION]: [OK] h(Y) <= h(O) + c: 37.0 <= 34.0 + 37.0
+[CONDITION]: [OK] h(Y) <= h(P) + c: 37.0 <= 16.0 + 74.0
+[CONDITION]: [OK] h(Y) <= h(R) + c: 37.0 <= 56.0 + 66.0
+[CONDITION]: [OK] h(Z) <= h(H) + c: 0.0 <= 7.0 + 83.0
+[CONCLUSION]: Heuristic is consistent.
+
+- Failed test: HEURISTIC-CONSISTENT test_case_2_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-consistent 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is not consistent.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(A) <= h(H) + c: 41.0 <= 85.0 + 7.0
+[OK] h(M) <= h(B) + c: 43.0 <= 50.0 + 29.0
+[OK] h(J) <= h(A) + c: 61.0 <= 41.0 + 31.0
+[OK] h(Y) <= h(O) + c: 65.0 <= 42.0 + 37.0
+[OK] h(T) <= h(H) + c: 19.0 <= 85.0 + 28.0
+[OK] h(B) <= h(R) + c: 50.0 <= 79.0 + 57.0
+[OK] h(Q) <= h(W) + c: 82.0 <= 80.0 + 76.0
+[OK] h(J) <= h(P) + c: 61.0 <= 84.0 + 44.0
+[OK] h(R) <= h(D) + c: 79.0 <= 65.0 + 58.0
+[OK] h(M) <= h(N) + c: 43.0 <= 35.0 + 42.0
+[OK] h(Q) <= h(G) + c: 82.0 <= 94.0 + 48.0
+[OK] h(G) <= h(U) + c: 94.0 <= 81.0 + 74.0
+[OK] h(Y) <= h(R) + c: 65.0 <= 79.0 + 66.0
+[ERR] h(H) <= h(T) + c: 85.0 <= 19.0 + 28.0
+[OK] h(P) <= h(W) + c: 84.0 <= 80.0 + 38.0
+[OK] h(B) <= h(H) + c: 50.0 <= 85.0 + 19.0
+[OK] h(K) <= h(P) + c: 43.0 <= 84.0 + 38.0
+[ERR] h(G) <= h(E) + c: 94.0 <= 38.0 + 26.0
+[OK] h(S) <= h(H) + c: 43.0 <= 85.0 + 26.0
+[ERR] h(P) <= h(K) + c: 84.0 <= 43.0 + 38.0
+[OK] h(K) <= h(E) + c: 43.0 <= 38.0 + 17.0
+[OK] h(R) <= h(K) + c: 79.0 <= 43.0 + 56.0
+[OK] h(E) <= h(G) + c: 38.0 <= 94.0 + 26.0
+[OK] h(N) <= h(I) + c: 35.0 <= 26.0 + 32.0
+[OK] h(R) <= h(B) + c: 79.0 <= 50.0 + 57.0
+[OK] h(P) <= h(J) + c: 84.0 <= 61.0 + 44.0
+[OK] h(P) <= h(Y) + c: 84.0 <= 65.0 + 74.0
+[ERR] h(D) <= h(L) + c: 65.0 <= 27.0 + 33.0
+[ERR] h(H) <= h(N) + c: 85.0 <= 35.0 + 29.0
+[OK] h(I) <= h(O) + c: 26.0 <= 42.0 + 34.0
+[OK] h(R) <= h(U) + c: 79.0 <= 81.0 + 69.0
+[OK] h(C) <= h(B) + c: 18.0 <= 50.0 + 26.0
+[OK] h(B) <= h(N) + c: 50.0 <= 35.0 + 27.0
+[OK] h(N) <= h(B) + c: 35.0 <= 50.0 + 27.0
+[ERR] h(H) <= h(V) + c: 85.0 <= 59.0 + 23.0
+[OK] h(E) <= h(K) + c: 38.0 <= 43.0 + 17.0
+[OK] h(P) <= h(H) + c: 84.0 <= 85.0 + 16.0
+[OK] h(A) <= h(J) + c: 41.0 <= 61.0 + 31.0
+[OK] h(O) <= h(Y) + c: 42.0 <= 65.0 + 37.0
+[OK] h(V) <= h(H) + c: 59.0 <= 85.0 + 23.0
+[OK] h(Q) <= h(V) + c: 82.0 <= 59.0 + 54.0
+[ERR] h(P) <= h(S) + c: 84.0 <= 43.0 + 38.0
+[OK] h(R) <= h(Y) + c: 79.0 <= 65.0 + 66.0
+[ERR] h(H) <= h(B) + c: 85.0 <= 50.0 + 19.0
+[ERR] h(P) <= h(E) + c: 84.0 <= 38.0 + 39.0
+[OK] h(W) <= h(P) + c: 80.0 <= 84.0 + 38.0
+[OK] h(B) <= h(M) + c: 50.0 <= 43.0 + 29.0
+[OK] h(O) <= h(I) + c: 42.0 <= 26.0 + 34.0
+[ERR] h(D) <= h(C) + c: 65.0 <= 18.0 + 22.0
+[OK] h(K) <= h(M) + c: 43.0 <= 43.0 + 28.0
+[OK] h(L) <= h(D) + c: 27.0 <= 65.0 + 33.0
+[ERR] h(B) <= h(C) + c: 50.0 <= 18.0 + 26.0
+[OK] h(S) <= h(P) + c: 43.0 <= 84.0 + 38.0
+[ERR] h(A) <= h(F) + c: 41.0 <= 4.0 + 14.0
+[OK] h(N) <= h(H) + c: 35.0 <= 85.0 + 29.0
+[OK] h(U) <= h(G) + c: 81.0 <= 94.0 + 74.0
+[OK] h(X) <= h(R) + c: 43.0 <= 79.0 + 72.0
+[OK] h(I) <= h(N) + c: 26.0 <= 35.0 + 32.0
+[OK] h(K) <= h(N) + c: 43.0 <= 35.0 + 41.0
+[ERR] h(H) <= h(Z) + c: 85.0 <= 0.0 + 83.0
+[OK] h(F) <= h(A) + c: 4.0 <= 41.0 + 14.0
+[OK] h(D) <= h(R) + c: 65.0 <= 79.0 + 58.0
+[OK] h(N) <= h(M) + c: 35.0 <= 43.0 + 42.0
+[ERR] h(G) <= h(X) + c: 94.0 <= 43.0 + 14.0
+[OK] h(H) <= h(P) + c: 85.0 <= 84.0 + 16.0
+[OK] h(N) <= h(K) + c: 35.0 <= 43.0 + 41.0
+[OK] h(U) <= h(R) + c: 81.0 <= 79.0 + 69.0
+[OK] h(K) <= h(R) + c: 43.0 <= 79.0 + 56.0
+[OK] h(W) <= h(Q) + c: 80.0 <= 82.0 + 76.0
+[OK] h(R) <= h(X) + c: 79.0 <= 43.0 + 72.0
+[OK] h(Y) <= h(P) + c: 65.0 <= 84.0 + 74.0
+[ERR] h(H) <= h(S) + c: 85.0 <= 43.0 + 26.0
+[OK] h(M) <= h(K) + c: 43.0 <= 43.0 + 28.0
+[ERR] h(H) <= h(A) + c: 85.0 <= 41.0 + 7.0
+[OK] h(X) <= h(G) + c: 43.0 <= 94.0 + 14.0
+[OK] h(C) <= h(D) + c: 18.0 <= 65.0 + 22.0
+[OK] h(V) <= h(Q) + c: 59.0 <= 82.0 + 54.0
+[OK] h(Z) <= h(H) + c: 0.0 <= 85.0 + 83.0
+[OK] h(G) <= h(Q) + c: 94.0 <= 82.0 + 48.0
+[OK] h(E) <= h(P) + c: 38.0 <= 84.0 + 39.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-CONSISTENT test_case_2_heuristic_nonopt.txt
+[CONDITION]: [ERR] h(A) <= h(F) + c: 41.0 <= 4.0 + 14.0
+[CONDITION]: [OK] h(A) <= h(H) + c: 41.0 <= 85.0 + 7.0
+[CONDITION]: [OK] h(A) <= h(J) + c: 41.0 <= 61.0 + 31.0
+[CONDITION]: [ERR] h(B) <= h(C) + c: 50.0 <= 18.0 + 26.0
+[CONDITION]: [OK] h(B) <= h(H) + c: 50.0 <= 85.0 + 19.0
+[CONDITION]: [OK] h(B) <= h(M) + c: 50.0 <= 43.0 + 29.0
+[CONDITION]: [OK] h(B) <= h(N) + c: 50.0 <= 35.0 + 27.0
+[CONDITION]: [OK] h(B) <= h(R) + c: 50.0 <= 79.0 + 57.0
+[CONDITION]: [OK] h(C) <= h(B) + c: 18.0 <= 50.0 + 26.0
+...
+[CONDITION]: [OK] h(V) <= h(Q) + c: 59.0 <= 82.0 + 54.0
+[CONDITION]: [OK] h(W) <= h(P) + c: 80.0 <= 84.0 + 38.0
+[CONDITION]: [OK] h(W) <= h(Q) + c: 80.0 <= 82.0 + 76.0
+[CONDITION]: [OK] h(X) <= h(G) + c: 43.0 <= 94.0 + 14.0
+[CONDITION]: [OK] h(X) <= h(R) + c: 43.0 <= 79.0 + 72.0
+[CONDITION]: [OK] h(Y) <= h(O) + c: 65.0 <= 42.0 + 37.0
+[CONDITION]: [OK] h(Y) <= h(P) + c: 65.0 <= 84.0 + 74.0
+[CONDITION]: [OK] h(Y) <= h(R) + c: 65.0 <= 79.0 + 66.0
+[CONDITION]: [OK] h(Z) <= h(H) + c: 0.0 <= 85.0 + 83.0
+[CONCLUSION]: Heuristic is not consistent.
+
 == HEURISTIC-OPTIMISTIC ==
   Passed 0 / 10 tests.
 
-- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic.txt
-- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-optimistic 
+- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic.txt --check-optimistic 
 Mismatch with field: CONCLUSION
 -> Obtained output:
 
@@ -1192,59 +1192,44 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(E) <= h*: 17.0 <= 138.0
-[OK] h(O) <= h*: 34.0 <= 178.0
-[OK] h(J) <= h*: 31.0 <= 121.0
-[OK] h(W) <= h*: 38.0 <= 137.0
-[OK] h(V) <= h*: 23.0 <= 106.0
-[OK] h(K) <= h*: 17.0 <= 137.0
-[OK] h(N) <= h*: 27.0 <= 112.0
-[OK] h(I) <= h*: 32.0 <= 144.0
-[OK] h(D) <= h*: 22.0 <= 150.0
-[OK] h(P) <= h*: 16.0 <= 99.0
-[OK] h(Z) <= h*: 0.0 <= 0.0
-[OK] h(L) <= h*: 33.0 <= 183.0
-[OK] h(C) <= h*: 22.0 <= 128.0
-[OK] h(T) <= h*: 28.0 <= 111.0
-[OK] h(S) <= h*: 26.0 <= 109.0
-[OK] h(H) <= h*: 7.0 <= 83.0
-[OK] h(A) <= h*: 7.0 <= 90.0
-[OK] h(B) <= h*: 19.0 <= 102.0
-[OK] h(F) <= h*: 14.0 <= 104.0
-[OK] h(U) <= h*: 69.0 <= 228.0
-[OK] h(Y) <= h*: 37.0 <= 173.0
-[OK] h(G) <= h*: 14.0 <= 164.0
-[OK] h(M) <= h*: 28.0 <= 131.0
-[OK] h(R) <= h*: 56.0 <= 159.0
-[OK] h(X) <= h*: 14.0 <= 178.0
-[OK] h(Q) <= h*: 48.0 <= 160.0
+[OK] h(N) <= h*: 11.0 <= 45.0
+[OK] h(G) <= h*: 13.0 <= 52.0
+[OK] h(J) <= h*: 15.0 <= 70.0
+[OK] h(I) <= h*: 9.0 <= 24.0
+[OK] h(B) <= h*: 7.0 <= 18.0
+[OK] h(H) <= h*: 12.0 <= 23.0
+[OK] h(A) <= h*: 1.0 <= 54.0
+[OK] h(D) <= h*: 6.0 <= 39.0
+[OK] h(M) <= h*: 6.0 <= 45.0
+[OK] h(O) <= h*: 0.0 <= 0.0
+[OK] h(K) <= h*: 10.0 <= 34.0
+[OK] h(L) <= h*: 10.0 <= 49.0
+[OK] h(F) <= h*: 1.0 <= 55.0
+[OK] h(E) <= h*: 7.0 <= 11.0
+[OK] h(C) <= h*: 8.0 <= 26.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
-# HEURISTIC-OPTIMISTIC test_case_2_heuristic.txt
-[CONDITION]: [OK] h(A) <= h*: 7.0 <= 90.0
-[CONDITION]: [OK] h(B) <= h*: 19.0 <= 102.0
-[CONDITION]: [OK] h(C) <= h*: 22.0 <= 128.0
-[CONDITION]: [OK] h(D) <= h*: 22.0 <= 150.0
-[CONDITION]: [OK] h(E) <= h*: 17.0 <= 138.0
-[CONDITION]: [OK] h(F) <= h*: 14.0 <= 104.0
-[CONDITION]: [OK] h(G) <= h*: 14.0 <= 164.0
-[CONDITION]: [OK] h(H) <= h*: 7.0 <= 83.0
-[CONDITION]: [OK] h(I) <= h*: 32.0 <= 144.0
-...
-[CONDITION]: [OK] h(R) <= h*: 56.0 <= 159.0
-[CONDITION]: [OK] h(S) <= h*: 26.0 <= 109.0
-[CONDITION]: [OK] h(T) <= h*: 28.0 <= 111.0
-[CONDITION]: [OK] h(U) <= h*: 69.0 <= 228.0
-[CONDITION]: [OK] h(V) <= h*: 23.0 <= 106.0
-[CONDITION]: [OK] h(W) <= h*: 38.0 <= 137.0
-[CONDITION]: [OK] h(X) <= h*: 14.0 <= 178.0
-[CONDITION]: [OK] h(Y) <= h*: 37.0 <= 173.0
-[CONDITION]: [OK] h(Z) <= h*: 0.0 <= 0.0
+# HEURISTIC-OPTIMISTIC test_case_1_heuristic.txt
+[CONDITION]: [OK] h(A) <= h*: 1.0 <= 54.0
+[CONDITION]: [OK] h(B) <= h*: 7.0 <= 18.0
+[CONDITION]: [OK] h(C) <= h*: 8.0 <= 26.0
+[CONDITION]: [OK] h(D) <= h*: 6.0 <= 39.0
+[CONDITION]: [OK] h(E) <= h*: 7.0 <= 11.0
+[CONDITION]: [OK] h(F) <= h*: 1.0 <= 55.0
+[CONDITION]: [OK] h(G) <= h*: 13.0 <= 52.0
+[CONDITION]: [OK] h(H) <= h*: 12.0 <= 23.0
+[CONDITION]: [OK] h(I) <= h*: 9.0 <= 24.0
+[CONDITION]: [OK] h(J) <= h*: 15.0 <= 70.0
+[CONDITION]: [OK] h(K) <= h*: 10.0 <= 34.0
+[CONDITION]: [OK] h(L) <= h*: 10.0 <= 49.0
+[CONDITION]: [OK] h(M) <= h*: 6.0 <= 45.0
+[CONDITION]: [OK] h(N) <= h*: 11.0 <= 45.0
+[CONDITION]: [OK] h(O) <= h*: 0.0 <= 0.0
 [CONCLUSION]: Heuristic is optimistic.
 
-- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic_nonopt.txt
-- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-optimistic 
+- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-optimistic 
 Mismatch with field: CONCLUSION
 -> Obtained output:
 
@@ -1254,126 +1239,41 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(R) <= h*: 79.0 <= 159.0
-[OK] h(E) <= h*: 38.0 <= 138.0
-[OK] h(K) <= h*: 43.0 <= 137.0
-[OK] h(V) <= h*: 59.0 <= 106.0
-[OK] h(I) <= h*: 26.0 <= 144.0
-[OK] h(Q) <= h*: 82.0 <= 160.0
-[OK] h(T) <= h*: 19.0 <= 111.0
-[OK] h(G) <= h*: 94.0 <= 164.0
-[OK] h(B) <= h*: 50.0 <= 102.0
-[OK] h(W) <= h*: 80.0 <= 137.0
-[OK] h(M) <= h*: 43.0 <= 131.0
-[OK] h(L) <= h*: 27.0 <= 183.0
-[OK] h(D) <= h*: 65.0 <= 150.0
-[OK] h(X) <= h*: 43.0 <= 178.0
-[OK] h(O) <= h*: 42.0 <= 178.0
-[OK] h(Z) <= h*: 0.0 <= 0.0
-[OK] h(P) <= h*: 84.0 <= 99.0
-[ERR] h(H) <= h*: 85.0 <= 83.0
-[OK] h(U) <= h*: 81.0 <= 228.0
-[OK] h(C) <= h*: 18.0 <= 128.0
-[OK] h(Y) <= h*: 65.0 <= 173.0
-[OK] h(A) <= h*: 41.0 <= 90.0
-[OK] h(N) <= h*: 35.0 <= 112.0
-[OK] h(J) <= h*: 61.0 <= 121.0
-[OK] h(S) <= h*: 43.0 <= 109.0
-[OK] h(F) <= h*: 4.0 <= 104.0
+[OK] h(G) <= h*: 13.0 <= 52.0
+[OK] h(M) <= h*: 13.0 <= 45.0
+[OK] h(N) <= h*: 19.0 <= 45.0
+[OK] h(J) <= h*: 14.0 <= 70.0
+[OK] h(D) <= h*: 26.0 <= 39.0
+[OK] h(C) <= h*: 25.0 <= 26.0
+[OK] h(L) <= h*: 8.0 <= 49.0
+[OK] h(I) <= h*: 5.0 <= 24.0
+[OK] h(F) <= h*: 24.0 <= 55.0
+[OK] h(B) <= h*: 11.0 <= 18.0
+[OK] h(H) <= h*: 7.0 <= 23.0
+[OK] h(O) <= h*: 0.0 <= 0.0
+[OK] h(K) <= h*: 19.0 <= 34.0
+[OK] h(A) <= h*: 0.0 <= 54.0
+[ERR] h(E) <= h*: 21.0 <= 11.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
-# HEURISTIC-OPTIMISTIC test_case_2_heuristic_nonopt.txt
-[CONDITION]: [OK] h(A) <= h*: 41.0 <= 90.0
-[CONDITION]: [OK] h(B) <= h*: 50.0 <= 102.0
-[CONDITION]: [OK] h(C) <= h*: 18.0 <= 128.0
-[CONDITION]: [OK] h(D) <= h*: 65.0 <= 150.0
-[CONDITION]: [OK] h(E) <= h*: 38.0 <= 138.0
-[CONDITION]: [OK] h(F) <= h*: 4.0 <= 104.0
-[CONDITION]: [OK] h(G) <= h*: 94.0 <= 164.0
-[CONDITION]: [ERR] h(H) <= h*: 85.0 <= 83.0
-[CONDITION]: [OK] h(I) <= h*: 26.0 <= 144.0
-...
-[CONDITION]: [OK] h(R) <= h*: 79.0 <= 159.0
-[CONDITION]: [OK] h(S) <= h*: 43.0 <= 109.0
-[CONDITION]: [OK] h(T) <= h*: 19.0 <= 111.0
-[CONDITION]: [OK] h(U) <= h*: 81.0 <= 228.0
-[CONDITION]: [OK] h(V) <= h*: 59.0 <= 106.0
-[CONDITION]: [OK] h(W) <= h*: 80.0 <= 137.0
-[CONDITION]: [OK] h(X) <= h*: 43.0 <= 178.0
-[CONDITION]: [OK] h(Y) <= h*: 65.0 <= 173.0
-[CONDITION]: [OK] h(Z) <= h*: 0.0 <= 0.0
+# HEURISTIC-OPTIMISTIC test_case_1_heuristic_nonopt.txt
+[CONDITION]: [OK] h(A) <= h*: 0.0 <= 54.0
+[CONDITION]: [OK] h(B) <= h*: 11.0 <= 18.0
+[CONDITION]: [OK] h(C) <= h*: 25.0 <= 26.0
+[CONDITION]: [OK] h(D) <= h*: 26.0 <= 39.0
+[CONDITION]: [ERR] h(E) <= h*: 21.0 <= 11.0
+[CONDITION]: [OK] h(F) <= h*: 24.0 <= 55.0
+[CONDITION]: [OK] h(G) <= h*: 13.0 <= 52.0
+[CONDITION]: [OK] h(H) <= h*: 7.0 <= 23.0
+[CONDITION]: [OK] h(I) <= h*: 5.0 <= 24.0
+[CONDITION]: [OK] h(J) <= h*: 14.0 <= 70.0
+[CONDITION]: [OK] h(K) <= h*: 19.0 <= 34.0
+[CONDITION]: [OK] h(L) <= h*: 8.0 <= 49.0
+[CONDITION]: [OK] h(M) <= h*: 13.0 <= 45.0
+[CONDITION]: [OK] h(N) <= h*: 19.0 <= 45.0
+[CONDITION]: [OK] h(O) <= h*: 0.0 <= 0.0
 [CONCLUSION]: Heuristic is not optimistic.
-
-- Failed test: HEURISTIC-OPTIMISTIC ai_fail.txt
-- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-optimistic 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is not optimistic.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(fail_continuous) <= h*: 6.0 <= 17.0
-[OK] h(complete_lab) <= h*: 10.0 <= 13.0
-[OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
-[ERR] h(pass_continuous) <= h*: 20.0 <= 1.0
-[OK] h(pass_exam) <= h*: 1.0 <= 1.0
-[OK] h(fail_exam) <= h*: 5.0 <= 20.0
-[OK] h(fail_lab) <= h*: 1.0 <= 17.0
-[OK] h(pass_course) <= h*: 0.0 <= 0.0
-[OK] h(fail_course) <= h*: 0.0 <= 0.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-OPTIMISTIC ai_fail.txt
-[CONDITION]: [OK] h(complete_lab) <= h*: 10.0 <= 13.0
-[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
-[CONDITION]: [OK] h(fail_continuous) <= h*: 6.0 <= 17.0
-[CONDITION]: [OK] h(fail_course) <= h*: 0.0 <= 0.0
-[CONDITION]: [OK] h(fail_exam) <= h*: 5.0 <= 20.0
-[CONDITION]: [OK] h(fail_lab) <= h*: 1.0 <= 17.0
-[CONDITION]: [ERR] h(pass_continuous) <= h*: 20.0 <= 1.0
-[CONDITION]: [OK] h(pass_course) <= h*: 0.0 <= 0.0
-[CONDITION]: [OK] h(pass_exam) <= h*: 1.0 <= 1.0
-[CONCLUSION]: Heuristic is not optimistic.
-
-- Failed test: HEURISTIC-OPTIMISTIC ai_pass.txt
-- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-optimistic 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is optimistic.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(complete_lab) <= h*: 13.0 <= 13.0
-[OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
-[OK] h(pass_exam) <= h*: 1.0 <= 1.0
-[OK] h(fail_continuous) <= h*: 17.0 <= 17.0
-[OK] h(pass_course) <= h*: 0.0 <= 0.0
-[OK] h(fail_lab) <= h*: 17.0 <= 17.0
-[OK] h(fail_exam) <= h*: 20.0 <= 20.0
-[OK] h(pass_continuous) <= h*: 1.0 <= 1.0
-[OK] h(fail_course) <= h*: 0.0 <= 0.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-OPTIMISTIC ai_pass.txt
-[CONDITION]: [OK] h(complete_lab) <= h*: 13.0 <= 13.0
-[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
-[CONDITION]: [OK] h(fail_continuous) <= h*: 17.0 <= 17.0
-[CONDITION]: [OK] h(fail_course) <= h*: 0.0 <= 0.0
-[CONDITION]: [OK] h(fail_exam) <= h*: 20.0 <= 20.0
-[CONDITION]: [OK] h(fail_lab) <= h*: 17.0 <= 17.0
-[CONDITION]: [OK] h(pass_continuous) <= h*: 1.0 <= 1.0
-[CONDITION]: [OK] h(pass_course) <= h*: 0.0 <= 0.0
-[CONDITION]: [OK] h(pass_exam) <= h*: 1.0 <= 1.0
-[CONCLUSION]: Heuristic is optimistic.
 
 - Failed test: HEURISTIC-OPTIMISTIC istra_pessimistic_heuristic.txt
 - Command run: python solution.py --ss istra.txt --h istra_pessimistic_heuristic.txt --check-optimistic 
@@ -1386,24 +1286,24 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(Opatija) <= h*: 26.0 <= 44.0
-[ERR] h(Lupoglav) <= h*: 35.0 <= 15.0
-[OK] h(Motovun) <= h*: 12.0 <= 18.0
-[OK] h(Kanfanar) <= h*: 30.0 <= 61.0
-[OK] h(Barban) <= h*: 35.0 <= 72.0
-[OK] h(Buzet) <= h*: 0.0 <= 0.0
-[ERR] h(Pazin) <= h*: 40.0 <= 38.0
-[OK] h(Vodnjan) <= h*: 47.0 <= 90.0
-[OK] h(Baderna) <= h*: 25.0 <= 57.0
-[OK] h(Grožnjan) <= h*: 17.0 <= 33.0
-[OK] h(Pula) <= h*: 57.0 <= 100.0
-[OK] h(Rovinj) <= h*: 40.0 <= 79.0
 [OK] h(Buje) <= h*: 21.0 <= 41.0
-[OK] h(Umag) <= h*: 31.0 <= 54.0
+[OK] h(Barban) <= h*: 35.0 <= 72.0
+[OK] h(Motovun) <= h*: 12.0 <= 18.0
 [OK] h(Višnjan) <= h*: 20.0 <= 52.0
+[OK] h(Rovinj) <= h*: 40.0 <= 79.0
 [OK] h(Poreč) <= h*: 32.0 <= 71.0
 [OK] h(Medulin) <= h*: 61.0 <= 109.0
+[ERR] h(Lupoglav) <= h*: 35.0 <= 15.0
+[OK] h(Grožnjan) <= h*: 17.0 <= 33.0
+[ERR] h(Pazin) <= h*: 40.0 <= 38.0
+[OK] h(Opatija) <= h*: 26.0 <= 44.0
+[OK] h(Kanfanar) <= h*: 30.0 <= 61.0
+[OK] h(Umag) <= h*: 31.0 <= 54.0
+[OK] h(Vodnjan) <= h*: 47.0 <= 90.0
+[OK] h(Buzet) <= h*: 0.0 <= 0.0
+[OK] h(Pula) <= h*: 57.0 <= 100.0
 [OK] h(Labin) <= h*: 35.0 <= 57.0
+[OK] h(Baderna) <= h*: 25.0 <= 57.0
 [OK] h(Žminj) <= h*: 27.0 <= 55.0
 -> Complete obtained output:
 Solving lab 1 assignment...
@@ -1441,24 +1341,24 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(Opatija) <= h*: 26.0 <= 44.0
-[OK] h(Motovun) <= h*: 12.0 <= 18.0
-[OK] h(Kanfanar) <= h*: 30.0 <= 61.0
-[OK] h(Barban) <= h*: 35.0 <= 72.0
-[OK] h(Buzet) <= h*: 0.0 <= 0.0
-[OK] h(Lupoglav) <= h*: 13.0 <= 15.0
-[OK] h(Pazin) <= h*: 17.0 <= 38.0
-[OK] h(Vodnjan) <= h*: 47.0 <= 90.0
-[OK] h(Baderna) <= h*: 25.0 <= 57.0
-[OK] h(Grožnjan) <= h*: 17.0 <= 33.0
-[OK] h(Pula) <= h*: 57.0 <= 100.0
-[OK] h(Rovinj) <= h*: 40.0 <= 79.0
 [OK] h(Buje) <= h*: 21.0 <= 41.0
-[OK] h(Umag) <= h*: 31.0 <= 54.0
+[OK] h(Barban) <= h*: 35.0 <= 72.0
+[OK] h(Lupoglav) <= h*: 13.0 <= 15.0
+[OK] h(Motovun) <= h*: 12.0 <= 18.0
 [OK] h(Višnjan) <= h*: 20.0 <= 52.0
+[OK] h(Pazin) <= h*: 17.0 <= 38.0
+[OK] h(Rovinj) <= h*: 40.0 <= 79.0
 [OK] h(Poreč) <= h*: 32.0 <= 71.0
 [OK] h(Medulin) <= h*: 61.0 <= 109.0
+[OK] h(Grožnjan) <= h*: 17.0 <= 33.0
+[OK] h(Opatija) <= h*: 26.0 <= 44.0
+[OK] h(Kanfanar) <= h*: 30.0 <= 61.0
+[OK] h(Umag) <= h*: 31.0 <= 54.0
+[OK] h(Vodnjan) <= h*: 47.0 <= 90.0
+[OK] h(Buzet) <= h*: 0.0 <= 0.0
+[OK] h(Pula) <= h*: 57.0 <= 100.0
 [OK] h(Labin) <= h*: 35.0 <= 57.0
+[OK] h(Baderna) <= h*: 25.0 <= 57.0
 [OK] h(Žminj) <= h*: 27.0 <= 55.0
 -> Complete obtained output:
 Solving lab 1 assignment...
@@ -1496,31 +1396,31 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(K) <= h*: 41.0 <= 136.0
-[OK] h(N) <= h*: 41.0 <= 59.0
-[OK] h(I) <= h*: 14.0 <= 76.0
-[OK] h(G) <= h*: 35.0 <= 110.0
-[OK] h(X) <= h*: 35.0 <= 76.0
-[OK] h(J) <= h*: 36.0 <= 182.0
-[OK] h(H) <= h*: 27.0 <= 89.0
-[OK] h(Y) <= h*: 0.0 <= 0.0
-[OK] h(D) <= h*: 21.0 <= 67.0
-[OK] h(P) <= h*: 35.0 <= 97.0
-[OK] h(L) <= h*: 44.0 <= 64.0
-[OK] h(V) <= h*: 39.0 <= 133.0
-[OK] h(F) <= h*: 46.0 <= 156.0
+[OK] h(O) <= h*: 35.0 <= 111.0
+[OK] h(M) <= h*: 4.0 <= 66.0
+[OK] h(U) <= h*: 41.0 <= 157.0
+[OK] h(Q) <= h*: 36.0 <= 146.0
 [OK] h(C) <= h*: 33.0 <= 108.0
 [OK] h(R) <= h*: 26.0 <= 94.0
+[OK] h(P) <= h*: 35.0 <= 97.0
+[OK] h(Y) <= h*: 0.0 <= 0.0
+[OK] h(J) <= h*: 36.0 <= 182.0
+[OK] h(D) <= h*: 21.0 <= 67.0
+[OK] h(A) <= h*: 3.0 <= 208.0
+[OK] h(L) <= h*: 44.0 <= 64.0
 [OK] h(T) <= h*: 30.0 <= 110.0
+[OK] h(N) <= h*: 41.0 <= 59.0
+[OK] h(S) <= h*: 30.0 <= 113.0
+[OK] h(X) <= h*: 35.0 <= 76.0
+[OK] h(H) <= h*: 27.0 <= 89.0
 [OK] h(B) <= h*: 4.0 <= 62.0
+[OK] h(V) <= h*: 39.0 <= 133.0
+[OK] h(I) <= h*: 14.0 <= 76.0
 [OK] h(E) <= h*: 3.0 <= 205.0
 [OK] h(W) <= h*: 33.0 <= 141.0
-[OK] h(U) <= h*: 41.0 <= 157.0
-[OK] h(S) <= h*: 30.0 <= 113.0
-[OK] h(M) <= h*: 4.0 <= 66.0
-[OK] h(O) <= h*: 35.0 <= 111.0
-[OK] h(Q) <= h*: 36.0 <= 146.0
-[OK] h(A) <= h*: 3.0 <= 208.0
+[OK] h(F) <= h*: 46.0 <= 156.0
+[OK] h(G) <= h*: 35.0 <= 110.0
+[OK] h(K) <= h*: 41.0 <= 136.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
@@ -1557,31 +1457,31 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(G) <= h*: 53.0 <= 110.0
-[OK] h(S) <= h*: 57.0 <= 113.0
-[ERR] h(B) <= h*: 68.0 <= 62.0
-[OK] h(A) <= h*: 23.0 <= 208.0
-[OK] h(W) <= h*: 44.0 <= 141.0
-[ERR] h(M) <= h*: 70.0 <= 66.0
-[OK] h(I) <= h*: 53.0 <= 76.0
-[OK] h(Y) <= h*: 0.0 <= 0.0
-[OK] h(F) <= h*: 60.0 <= 156.0
-[OK] h(O) <= h*: 53.0 <= 111.0
-[OK] h(U) <= h*: 61.0 <= 157.0
 [OK] h(H) <= h*: 49.0 <= 89.0
-[OK] h(K) <= h*: 42.0 <= 136.0
-[ERR] h(L) <= h*: 70.0 <= 64.0
-[OK] h(C) <= h*: 48.0 <= 108.0
-[OK] h(D) <= h*: 64.0 <= 67.0
-[OK] h(V) <= h*: 53.0 <= 133.0
-[ERR] h(N) <= h*: 62.0 <= 59.0
-[OK] h(R) <= h*: 40.0 <= 94.0
-[OK] h(Q) <= h*: 50.0 <= 146.0
-[OK] h(T) <= h*: 76.0 <= 110.0
-[ERR] h(X) <= h*: 78.0 <= 76.0
-[OK] h(J) <= h*: 39.0 <= 182.0
 [OK] h(E) <= h*: 54.0 <= 205.0
+[OK] h(J) <= h*: 39.0 <= 182.0
+[OK] h(U) <= h*: 61.0 <= 157.0
+[OK] h(Y) <= h*: 0.0 <= 0.0
+[ERR] h(M) <= h*: 70.0 <= 66.0
+[ERR] h(B) <= h*: 68.0 <= 62.0
+[OK] h(C) <= h*: 48.0 <= 108.0
+[OK] h(W) <= h*: 44.0 <= 141.0
+[ERR] h(L) <= h*: 70.0 <= 64.0
+[OK] h(A) <= h*: 23.0 <= 208.0
+[OK] h(S) <= h*: 57.0 <= 113.0
+[OK] h(G) <= h*: 53.0 <= 110.0
+[ERR] h(X) <= h*: 78.0 <= 76.0
+[ERR] h(N) <= h*: 62.0 <= 59.0
+[OK] h(I) <= h*: 53.0 <= 76.0
+[OK] h(R) <= h*: 40.0 <= 94.0
+[OK] h(O) <= h*: 53.0 <= 111.0
+[OK] h(T) <= h*: 76.0 <= 110.0
+[OK] h(D) <= h*: 64.0 <= 67.0
+[OK] h(K) <= h*: 42.0 <= 136.0
+[OK] h(Q) <= h*: 50.0 <= 146.0
+[OK] h(F) <= h*: 60.0 <= 156.0
 [OK] h(P) <= h*: 67.0 <= 97.0
+[OK] h(V) <= h*: 53.0 <= 133.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
@@ -1607,55 +1507,8 @@ Solving lab 1 assignment...
 [CONDITION]: [OK] h(Y) <= h*: 0.0 <= 0.0
 [CONCLUSION]: Heuristic is not optimistic.
 
-- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic.txt
-- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic.txt --check-optimistic 
-Mismatch with field: CONCLUSION
--> Obtained output:
-
--> Expected output:
-Heuristic is optimistic.
-Mismatch with field: CONDITIONS
--> Obtained output:
-
--> Expected output:
-[OK] h(C) <= h*: 8.0 <= 26.0
-[OK] h(I) <= h*: 9.0 <= 24.0
-[OK] h(H) <= h*: 12.0 <= 23.0
-[OK] h(K) <= h*: 10.0 <= 34.0
-[OK] h(J) <= h*: 15.0 <= 70.0
-[OK] h(G) <= h*: 13.0 <= 52.0
-[OK] h(E) <= h*: 7.0 <= 11.0
-[OK] h(N) <= h*: 11.0 <= 45.0
-[OK] h(M) <= h*: 6.0 <= 45.0
-[OK] h(A) <= h*: 1.0 <= 54.0
-[OK] h(D) <= h*: 6.0 <= 39.0
-[OK] h(B) <= h*: 7.0 <= 18.0
-[OK] h(L) <= h*: 10.0 <= 49.0
-[OK] h(O) <= h*: 0.0 <= 0.0
-[OK] h(F) <= h*: 1.0 <= 55.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# HEURISTIC-OPTIMISTIC test_case_1_heuristic.txt
-[CONDITION]: [OK] h(A) <= h*: 1.0 <= 54.0
-[CONDITION]: [OK] h(B) <= h*: 7.0 <= 18.0
-[CONDITION]: [OK] h(C) <= h*: 8.0 <= 26.0
-[CONDITION]: [OK] h(D) <= h*: 6.0 <= 39.0
-[CONDITION]: [OK] h(E) <= h*: 7.0 <= 11.0
-[CONDITION]: [OK] h(F) <= h*: 1.0 <= 55.0
-[CONDITION]: [OK] h(G) <= h*: 13.0 <= 52.0
-[CONDITION]: [OK] h(H) <= h*: 12.0 <= 23.0
-[CONDITION]: [OK] h(I) <= h*: 9.0 <= 24.0
-[CONDITION]: [OK] h(J) <= h*: 15.0 <= 70.0
-[CONDITION]: [OK] h(K) <= h*: 10.0 <= 34.0
-[CONDITION]: [OK] h(L) <= h*: 10.0 <= 49.0
-[CONDITION]: [OK] h(M) <= h*: 6.0 <= 45.0
-[CONDITION]: [OK] h(N) <= h*: 11.0 <= 45.0
-[CONDITION]: [OK] h(O) <= h*: 0.0 <= 0.0
-[CONCLUSION]: Heuristic is optimistic.
-
-- Failed test: HEURISTIC-OPTIMISTIC test_case_1_heuristic_nonopt.txt
-- Command run: python solution.py --ss test_case_1.txt --h test_case_1_heuristic_nonopt.txt --check-optimistic 
+- Failed test: HEURISTIC-OPTIMISTIC ai_fail.txt
+- Command run: python solution.py --ss ai.txt --h ai_fail.txt --check-optimistic 
 Mismatch with field: CONCLUSION
 -> Obtained output:
 
@@ -1665,47 +1518,194 @@ Mismatch with field: CONDITIONS
 -> Obtained output:
 
 -> Expected output:
-[OK] h(J) <= h*: 14.0 <= 70.0
-[OK] h(C) <= h*: 25.0 <= 26.0
-[OK] h(D) <= h*: 26.0 <= 39.0
-[OK] h(N) <= h*: 19.0 <= 45.0
-[OK] h(L) <= h*: 8.0 <= 49.0
-[OK] h(B) <= h*: 11.0 <= 18.0
-[OK] h(F) <= h*: 24.0 <= 55.0
-[OK] h(A) <= h*: 0.0 <= 54.0
-[OK] h(I) <= h*: 5.0 <= 24.0
-[ERR] h(E) <= h*: 21.0 <= 11.0
-[OK] h(H) <= h*: 7.0 <= 23.0
-[OK] h(M) <= h*: 13.0 <= 45.0
-[OK] h(G) <= h*: 13.0 <= 52.0
-[OK] h(K) <= h*: 19.0 <= 34.0
-[OK] h(O) <= h*: 0.0 <= 0.0
+[OK] h(complete_lab) <= h*: 10.0 <= 13.0
+[OK] h(fail_exam) <= h*: 5.0 <= 20.0
+[OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
+[ERR] h(pass_continuous) <= h*: 20.0 <= 1.0
+[OK] h(fail_lab) <= h*: 1.0 <= 17.0
+[OK] h(fail_continuous) <= h*: 6.0 <= 17.0
+[OK] h(pass_course) <= h*: 0.0 <= 0.0
+[OK] h(pass_exam) <= h*: 1.0 <= 1.0
+[OK] h(fail_course) <= h*: 0.0 <= 0.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
-# HEURISTIC-OPTIMISTIC test_case_1_heuristic_nonopt.txt
-[CONDITION]: [OK] h(A) <= h*: 0.0 <= 54.0
-[CONDITION]: [OK] h(B) <= h*: 11.0 <= 18.0
-[CONDITION]: [OK] h(C) <= h*: 25.0 <= 26.0
-[CONDITION]: [OK] h(D) <= h*: 26.0 <= 39.0
-[CONDITION]: [ERR] h(E) <= h*: 21.0 <= 11.0
-[CONDITION]: [OK] h(F) <= h*: 24.0 <= 55.0
-[CONDITION]: [OK] h(G) <= h*: 13.0 <= 52.0
-[CONDITION]: [OK] h(H) <= h*: 7.0 <= 23.0
-[CONDITION]: [OK] h(I) <= h*: 5.0 <= 24.0
-[CONDITION]: [OK] h(J) <= h*: 14.0 <= 70.0
-[CONDITION]: [OK] h(K) <= h*: 19.0 <= 34.0
-[CONDITION]: [OK] h(L) <= h*: 8.0 <= 49.0
-[CONDITION]: [OK] h(M) <= h*: 13.0 <= 45.0
-[CONDITION]: [OK] h(N) <= h*: 19.0 <= 45.0
-[CONDITION]: [OK] h(O) <= h*: 0.0 <= 0.0
+# HEURISTIC-OPTIMISTIC ai_fail.txt
+[CONDITION]: [OK] h(complete_lab) <= h*: 10.0 <= 13.0
+[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
+[CONDITION]: [OK] h(fail_continuous) <= h*: 6.0 <= 17.0
+[CONDITION]: [OK] h(fail_course) <= h*: 0.0 <= 0.0
+[CONDITION]: [OK] h(fail_exam) <= h*: 5.0 <= 20.0
+[CONDITION]: [OK] h(fail_lab) <= h*: 1.0 <= 17.0
+[CONDITION]: [ERR] h(pass_continuous) <= h*: 20.0 <= 1.0
+[CONDITION]: [OK] h(pass_course) <= h*: 0.0 <= 0.0
+[CONDITION]: [OK] h(pass_exam) <= h*: 1.0 <= 1.0
+[CONCLUSION]: Heuristic is not optimistic.
+
+- Failed test: HEURISTIC-OPTIMISTIC ai_pass.txt
+- Command run: python solution.py --ss ai.txt --h ai_pass.txt --check-optimistic 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is optimistic.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(fail_exam) <= h*: 20.0 <= 20.0
+[OK] h(pass_continuous) <= h*: 1.0 <= 1.0
+[OK] h(pass_course) <= h*: 0.0 <= 0.0
+[OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
+[OK] h(complete_lab) <= h*: 13.0 <= 13.0
+[OK] h(fail_lab) <= h*: 17.0 <= 17.0
+[OK] h(pass_exam) <= h*: 1.0 <= 1.0
+[OK] h(fail_course) <= h*: 0.0 <= 0.0
+[OK] h(fail_continuous) <= h*: 17.0 <= 17.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-OPTIMISTIC ai_pass.txt
+[CONDITION]: [OK] h(complete_lab) <= h*: 13.0 <= 13.0
+[CONDITION]: [OK] h(enroll_artificial_intelligence) <= h*: 17.0 <= 17.0
+[CONDITION]: [OK] h(fail_continuous) <= h*: 17.0 <= 17.0
+[CONDITION]: [OK] h(fail_course) <= h*: 0.0 <= 0.0
+[CONDITION]: [OK] h(fail_exam) <= h*: 20.0 <= 20.0
+[CONDITION]: [OK] h(fail_lab) <= h*: 17.0 <= 17.0
+[CONDITION]: [OK] h(pass_continuous) <= h*: 1.0 <= 1.0
+[CONDITION]: [OK] h(pass_course) <= h*: 0.0 <= 0.0
+[CONDITION]: [OK] h(pass_exam) <= h*: 1.0 <= 1.0
+[CONCLUSION]: Heuristic is optimistic.
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic.txt --check-optimistic 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is optimistic.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(K) <= h*: 17.0 <= 137.0
+[OK] h(N) <= h*: 27.0 <= 112.0
+[OK] h(W) <= h*: 38.0 <= 137.0
+[OK] h(P) <= h*: 16.0 <= 99.0
+[OK] h(V) <= h*: 23.0 <= 106.0
+[OK] h(C) <= h*: 22.0 <= 128.0
+[OK] h(R) <= h*: 56.0 <= 159.0
+[OK] h(S) <= h*: 26.0 <= 109.0
+[OK] h(H) <= h*: 7.0 <= 83.0
+[OK] h(M) <= h*: 28.0 <= 131.0
+[OK] h(L) <= h*: 33.0 <= 183.0
+[OK] h(T) <= h*: 28.0 <= 111.0
+[OK] h(U) <= h*: 69.0 <= 228.0
+[OK] h(Z) <= h*: 0.0 <= 0.0
+[OK] h(F) <= h*: 14.0 <= 104.0
+[OK] h(Q) <= h*: 48.0 <= 160.0
+[OK] h(J) <= h*: 31.0 <= 121.0
+[OK] h(B) <= h*: 19.0 <= 102.0
+[OK] h(D) <= h*: 22.0 <= 150.0
+[OK] h(X) <= h*: 14.0 <= 178.0
+[OK] h(I) <= h*: 32.0 <= 144.0
+[OK] h(E) <= h*: 17.0 <= 138.0
+[OK] h(A) <= h*: 7.0 <= 90.0
+[OK] h(O) <= h*: 34.0 <= 178.0
+[OK] h(G) <= h*: 14.0 <= 164.0
+[OK] h(Y) <= h*: 37.0 <= 173.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-OPTIMISTIC test_case_2_heuristic.txt
+[CONDITION]: [OK] h(A) <= h*: 7.0 <= 90.0
+[CONDITION]: [OK] h(B) <= h*: 19.0 <= 102.0
+[CONDITION]: [OK] h(C) <= h*: 22.0 <= 128.0
+[CONDITION]: [OK] h(D) <= h*: 22.0 <= 150.0
+[CONDITION]: [OK] h(E) <= h*: 17.0 <= 138.0
+[CONDITION]: [OK] h(F) <= h*: 14.0 <= 104.0
+[CONDITION]: [OK] h(G) <= h*: 14.0 <= 164.0
+[CONDITION]: [OK] h(H) <= h*: 7.0 <= 83.0
+[CONDITION]: [OK] h(I) <= h*: 32.0 <= 144.0
+...
+[CONDITION]: [OK] h(R) <= h*: 56.0 <= 159.0
+[CONDITION]: [OK] h(S) <= h*: 26.0 <= 109.0
+[CONDITION]: [OK] h(T) <= h*: 28.0 <= 111.0
+[CONDITION]: [OK] h(U) <= h*: 69.0 <= 228.0
+[CONDITION]: [OK] h(V) <= h*: 23.0 <= 106.0
+[CONDITION]: [OK] h(W) <= h*: 38.0 <= 137.0
+[CONDITION]: [OK] h(X) <= h*: 14.0 <= 178.0
+[CONDITION]: [OK] h(Y) <= h*: 37.0 <= 173.0
+[CONDITION]: [OK] h(Z) <= h*: 0.0 <= 0.0
+[CONCLUSION]: Heuristic is optimistic.
+
+- Failed test: HEURISTIC-OPTIMISTIC test_case_2_heuristic_nonopt.txt
+- Command run: python solution.py --ss test_case_2.txt --h test_case_2_heuristic_nonopt.txt --check-optimistic 
+Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+Heuristic is not optimistic.
+Mismatch with field: CONDITIONS
+-> Obtained output:
+
+-> Expected output:
+[OK] h(S) <= h*: 43.0 <= 109.0
+[OK] h(K) <= h*: 43.0 <= 137.0
+[OK] h(A) <= h*: 41.0 <= 90.0
+[OK] h(M) <= h*: 43.0 <= 131.0
+[OK] h(U) <= h*: 81.0 <= 228.0
+[ERR] h(H) <= h*: 85.0 <= 83.0
+[OK] h(T) <= h*: 19.0 <= 111.0
+[OK] h(P) <= h*: 84.0 <= 99.0
+[OK] h(Q) <= h*: 82.0 <= 160.0
+[OK] h(B) <= h*: 50.0 <= 102.0
+[OK] h(D) <= h*: 65.0 <= 150.0
+[OK] h(G) <= h*: 94.0 <= 164.0
+[OK] h(V) <= h*: 59.0 <= 106.0
+[OK] h(X) <= h*: 43.0 <= 178.0
+[OK] h(L) <= h*: 27.0 <= 183.0
+[OK] h(I) <= h*: 26.0 <= 144.0
+[OK] h(O) <= h*: 42.0 <= 178.0
+[OK] h(Z) <= h*: 0.0 <= 0.0
+[OK] h(E) <= h*: 38.0 <= 138.0
+[OK] h(N) <= h*: 35.0 <= 112.0
+[OK] h(Y) <= h*: 65.0 <= 173.0
+[OK] h(C) <= h*: 18.0 <= 128.0
+[OK] h(F) <= h*: 4.0 <= 104.0
+[OK] h(J) <= h*: 61.0 <= 121.0
+[OK] h(W) <= h*: 80.0 <= 137.0
+[OK] h(R) <= h*: 79.0 <= 159.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# HEURISTIC-OPTIMISTIC test_case_2_heuristic_nonopt.txt
+[CONDITION]: [OK] h(A) <= h*: 41.0 <= 90.0
+[CONDITION]: [OK] h(B) <= h*: 50.0 <= 102.0
+[CONDITION]: [OK] h(C) <= h*: 18.0 <= 128.0
+[CONDITION]: [OK] h(D) <= h*: 65.0 <= 150.0
+[CONDITION]: [OK] h(E) <= h*: 38.0 <= 138.0
+[CONDITION]: [OK] h(F) <= h*: 4.0 <= 104.0
+[CONDITION]: [OK] h(G) <= h*: 94.0 <= 164.0
+[CONDITION]: [ERR] h(H) <= h*: 85.0 <= 83.0
+[CONDITION]: [OK] h(I) <= h*: 26.0 <= 144.0
+...
+[CONDITION]: [OK] h(R) <= h*: 79.0 <= 159.0
+[CONDITION]: [OK] h(S) <= h*: 43.0 <= 109.0
+[CONDITION]: [OK] h(T) <= h*: 19.0 <= 111.0
+[CONDITION]: [OK] h(U) <= h*: 81.0 <= 228.0
+[CONDITION]: [OK] h(V) <= h*: 59.0 <= 106.0
+[CONDITION]: [OK] h(W) <= h*: 80.0 <= 137.0
+[CONDITION]: [OK] h(X) <= h*: 43.0 <= 178.0
+[CONDITION]: [OK] h(Y) <= h*: 65.0 <= 173.0
+[CONDITION]: [OK] h(Z) <= h*: 0.0 <= 0.0
 [CONCLUSION]: Heuristic is not optimistic.
 
 == UCS ==
   Passed 0 / 6 tests.
 
 - Failed test: UCS
-- Command run: python solution.py --ss test_case_2.txt --alg ucs
+- Command run: python solution.py --ss test_case_1.txt --alg ucs
 Mismatch with field: FOUND_SOLUTION
 -> Obtained output:
 
@@ -1715,38 +1715,16 @@ Mismatch with field: TOTAL_COST
 -> Obtained output:
 
 -> Expected output:
-90.0
+54.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
 # UCS
 [FOUND_SOLUTION]: yes
-[STATES_VISITED]: 21
-[PATH_LENGTH]: 3
-[TOTAL_COST]: 90.0
-[PATH]: A => H => Z
-
-- Failed test: UCS
-- Command run: python solution.py --ss ai.txt --alg ucs
-Mismatch with field: FOUND_SOLUTION
--> Obtained output:
-
--> Expected output:
-yes
-Mismatch with field: TOTAL_COST
--> Obtained output:
-
--> Expected output:
-17.0
--> Complete obtained output:
-Solving lab 1 assignment...
--> Complete expected output:
-# UCS
-[FOUND_SOLUTION]: yes
-[STATES_VISITED]: 7
-[PATH_LENGTH]: 4
-[TOTAL_COST]: 17.0
-[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course
+[STATES_VISITED]: 14
+[PATH_LENGTH]: 5
+[TOTAL_COST]: 54.0
+[PATH]: A => D => H => E => O
 
 - Failed test: UCS
 - Command run: python solution.py --ss istra.txt --alg ucs
@@ -1793,7 +1771,7 @@ Solving lab 1 assignment...
 [PATH]: A => E => F => G => M => B => Y
 
 - Failed test: UCS
-- Command run: python solution.py --ss test_case_1.txt --alg ucs
+- Command run: python solution.py --ss ai.txt --alg ucs
 Mismatch with field: FOUND_SOLUTION
 -> Obtained output:
 
@@ -1803,16 +1781,16 @@ Mismatch with field: TOTAL_COST
 -> Obtained output:
 
 -> Expected output:
-54.0
+17.0
 -> Complete obtained output:
 Solving lab 1 assignment...
 -> Complete expected output:
 # UCS
 [FOUND_SOLUTION]: yes
-[STATES_VISITED]: 14
-[PATH_LENGTH]: 5
-[TOTAL_COST]: 54.0
-[PATH]: A => D => H => E => O
+[STATES_VISITED]: 7
+[PATH_LENGTH]: 4
+[TOTAL_COST]: 17.0
+[PATH]: enroll_artificial_intelligence => complete_lab => pass_continuous => pass_course
 
 - Failed test: UCS
 - Command run: python solution.py --ss 3x3_puzzle.txt --alg ucs
@@ -1835,6 +1813,28 @@ Solving lab 1 assignment...
 [PATH_LENGTH]: 31
 [TOTAL_COST]: 30.0
 [PATH]: 876_543_21x => 876_543_2x1 => 876_543_x21 => 876_x43_521 => x76_843_521 => 7x6_843_521 => 746_8x3_521 => 746_83x_521 => 746_831_52x => 746_831_5x2 => 746_831_x52 => 746_x31_852 => x46_731_852 => 4x6_731_852 => 436_7x1_852 => 436_71x_852 => 43x_716_852 => 4x3_716_852 => 413_7x6_852 => 413_756_8x2 => 413_756_82x => 413_75x_826 => 413_7x5_826 => 413_725_8x6 => 413_725_x86 => 413_x25_786 => x13_425_786 => 1x3_425_786 => 123_4x5_786 => 123_45x_786 => 123_456_78x
+
+- Failed test: UCS
+- Command run: python solution.py --ss test_case_2.txt --alg ucs
+Mismatch with field: FOUND_SOLUTION
+-> Obtained output:
+
+-> Expected output:
+yes
+Mismatch with field: TOTAL_COST
+-> Obtained output:
+
+-> Expected output:
+90.0
+-> Complete obtained output:
+Solving lab 1 assignment...
+-> Complete expected output:
+# UCS
+[FOUND_SOLUTION]: yes
+[STATES_VISITED]: 21
+[PATH_LENGTH]: 3
+[TOTAL_COST]: 90.0
+[PATH]: A => H => Z
 
 === TOTAL RESULTS ===
 0 / 39 tests passed. (0.00%)
