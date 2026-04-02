@@ -19,10 +19,10 @@ class Node:
 def dataLoading(stateSpaceFile, heuristicsFile=None):
 
     stateSpace: dict[str, list[Node]] = dict()
+    heuristicsNameValues: dict[str, float] = dict()
 
     # with heuristics file
     if heuristicsFile:
-        heuristicsNameValues: dict[str, float] = dict()
 
         with open(heuristicsFile) as f:
             lines = f.readlines()
@@ -109,7 +109,7 @@ def dataLoading(stateSpaceFile, heuristicsFile=None):
         
                     
 
-    return stateSpace, initialState, goalStateNames, heuristicsFile
+    return stateSpace, initialState, goalStateNames, heuristicsFile, heuristicsNameValues
 
 def getPath(initialState: Node, currentState: Node, path: list[Node]) -> list[Node]:
     if (currentState.name == initialState.name):
@@ -118,6 +118,32 @@ def getPath(initialState: Node, currentState: Node, path: list[Node]) -> list[No
     else:
         path.append(currentState)
         return getPath(initialState = initialState, currentState = currentState.parent, path = path)
+
+def calculateTrueCost(initialNode: Node, stateSpace: dict[str, list[Node]], goalStateNames: list[str]):
+    openNodes: list[Node] = [Node(name=initialNode.name, distance=0.0)]
+
+    traversedStates: list[Node] = []
+
+    while len(openNodes) > 0:
+        currentState = openNodes.pop(0)
+
+        # because if the node appears again, it has to be because it has the equal 
+        # or worse cost (because we sort openNodes by distance), so no point in appending the node to openNodes
+        if currentState.name in [n.name for n in traversedStates]:
+            continue
+
+        traversedStates.append(currentState)
+
+        if currentState.name in goalStateNames:
+            return currentState.distance
+
+        for successor in sorted(stateSpace[currentState.name], key=lambda n: n.name): # sorted because output needs to be alphabetical
+            if successor.name not in [n.name for n in traversedStates]:
+                openNodes.append(Node(name=successor.name, distance=currentState.distance + successor.distance))
+
+        openNodes.sort(key=lambda n: n.distance)
+
+    return float('inf')
 
 def bfs(stateSpace: dict[str, list[Node]], initialState: Node, goalStateNames: list[str]):
     foundSolution: Node = None
@@ -228,7 +254,8 @@ def astar(stateSpace: dict[str, list[Node]], initialState: Node, goalStateNames:
         for succNode in succNodes:
             updatedNode = Node(name = succNode.name, distance = node.distance + succNode.distance, parent = node, heuristic = succNode.heuristic)
 
-            # if there exists a node n in traversedStates or openNodes which has the same name as updatedNode, if not then False
+            # if there exists a node n in traversedStates or openNodes 
+            # which has the same name as updatedNode, if not then False
             existing = next((n for n in traversedStates + openNodes if n.name == updatedNode.name), False)
 
             if existing:
@@ -260,21 +287,65 @@ def astar(stateSpace: dict[str, list[Node]], initialState: Node, goalStateNames:
             
             if not i == len(path) - 1:
                 print(" => ", end="")
+        print("") # prints newline
 
     else:
         print("[FOUND_SOLUTION]: no")
 
+# if a node's heuristic is smaller or equal to the successor's distance + successor's heuristic for every node, then consistent
+def checkConsistent(stateSpace: dict[str, list[Node]], heuristics: dict[str, float], heuristicsFile):
+    consistent = True
+
+    print(f"# HEURISTIC-CONSISTENT {os.path.basename(heuristicsFile)}")
+
+    for nodeName, successors in stateSpace.items():
+        nodeHeuristic = float(heuristics[nodeName])
+
+        for succ in successors:
+            successorHeuristic = float(heuristics[succ.name])
+
+            if nodeHeuristic > succ.distance + successorHeuristic:
+                consistent = False
+                print(f"[CONDITION]: [ERR] h({nodeName}) <= h({succ.name}) + c: {nodeHeuristic} <= {successorHeuristic} + {succ.distance}")
+            else:
+                print(f"[CONDITION]: [OK] h({nodeName}) <= h({succ.name}) + c: {nodeHeuristic} <= {successorHeuristic} + {succ.distance}")
+
+    if consistent:
+        print("[CONCLUSION]: Heuristic is consistent.")
+    else:
+        print("[CONCLUSION]: Heuristic is not consistent.")
+
+# if a node's heuristic is smaller or equal to the true cost of the optimal path, then optimistic
+def checkOptimistic(stateSpace: dict[str, list[Node]], heuristics: dict[str, float], goalStateNames: list[str], heuristicsFile: str):
+    optimistic = True
+
+    print(f"# HEURISTIC-OPTIMISTIC {os.path.basename(heuristicsFile)}")
+
+    for nodeName in sorted(stateSpace.keys()): # sorted because the output needs to display alphabetically
+        nodeHeuristic = float(heuristics.get(nodeName, 0.0))
+        trueCost = calculateTrueCost(Node(name=nodeName, distance=0.0), stateSpace, goalStateNames)
+
+        if nodeHeuristic > trueCost:
+            optimistic = False
+            print(f"[CONDITION]: [ERR] h({nodeName}) <= h*: {nodeHeuristic} <= {trueCost}")
+        else:
+            print(f"[CONDITION]: [OK] h({nodeName}) <= h*: {nodeHeuristic} <= {trueCost}")
+
+    if optimistic:
+        print("[CONCLUSION]: Heuristic is optimistic.")
+    else:
+        print("[CONCLUSION]: Heuristic is not optimistic.")
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--ss', required=True) # path to state space file
-    parser.add_argument('--alg', required=True) # search algorithm
+    parser.add_argument('--alg', default=None) # search algorithm
     parser.add_argument('--h', default=None) # path to heuristics file
-    parser.add_argument('--check-optimistic', default=None) # flag for checking if heuristic is optimistic
-    parser.add_argument('--check-consistent', default=None) # flag for checking if herustic is consistent
+    parser.add_argument('--check-optimistic', action='store_true') # flag for checking if heuristic is optimistic
+    parser.add_argument('--check-consistent', action='store_true') # flag for checking if herustic is consistent
     args = parser.parse_args()
 
-    stateSpace, initialState, goalStateNames, heuristicsFile =  dataLoading(args.ss, args.h)
+    stateSpace, initialState, goalStateNames, heuristicsFile, heuristicsNameValues =  dataLoading(args.ss, args.h)
 
     if args.alg == 'bfs':
         bfs(stateSpace, initialState, goalStateNames)
@@ -282,6 +353,13 @@ def main():
         ucs(stateSpace, initialState, goalStateNames)
     elif args.alg == 'astar':
         astar(stateSpace, initialState, goalStateNames, heuristicsFile)
+    
+    if args.check_consistent:
+        checkConsistent(stateSpace, heuristicsNameValues, heuristicsFile)
+
+    if args.check_optimistic:
+        checkOptimistic(stateSpace, heuristicsNameValues, goalStateNames, heuristicsFile)
+    
 
 if __name__ == '__main__':
     main()

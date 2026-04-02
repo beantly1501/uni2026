@@ -19,12 +19,12 @@ Skipping (python)
 - Command run: python solution.py --ss 3x3_puzzle.txt --alg bfs
 Execution failed with error:
 Traceback (most recent call last):
-  File "solution.py", line 437, in <module>
+  File "solution.py", line 368, in <module>
     main()
-  File "solution.py", line 412, in main
-    nodes = dataLoading(stateDescriptor, heuristicDescriptor)
-  File "solution.py", line 107, in dataLoading
-    with open(stateDescriptor) as f:
+  File "solution.py", line 351, in main
+    stateSpace, initialState, goalStateNames, heuristicsFile, heuristicsNameValues =  dataLoading(args.ss, args.h)
+  File "solution.py", line 80, in dataLoading
+    with open(stateSpaceFile) as f:
 FileNotFoundError: [Errno 2] No such file or directory: '3x3_puzzle.txt'
 
 
@@ -41,12 +41,12 @@ FileNotFoundError: [Errno 2] No such file or directory: '3x3_puzzle.txt'
 - Command run: python solution.py --ss 3x3_puzzle.txt --alg ucs
 Execution failed with error:
 Traceback (most recent call last):
-  File "solution.py", line 437, in <module>
+  File "solution.py", line 368, in <module>
     main()
-  File "solution.py", line 412, in main
-    nodes = dataLoading(stateDescriptor, heuristicDescriptor)
-  File "solution.py", line 107, in dataLoading
-    with open(stateDescriptor) as f:
+  File "solution.py", line 351, in main
+    stateSpace, initialState, goalStateNames, heuristicsFile, heuristicsNameValues =  dataLoading(args.ss, args.h)
+  File "solution.py", line 80, in dataLoading
+    with open(stateSpaceFile) as f:
 FileNotFoundError: [Errno 2] No such file or directory: '3x3_puzzle.txt'
 
 

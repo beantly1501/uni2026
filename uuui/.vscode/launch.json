@@ -10,7 +10,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/2026/lab1/lab1py/solution.py",
             "console": "integratedTerminal",
-            "args": ["--ss", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab1/files/ai.txt", "--alg", "astar", "--h", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab1/files/ai_fail.txt"]
+            "args": ["--ss", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab1/files/ai.txt", "--alg", "astar", "--h", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab1/files/ai_fail.txt", "--check-consistent"]
         }
     ]
 }
