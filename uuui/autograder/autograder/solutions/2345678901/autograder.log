@@ -1,0 +1,365 @@
+2345678901
+================
+
+=== UNARCHIVE AND STRUCTURE ===
+OK!
+
+=== COMPILE ===
+Skipping (python)
+
+=== EVALUATION ===
+
+=== TOTAL RESULTS ===
+26 / 32 tests passed. (81.25%)
+
+== RESOLUTION ==
+  Passed 26 / 26 tests. Failed 0 tests.
+
+== COOKING ==
+  Passed 0 / 6 tests. Failed 6 tests.
+
+== RESOLUTION ==
+== PASSED TESTS ==
+
+- Passed test: resolution resolution_small_example.txt
+-> Complete obtained output:
+[CONCLUSION]: c is true
+
+- Passed test: resolution resolution_ai.txt
+-> Complete obtained output:
+[CONCLUSION]: prolaz_predmeta is true
+
+- Passed test: resolution resolution_chicken_alfredo_nomilk.txt
+-> Complete obtained output:
+[CONCLUSION]: chicken_alfredo is unknown
+
+- Passed test: resolution resolution_chicken_alfredo.txt
+-> Complete obtained output:
+[CONCLUSION]: chicken_alfredo is true
+
+- Passed test: resolution resolution_chicken_broccoli_alfredo_big.txt
+-> Complete obtained output:
+[CONCLUSION]: chicken_broccoli_alfredo is true
+
+- Passed test: resolution resolution_coffee.txt
+-> Complete obtained output:
+[CONCLUSION]: coffee is true
+
+- Passed test: resolution resolution_coffee_noheater.txt
+-> Complete obtained output:
+[CONCLUSION]: coffee is unknown
+
+- Passed test: resolution resolution_coffee_or_tea.txt
+-> Complete obtained output:
+[CONCLUSION]: coffee v tea is true
+
+- Passed test: resolution resolution_coffee_or_tea_nopowder.txt
+-> Complete obtained output:
+[CONCLUSION]: tea v coffee is true
+
+- Passed test: resolution resolution_small_example_2.txt
+-> Complete obtained output:
+[CONCLUSION]: c is true
+
+- Passed test: resolution resolution_small_example_3.txt
+-> Complete obtained output:
+[CONCLUSION]: c is unknown
+
+- Passed test: resolution resolution_small_example_4.txt
+-> Complete obtained output:
+[CONCLUSION]: c v b is true
+
+- Passed test: resolution resolution_heldout_small.txt
+-> Complete obtained output:
+[CONCLUSION]: a is true
+
+- Passed test: resolution resolution_heldout_small_2.txt
+-> Complete obtained output:
+[CONCLUSION]: b v c is unknown
+
+- Passed test: resolution resolution_heldout_tautology.txt
+-> Complete obtained output:
+[CONCLUSION]: c is unknown
+
+- Passed test: resolution resolution_heldout_tautology_2.txt
+-> Complete obtained output:
+[CONCLUSION]: c is true
+
+- Passed test: resolution resolution_heldout_tautology_3.txt
+-> Complete obtained output:
+[CONCLUSION]: a is unknown
+
+- Passed test: resolution resolution_heldout_tautology_4.txt
+-> Complete obtained output:
+[CONCLUSION]: a v b is unknown
+
+- Passed test: resolution resolution_heldout_large_chain.txt
+-> Complete obtained output:
+[CONCLUSION]: g is true
+
+- Passed test: resolution resolution_heldout_goal_isnegated.txt
+-> Complete obtained output:
+[CONCLUSION]: ~c is true
+
+- Passed test: resolution new_example_1.txt
+-> Complete obtained output:
+[CONCLUSION]: c is unknown
+
+- Passed test: resolution new_example_2.txt
+-> Complete obtained output:
+[CONCLUSION]: ~c is true
+
+- Passed test: resolution new_example_3.txt
+-> Complete obtained output:
+[CONCLUSION]: ~c is true
+
+- Passed test: resolution new_example_4.txt
+-> Complete obtained output:
+[CONCLUSION]: d is true
+
+- Passed test: resolution new_example_5.txt
+-> Complete obtained output:
+[CONCLUSION]: e is true
+
+- Passed test: resolution new_example_6.txt
+-> Complete obtained output:
+[CONCLUSION]: a is true
+
+== COOKING ==
+
+== FAILED TESTS ==
+
+- Failed test: python solution.py cooking cooking_coffee.txt cooking_coffee_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+water is true
+hot_water is true
+coffee is true
+hot_water is unknown
+coffee is unknown
+coffee is true
+--> Complete obtained output:
+Water
+Heater
+Coffee_powder
+~Water V ~Heater V Hot_water
+~Coffee_powder V ~Hot_water V Coffee
+
+Water ?
+Hot_water ?
+Coffee ?
+Heater -
+Hot_water ?
+Coffee ?
+Heater +
+Coffee ?
+
+
+
+- Failed test: python solution.py cooking cooking_chicken_alfredo.txt cooking_chicken_alfredo_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+alfredo_sauce is true
+chicken_alfredo is true
+chicken_alfredo is unknown
+--> Complete obtained output:
+# https://damndelicious.net/2015/01/03/chicken-broccoli-alfredo/
+Pasta
+Olive_oil
+Chicken
+Butter
+Flour
+Milk
+Cream
+Parmesan
+~Butter v ~Flour v ~Milk v ~Cream v ~Parmesan v Alfredo_sauce
+~Olive_oil v ~Pasta v ~Chicken v ~Alfredo_sauce v Chicken_alfredo
+
+Alfredo_sauce ?
+Chicken_alfredo ?
+Butter -
+Chicken_alfredo ?
+
+
+
+- Failed test: python solution.py cooking cooking_chicken_alfredo_nomilk.txt cooking_chicken_alfredo_nomilk_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+alfredo_sauce is unknown
+alfredo_sauce is true
+alfredo_sauce is unknown
+chicken_alfredo is true
+--> Complete obtained output:
+# https://damndelicious.net/2015/01/03/chicken-broccoli-alfredo/
+Pasta
+Olive_oil
+Chicken
+Butter
+Flour
+Cream
+Parmesan
+~Butter v ~Flour v ~Milk v ~Cream v ~Parmesan v Alfredo_sauce
+~Olive_oil v ~Pasta v ~Chicken v ~Alfredo_sauce v Chicken_alfredo
+
+Alfredo_sauce ?
+Milk +
+Alfredo_sauce ?
+Butter -
+Alfredo_sauce ?
+Butter +
+Chicken_alfredo ?
+
+
+
+- Failed test: python solution.py cooking cooking_chicken_broccoli_alfredo_big.txt cooking_chicken_broccoli_alfredo_big_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+chicken_broccoli_alfredo is true
+--> Complete obtained output:
+Pasta
+Broccoli
+Olive_oil
+Chicken
+Butter
+Flour
+Milk
+Cream
+Parmesan
+Parsley
+~Olive_oil v ~Chicken v Diced_chicken
+~Butter v ~Flour v ~Milk v ~Cream v ~Parmesan v Alfredo_sauce
+~Pasta v ~Diced_chicken v ~Alfredo_sauce v ~Broccoli v Chicken_broccoli_alfredo
+
+Chicken_broccoli_alfredo ?
+
+
+
+- Failed test: python solution.py cooking cooking_heldout_large_chain.txt cooking_heldout_large_chain_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+b is true
+c is true
+d is true
+e is true
+f is true
+g is true
+b is unknown
+b is true
+c is unknown
+c is true
+d is unknown
+d is true
+e is unknown
+e is true
+f is unknown
+f is true
+g is unknown
+g is true
+--> Complete obtained output:
+A
+~A v B
+~B v C
+~C v D
+~D v E
+~E v F
+~F v G
+
+B ?
+C ?
+D ?
+E ?
+F ?
+G ?
+~A v B -
+B ?
+~A v B +
+B ?
+~B v C -
+C ?
+~B v C +
+C ?
+~C v D -
+D ?
+~C v D +
+D ?
+~D v E -
+E ?
+~D v E +
+E ?
+~E v F -
+F ?
+~E v F +
+F ?
+~F v G -
+G ?
+~F v G +
+G ?
+
+
+
+- Failed test: python solution.py cooking new_pizza.txt new_pizza_input.txt
+- Mismatch with field: CONCLUSION
+-> Obtained output:
+
+-> Expected output:
+yeast is true
+dough is true
+pizza_margherita is true
+pizza_margherita is unknown
+dough is true
+dough is unknown
+pizza_prosciutto is unknown
+pizza_prosciutto is true
+pizza_prosciutto is unknown
+pizza_prosciutto is true
+pizza_margherita is true
+--> Complete obtained output:
+flour
+yeast
+water
+salt
+~flour v ~yeast v ~water v ~salt v dough
+tomatoes
+garlic
+basil
+olive_oil
+mozzarella
+~tomatoes v ~garlic v ~basil v ~olive_oil v ~dough v pizza_margherita
+tomato_paste
+~water v ~tomato_paste v tomato_sauce
+cheese
+prosciutto
+~dough v ~tomato_sauce v ~prosciutto v ~cheese v pizza_prosciutto
+
+yeast ?
+dough ?
+yeast +
+pizza_margherita ?
+water -
+pizza_margherita ?
+water +
+dough ?
+~flour v ~yeast v ~water v ~salt v dough -
+dough ?
+pizza_prosciutto ?
+~flour v ~yeast v ~water v ~salt v dough +
+pizza_prosciutto ?
+tomato_paste -
+pizza_prosciutto ?
+tomato_paste +
+water +
+pizza_prosciutto ?
+~water v ~tomato_paste v tomato_sauce -
+pizza_margherita ?
+
+
