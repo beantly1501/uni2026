@@ -10,8 +10,8 @@
             "request": "launch",
             "program": "${workspaceFolder}/2026/lab2/lab2py/solution.py",
             "console": "integratedTerminal",
-            // "args": ["resolution", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/resolution_small_example.txt"]
-            "args": ["resolution", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/resolution_ai.txt"]
+            "args": ["resolution", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/resolution_small_example.txt"]
+            // "args": ["resolution", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/resolution_ai.txt"]
             // "args": ["resolution", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/new_example_6.txt"]
             // "args": ["cooking", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/cooking_coffee.txt", "/Users/jbockal/uni/git-uni/uni/uuui/autograder/autograder/data/lab2/files/cooking_coffee_input.txt"]
         }
