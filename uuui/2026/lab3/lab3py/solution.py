@@ -19,13 +19,14 @@ class ID3:
         self.featuresDict = None
 
     def fit(self, headers, rows):
-        self.headers = headers
-        self.labelIndex = len(headers) - 1
-        self.featuresDict = {feat: index for index, feat in enumerate(headers[:-1])}
-        labels = [row[self.labelIndex] for row in rows]
+        self.headers = headers # like weather, temperature, ...
+        self.labelIndex = len(headers) - 1 # index of the class labels
+        self.featuresDict = {feat: index for index, feat in enumerate(headers[:-1])} # lookup dictionary, like {"weather": 0, "temperature": 1, ...}
+        labels = [row[self.labelIndex] for row in rows] # collects all class labels, like yes or no
 
-        self.root = id3(rows, self.featuresDict, self.labelIndex, self.maxDepth, 0, labels)
+        self.root = id3(rows, self.featuresDict, self.labelIndex, self.maxDepth, 0, labels) # builds the decision tree and returns a node with all children
 
+    # returns a list of predictions for the given rows
     def predict(self, rows):
         return [predictOne(self.root, row, self.headers) for row in rows]
 
@@ -60,18 +61,18 @@ def entropy(labels):
 
 def informationGain(rows, featureIndex, labelIndex):
     labels = [row[labelIndex] for row in rows]
-    baseEntropy = entropy(labels)
+    baseEntropy = entropy(labels) # computes the base entropy of the full dataset
 
     n = len(rows)
-    values = {}
+    values = {} # creates buckets of class labels for each feature label (ex. temperature has high, med, low; buckets would be high: 2 yes, 3 no, ..)
     for row in rows:
-        v = row[featureIndex]
+        v = row[featureIndex] # value of the feature for this row
         if v not in values:
             values[v] = []
-        values[v].append(row[labelIndex])
+        values[v].append(row[labelIndex]) # we get the label of that row and add it to the feature label bucket
 
     weightedEntropy = 0.0
-    for subsetLabels in values.values():
+    for subsetLabels in values.values(): # compute the entropy for each group and sum them
         weightedEntropy += (len(subsetLabels) / n) * entropy(subsetLabels)
     return baseEntropy - weightedEntropy
 
@@ -84,6 +85,7 @@ def id3(rows, featuresDict, labelIndex, maxDepth, currentDepth, parentLabels):
 
     default = majorityLabel(labels)
 
+    # we use maxDepth to avoid overfitting
     if maxDepth is not None and currentDepth >= maxDepth:
         node = Node()
         node.label = default
@@ -104,8 +106,8 @@ def id3(rows, featuresDict, labelIndex, maxDepth, currentDepth, parentLabels):
         ig = informationGain(rows, index, labelIndex)
         gains.append((ig, feat, index))
 
-    gains.sort(key=lambda x: x[1])
-    gains.sort(key=lambda x: x[0], reverse=True)
+    gains.sort(key=lambda x: x[1]) # first, sort alphabetically by feature name for determinism
+    gains.sort(key=lambda x: x[0], reverse=True) # then, sort by information gain in descending order
     bestIg, bestFeature, bestIndex = gains[0]
 
     node = Node()
@@ -113,8 +115,9 @@ def id3(rows, featuresDict, labelIndex, maxDepth, currentDepth, parentLabels):
     node.featureIndex = bestIndex
     node.defaultLabel = default
 
-    remainingFeatures = {feat: index for feat, index in featuresDict.items() if feat != bestFeature}
+    remainingFeatures = {feat: index for feat, index in featuresDict.items() if feat != bestFeature} # features without the best feature
 
+    # create buckets of rows for each value of the best feature
     values = {}
     for row in rows:
         v = row[bestIndex]
@@ -122,10 +125,12 @@ def id3(rows, featuresDict, labelIndex, maxDepth, currentDepth, parentLabels):
             values[v] = []
         values[v].append(row)
 
+    # recursively build child nodes for each value of the best feature
     for v, subset in values.items():
         child = id3(subset, remainingFeatures, labelIndex, maxDepth, currentDepth + 1, labels)
         node.children[v] = child
 
+    # final return will be the root node with all children attached
     return node
 
 # used for printing the branches of the tree
@@ -136,7 +141,7 @@ def collectBranches(node, path):
         fullPath = path + [node.label]
         return [fullPath]
     branches = []
-    for v in sorted(node.children.keys()):
+    for v in sorted(node.children.keys()): # sorted feature values
         child = node.children[v]
         segment = f"{len(path) + 1}:{node.feature}={v}"
         extendedPath = path + [segment]
@@ -176,11 +181,32 @@ def main():
     print("[PREDICTIONS]: " + ' '.join(predictions))
 
     labelIndex = len(testHeaders) - 1
-    trueLabels = [row[labelIndex] for row in testRows]
+    trueLabels = [row[labelIndex] for row in testRows] # collects the true class labels from the testCsv
 
-    correct = sum(1 for true, prediction in zip(trueLabels, predictions) if true == prediction)
+    correct = sum(1 for true, prediction in zip(trueLabels, predictions) if true == prediction) # sums up the number of correct predictions
     accuracy = correct / len(trueLabels)
     print(f"[ACCURACY]: {accuracy:.5f}")
+
+    # confusion matrix
+    allLabels = sorted(set(trueLabels) | set(predictions)) # all unique labels
+    labelToIndex = {label: i for i, label in enumerate(allLabels)} # mapping labels to indexes, like no: 0, yes: 1
+    size = len(allLabels)
+
+    matrix = []
+    for _ in range(size):
+        matrix.append([0] * size)
+
+    # uses labelToIndex to find the correct row and column for the true label and predicted label, and then increments that number in the matrix
+    for trueLabel, predicted in zip(trueLabels, predictions):
+        rowIndex = labelToIndex[trueLabel]
+        colIndex = labelToIndex[predicted]
+        matrix[rowIndex][colIndex] += 1
+
+    print("[CONFUSION_MATRIX]:")
+    for row in matrix:
+        rowAsStrings = [str(count) for count in row]
+        print(' '.join(rowAsStrings))
+
 
 if __name__ == '__main__':
     main()
