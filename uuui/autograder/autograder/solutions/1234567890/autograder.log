@@ -9,29 +9,27 @@ Skipping (python)
 
 === EVALUATION ===
 
-== A-STAR ==
-  Passed 7 / 7 tests.
-
-== BFS ==
-  Passed 5 / 6 tests.
-
-- Failed test: BFS
-- Command run: python solution.py --ss 3x3_puzzle.txt --alg bfs
-Execution timed out.
-
-== HEURISTIC-CONSISTENT ==
-  Passed 10 / 10 tests.
-
-== HEURISTIC-OPTIMISTIC ==
-  Passed 10 / 10 tests.
-
-== UCS ==
-  Passed 5 / 6 tests.
-
-- Failed test: UCS
-- Command run: python solution.py --ss 3x3_puzzle.txt --alg ucs
-Execution timed out.
-
 === TOTAL RESULTS ===
-37 / 39 tests passed. (94.87%)
+5 / 5 tests passed. (100.00%)
 
+== GENETIC ALGORITHM NEURAL NET ==
+python solution.py --train sine_train.txt --test sine_test.txt --nn 5s --popsize 10 --elitism 1 --p 0.1 --K 0.1 --iter 2000
+--> Complete obtained output:
+[Train error @2000]: 0.001902
+[Test error]: 0.001076
+python solution.py --train sine_train.txt --test sine_test.txt --nn 20s --popsize 10 --elitism 1 --p 0.7 --K 0.1 --iter 2000
+--> Complete obtained output:
+[Train error @2000]: 0.006915
+[Test error]: 0.005440
+python solution.py --train sine_train.txt --test sine_test.txt --nn 5s5s --popsize 10 --elitism 1 --p 0.7 --K 0.1 --iter 2000
+--> Complete obtained output:
+[Train error @2000]: 0.005638
+[Test error]: 0.005113
+python solution.py --train rastrigin_train.txt --test rastrigin_test.txt --nn 5s --popsize 10 --elitism 1 --p 0.3 --K 0.5 --iter 2000
+--> Complete obtained output:
+[Train error @2000]: 44.473022
+[Test error]: 42.005371
+python solution.py --train rosenbrock_train.txt --test rosenbrock_test.txt --nn 5s --popsize 10 --elitism 1 --p 0.5 --K 4. --iter 2000
+--> Complete obtained output:
+[Train error @2000]: 273107.391703
+[Test error]: 292500.043815
