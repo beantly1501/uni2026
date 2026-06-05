@@ -1,0 +1,6 @@
+jmbag: 7606000088
+obrnuti: 8800006067
+charger id: FER7606000088
+password: 7606000088
+rfid tag: TAG7606000088
+remote tag id: TAG8800006067

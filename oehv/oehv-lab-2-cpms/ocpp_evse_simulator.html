@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OCPP 1.6 EVSE Simulator</title>
+  <style>
+    :root {
+      --fer-blue: #004f9f;
+      --fer-blue-dark: #003b78;
+      --fer-blue-ink: #062d54;
+      --fer-cyan: #00a3e0;
+      --sim-orange: #9a3f00;
+      --sim-orange-dark: #642900;
+      --bg: #eef3f8;
+      --panel: #ffffff;
+      --panel-2: #f7fafd;
+      --text: #102235;
+      --muted: #607286;
+      --line: #d6e0ea;
+      --primary: var(--fer-blue);
+      --primary-2: var(--fer-blue-dark);
+      --ok: #21883f;
+      --warn: #f3c33c;
+      --bad: #c73636;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, #dcebf8 0, var(--bg) 320px),
+        var(--bg);
+      color: var(--text);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.45;
+    }
+
+    .container {
+      width: min(1200px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 24px 0;
+    }
+
+    h1 {
+      margin: 0;
+      color: #ffffff;
+      font-size: clamp(26px, 4vw, 40px);
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      color: var(--fer-blue-ink);
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 22px rgba(7, 45, 84, 0.08);
+    }
+
+    .fer-header {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 18px;
+      padding: 20px;
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, var(--sim-orange) 0%, var(--sim-orange-dark) 72%);
+      box-shadow: 0 10px 28px rgba(154, 63, 0, 0.26);
+    }
+
+    .fer-logo {
+      display: block;
+      width: 118px;
+      max-width: 28vw;
+      height: auto;
+    }
+
+    .fer-header p {
+      margin: 5px 0 0;
+      color: #d9ecff;
+      font-size: 15px;
+    }
+
+    .fer-project {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      margin-bottom: 8px;
+      padding: 4px 9px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.14);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 750;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 620px) {
+      .fer-header {
+        grid-template-columns: 1fr;
+      }
+
+      .fer-logo {
+        width: 96px;
+        max-width: 46vw;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+    }
+
+    .connect-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .connect-grid { grid-template-columns: 1fr; }
+    }
+
+    label {
+      display: block;
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    input, select {
+      width: 100%;
+      min-height: 40px;
+      padding: 9px 10px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel-2);
+      color: var(--text);
+      font-size: 14px;
+    }
+
+    input[readonly] {
+      opacity: 0.74;
+      cursor: not-allowed;
+    }
+
+    .button-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      align-content: end;
+    }
+
+    button {
+      min-height: 42px;
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--primary);
+      color: #fff;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 650;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      transition: background-color 0.16s ease, opacity 0.16s ease;
+    }
+
+    button:hover { background: var(--primary-2); }
+    button:disabled { cursor: not-allowed; opacity: 0.55; }
+    .connect-button { background: var(--ok); }
+    .disconnect-button { background: var(--bad); }
+    .danger { background: var(--bad); }
+    .danger:hover { background: #a92f2f; }
+
+    .connector-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      gap: 18px;
+    }
+
+    @media (max-width: 860px) {
+      .connector-grid { grid-template-columns: 1fr; }
+    }
+
+    fieldset {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin: 0;
+    }
+
+    legend {
+      padding: 4px 10px;
+      border-radius: 5px;
+      color: var(--fer-blue-ink);
+      font-weight: 700;
+    }
+
+    .legend-idle { background: transparent; }
+    .legend-ready { background: var(--warn); color: #171717; }
+    .legend-active { background: var(--ok); }
+
+    .inline-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    @media (max-width: 520px) {
+      .inline-fields { grid-template-columns: 1fr; }
+    }
+
+    .status-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: end;
+    }
+
+    #console {
+      height: 320px;
+      margin: 0;
+      padding: 14px;
+      overflow-y: auto;
+      border-radius: var(--radius);
+      border: 1px solid #092c4b;
+      background: #061a2f;
+      color: #8de6ff;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      list-style: none;
+    }
+
+    #console li {
+      padding: 5px 0;
+      border-bottom: 1px solid rgba(141, 230, 255, 0.12);
+      overflow-wrap: anywhere;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 5px 10px;
+      border-radius: 6px;
+      background: #e7eef6;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .status-pill.connected { background: rgba(33, 136, 63, 0.12); color: #176831; }
+    .status-pill.disconnected { background: rgba(199, 54, 54, 0.12); color: #9c2a2a; }
+
+    .topline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="fer-header">
+      <img class="fer-logo" src="/fer_white_logo.png" alt="FER">
+      <div>
+        <div class="fer-project">Zavod za visoki napon i energetiku</div>
+        <h1>OCPP 1.6 EVSE Simulator</h1>
+        <p>Fakultet elektrotehnike i računarstava, Sveučilište u Zagrebu</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="topline">
+        <h2>Connection</h2>
+        <span id="connectionStatus" class="status-pill disconnected">Disconnected</span>
+      </div>
+      <div class="connect-grid">
+        <div class="grid">
+          <div>
+            <label for="chargerId">Charger ID</label>
+            <input id="chargerId" type="text" value="FER-&lt;JMBAG&gt;">
+          </div>
+          <div>
+            <label for="cpUrl">URL</label>
+            <input id="cpUrl" type="text" value="ws://localhost:3000/OCPP">
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="text" value="LOZINKA-PREMA-UPUTI">
+          </div>
+          <div>
+            <label for="tag">Tag</label>
+            <input id="tag" type="text" value="TAG-&lt;JMBAG&gt;">
+          </div>
+        </div>
+        <div class="button-grid">
+          <button id="connect" class="connect-button">Connect</button>
+          <button id="heartbeat">Heartbeat</button>
+          <button id="authorize">Authorize</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="connector-grid">
+      <fieldset class="card">
+        <legend id="connectorLegend1" class="legend-idle">Connector 1</legend>
+        <div class="button-grid">
+          <button id="start1">Start Transaction</button>
+          <button id="stop1" class="danger">Stop Transaction</button>
+          <button id="meter1">Meter Values</button>
+        </div>
+        <div class="inline-fields">
+          <div>
+            <label for="power1">Power.Active.Import</label>
+            <input id="power1" type="number" value="1000" min="0" step="1">
+          </div>
+          <div>
+            <label for="soc1">State of Charge</label>
+            <input id="soc1" type="number" value="23" min="0" max="100" step="1">
+          </div>
+        </div>
+        <div class="status-row">
+          <div>
+            <label for="status1">Status</label>
+            <select id="status1"></select>
+          </div>
+          <button id="sendStatus1">Status Notification</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="card">
+        <legend id="connectorLegend2" class="legend-idle">Connector 2</legend>
+        <div class="button-grid">
+          <button id="start2">Start Transaction</button>
+          <button id="stop2" class="danger">Stop Transaction</button>
+          <button id="meter2">Meter Values</button>
+        </div>
+        <div class="inline-fields">
+          <div>
+            <label for="power2">Power.Active.Import</label>
+            <input id="power2" type="number" value="1000" min="0" step="1">
+          </div>
+          <div>
+            <label for="soc2">State of Charge</label>
+            <input id="soc2" type="number" value="63" min="0" max="100" step="1">
+          </div>
+        </div>
+        <div class="status-row">
+          <div>
+            <label for="status2">Status</label>
+            <select id="status2"></select>
+          </div>
+          <button id="sendStatus2">Status Notification</button>
+        </div>
+      </fieldset>
+    </section>
+
+    <section class="card">
+      <div class="topline">
+        <h2>Console</h2>
+        <button id="clearConsole">Clear</button>
+      </div>
+      <ul id="console"></ul>
+    </section>
+  </main>
+
+  <script>
+    const CALL = 2;
+    const CALL_RESULT = 3;
+    const CALL_ERROR = 4;
+    const METER_VALUES_INTERVAL = 15000;
+    const BATTERY_CAPACITY_WH = {1: 50000, 2: 50000};
+    const statuses = [
+      "Available", "Preparing", "Charging", "SuspendedEVSE", "SuspendedEV",
+      "Finishing", "Reserved", "Unavailable", "Faulted"
+    ];
+
+    let ws = null;
+    let pingTimer = null;
+    let heartbeatTimer = null;
+    let sequence = 0;
+    const pending = new Map();
+    const state = {
+      initialSoc: {1: 23, 2: 63},
+      currentSoc: {1: 23, 2: 63},
+      energyWh: {1: 0, 2: 0},
+      meterTimers: {1: null, 2: null},
+      transactionId: {1: null, 2: null},
+      transactionActive: {1: false, 2: false},
+      lastIdTag: null
+    };
+
+    const $ = (id) => document.getElementById(id);
+
+    function nowOcpp() {
+      return new Date().toISOString().replace(/\.\d{3}Z$/, "Z");
+    }
+
+    function messageId() {
+      sequence += 1;
+      const random = crypto.getRandomValues(new Uint32Array(2));
+      return `${Date.now()}-${sequence}-${random[0].toString(36)}${random[1].toString(36)}`;
+    }
+
+    function log(message) {
+      const item = document.createElement("li");
+      item.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+      $("console").appendChild(item);
+      $("console").scrollTop = $("console").scrollHeight;
+      console.log(message);
+    }
+
+    function logJson(prefix, payload) {
+      log(`${prefix}: ${JSON.stringify(payload)}`);
+    }
+
+    function setConnected(connected) {
+      const pill = $("connectionStatus");
+      pill.textContent = connected ? "Connected" : "Disconnected";
+      pill.className = `status-pill ${connected ? "connected" : "disconnected"}`;
+      $("connect").textContent = connected ? "Disconnect" : "Connect";
+      $("connect").className = connected ? "disconnect-button" : "connect-button";
+    }
+
+    function setConnectorVisual(connectorId, active) {
+      const legend = $(`connectorLegend${connectorId}`);
+      legend.className = active ? "legend-active" : "legend-ready";
+    }
+
+    function resetConnectorVisual(connectorId) {
+      $(`connectorLegend${connectorId}`).className = "legend-idle";
+    }
+
+    function requireSocket() {
+      if (!ws || ws.readyState !== WebSocket.OPEN) {
+        log("WebSocket is not connected.");
+        return false;
+      }
+      return true;
+    }
+
+    function sendRaw(payload) {
+      if (!requireSocket()) return null;
+      const encoded = typeof payload === "string" ? payload : JSON.stringify(payload);
+      ws.send(encoded);
+      log(`Sent: ${encoded}`);
+      return payload;
+    }
+
+    function sendCall(action, payload, meta = {}) {
+      const id = messageId();
+      const frame = [CALL, id, action, payload];
+      pending.set(id, {action, ...meta});
+      sendRaw(frame);
+      return id;
+    }
+
+    function sendResult(id, payload) {
+      sendRaw([CALL_RESULT, id, payload]);
+    }
+
+    function sendError(id, code = "NotImplemented", description = "Action is not supported", details = {}) {
+      sendRaw([CALL_ERROR, id, code, description, details]);
+    }
+
+    function buildWebSocketUrl() {
+      const base = $("cpUrl").value.trim().replace(/\/+$/, "");
+      const chargerId = $("chargerId").value.trim();
+      const password = $("password").value;
+      const auth = btoa(`${chargerId}:${password}`);
+      return `${base}/${encodeURIComponent(chargerId)}?auth=${encodeURIComponent(auth)}`;
+    }
+
+    function connect() {
+      if (ws) {
+        ws.close(3001, "User disconnected");
+        return;
+      }
+
+      $("console").innerHTML = "";
+      const url = buildWebSocketUrl();
+      log(`Connecting to ${url}`);
+      ws = new WebSocket(url, ["ocpp1.6", "ocpp1.5", "simulator"]);
+
+      ws.onopen = () => {
+        setConnected(true);
+        log("ws connected");
+        bootNotification();
+        startPing();
+      };
+
+      ws.onmessage = (event) => {
+        if (event.data === "pong") {
+          log("Pong received");
+          return;
+        }
+        let data;
+        try {
+          data = JSON.parse(event.data);
+        } catch (error) {
+          log(`Received non-JSON message: ${event.data}`);
+          return;
+        }
+        logJson("Received", data);
+        handleIncoming(data);
+      };
+
+      ws.onerror = (event) => {
+        log(`ws error: ${event.type}`);
+      };
+
+      ws.onclose = (event) => {
+        stopPing();
+        stopHeartbeat();
+        for (const connectorId of [1, 2]) {
+          stopMeterTimer(connectorId);
+          resetConnectorVisual(connectorId);
+        }
+        ws = null;
+        setConnected(false);
+        log(event.code === 3001 ? "ws closed" : `ws closed: ${event.code}`);
+      };
+    }
+
+    function handleIncoming(data) {
+      if (!Array.isArray(data) || data.length < 3) {
+        log("Ignoring malformed OCPP frame.");
+        return;
+      }
+
+      if (data[0] === CALL_RESULT) {
+        const meta = pending.get(data[1]) || {};
+        pending.delete(data[1]);
+        handleCallResult(meta, data[2]);
+        return;
+      }
+
+      if (data[0] === CALL_ERROR) {
+        const meta = pending.get(data[1]) || {};
+        pending.delete(data[1]);
+        log(`Call failed for ${meta.action || data[1]}: ${JSON.stringify(data.slice(2))}`);
+        return;
+      }
+
+      if (data[0] === CALL) {
+        handleServerCall(data[1], data[2], data[3] || {});
+      }
+    }
+
+    function handleCallResult(meta, payload) {
+      if (meta.action === "BootNotification") {
+        const intervalSeconds = Number(payload && payload.interval);
+        startHeartbeat(Number.isFinite(intervalSeconds) ? intervalSeconds * 1000 : 30000);
+      }
+
+      if (meta.action === "StartTransaction") {
+        const connectorId = meta.connectorId;
+        const idTagInfo = payload && payload.idTagInfo;
+        const status = idTagInfo && idTagInfo.status;
+        if (status === "Accepted") {
+          state.transactionId[connectorId] = payload.transactionId;
+          state.transactionActive[connectorId] = true;
+          setConnectorVisual(connectorId, true);
+          log(`Transaction accepted on connector ${connectorId}: ${payload.transactionId}`);
+          sendMeterValues(connectorId);
+          startMeterTimer(connectorId);
+        } else {
+          state.transactionActive[connectorId] = false;
+          stopMeterTimer(connectorId);
+          $(`soc${connectorId}`).readOnly = false;
+          $(`status${connectorId}`).value = "Available";
+          setConnectorVisual(connectorId, false);
+          sendStatusNotification(connectorId);
+          log(`Transaction rejected on connector ${connectorId}: ${status || "Unknown"}`);
+        }
+      }
+
+      logJson("Response", payload);
+    }
+
+    function handleServerCall(id, action, payload) {
+      log(`Message Type ${action}`);
+
+      switch (action) {
+        case "GetConfiguration":
+          sendResult(id, {
+            configurationKey: configurationKeys(),
+            unknownKey: []
+          });
+          break;
+        case "Reset":
+          sendResult(id, {status: "Accepted"});
+          setTimeout(() => window.location.reload(), 300);
+          break;
+        case "RemoteStopTransaction": {
+          sendResult(id, {status: "Accepted"});
+          const transactionId = Number(payload.transactionId);
+          const connectorId = [1, 2].find((candidate) => Number(state.transactionId[candidate]) === transactionId);
+          if (connectorId) {
+            stopTransaction(connectorId, transactionId);
+          } else {
+            log(`RemoteStopTransaction transactionId not found: ${transactionId}`);
+          }
+          break;
+        }
+        case "RemoteStartTransaction": {
+          sendResult(id, {status: "Accepted"});
+          const connectorId = Number(payload.connectorId || 1);
+          const idTag = payload.idTag || $("tag").value;
+          log(`RemoteStartTransaction idTag: ${idTag}`);
+          startTransaction(connectorId, idTag);
+          break;
+        }
+        case "UnlockConnector": {
+          sendResult(id, {status: "Unlocked"});
+          const connectorId = Number(payload.connectorId || 1);
+          state.transactionActive[connectorId] = false;
+          setConnectorVisual(connectorId, false);
+          log(`Connector ${connectorId} unlocked`);
+          break;
+        }
+        case "ChangeConfiguration":
+        case "SetChargingProfile":
+          sendResult(id, {status: "Accepted"});
+          break;
+        case "ChangeAvailability": {
+          sendResult(id, {status: "Accepted"});
+          const connectorId = Number(payload.connectorId || 1);
+          changeAvailabilityFromRemote(connectorId, payload.type);
+          break;
+        }
+        default:
+          sendError(id);
+      }
+    }
+
+    function bootNotification() {
+      sendCall("BootNotification", {
+        chargePointVendor: "AVT-Company",
+        chargePointModel: "AVT-Express",
+        chargePointSerialNumber: "avt.001.13.1",
+        chargeBoxSerialNumber: "avt.001.13.1.01",
+        firmwareVersion: "0.9.87",
+        iccid: "",
+        imsi: "",
+        meterType: "AVT NQC-ACDC",
+        meterSerialNumber: "avt.001.13.1.01"
+      });
+      sendStatusNotification(1);
+      sendStatusNotification(2);
+    }
+
+    function authorize() {
+      sendCall("Authorize", {idTag: $("tag").value});
+    }
+
+    function sendHeartbeat() {
+      sendCall("Heartbeat", {});
+    }
+
+    function startTransaction(connectorId, idTag = null) {
+      if (!requireSocket()) return;
+      if (![1, 2].includes(Number(connectorId))) {
+        log(`Unsupported connector: ${connectorId}`);
+        return;
+      }
+      connectorId = Number(connectorId);
+      state.lastIdTag = idTag || $("tag").value;
+      state.transactionActive[connectorId] = true;
+      $(`soc${connectorId}`).readOnly = true;
+      $(`status${connectorId}`).value = "Charging";
+      setConnectorVisual(connectorId, true);
+      sendStatusNotification(connectorId);
+      sendCall("StartTransaction", {
+        connectorId,
+        idTag: state.lastIdTag,
+        timestamp: nowOcpp(),
+        meterStart: 0,
+        reservationId: 0
+      }, {connectorId});
+    }
+
+    function stopTransaction(connectorId, transactionId = null) {
+      if (!requireSocket()) return;
+      connectorId = Number(connectorId);
+      const fallbackId = state.transactionId[connectorId] || 0;
+      const meterStop = Math.max(2000, Math.round(Number(state.energyWh[connectorId]) || 0));
+      state.transactionActive[connectorId] = false;
+      $(`soc${connectorId}`).readOnly = false;
+      stopMeterTimer(connectorId);
+      setConnectorVisual(connectorId, false);
+      sendCall("StopTransaction", {
+        transactionId: Number(transactionId || fallbackId),
+        idTag: state.lastIdTag || $("tag").value,
+        timestamp: nowOcpp(),
+        meterStop
+      }, {connectorId});
+      state.energyWh[connectorId] = 0;
+      state.transactionId[connectorId] = null;
+      $(`status${connectorId}`).value = "Available";
+      sendStatusNotification(connectorId);
+    }
+
+    function sendMeterValues(connectorId) {
+      if (!requireSocket()) return;
+      connectorId = Number(connectorId);
+      const transactionId = state.transactionActive[connectorId] ? Number(state.transactionId[connectorId] || 0) : 0;
+      const payload = {
+        connectorId,
+        meterValue: [{
+          timestamp: nowOcpp(),
+          sampledValue: [
+            {value: String(state.energyWh[connectorId]), measurand: "Energy.Active.Import.Register"},
+            {value: String($(`power${connectorId}`).value), measurand: "Power.Active.Import"},
+            {value: String(state.currentSoc[connectorId]), measurand: "SoC"}
+          ]
+        }]
+      };
+      if (transactionId) payload.transactionId = transactionId;
+      sendCall("MeterValues", payload, {connectorId});
+    }
+
+    function prepareMeterValues(connectorId) {
+      connectorId = Number(connectorId);
+      let currentSoc = Number(state.currentSoc[connectorId]);
+      const power = Number($(`power${connectorId}`).value || 0);
+      if (currentSoc < 100) {
+        const addedWh = power * (METER_VALUES_INTERVAL / 3600000);
+        state.energyWh[connectorId] += addedWh;
+        currentSoc = (((state.initialSoc[connectorId] / 100) * BATTERY_CAPACITY_WH[connectorId] + state.energyWh[connectorId]) / BATTERY_CAPACITY_WH[connectorId]) * 100;
+        if (currentSoc >= 100) {
+          currentSoc = 100;
+          $(`power${connectorId}`).value = "0";
+        }
+        state.currentSoc[connectorId] = currentSoc;
+        $(`soc${connectorId}`).value = String(Math.round(currentSoc));
+      }
+      log(`Preparing meter values for connector ${connectorId}: energy=${state.energyWh[connectorId].toFixed(2)}Wh power=${$(`power${connectorId}`).value}W soc=${state.currentSoc[connectorId]}`);
+      sendMeterValues(connectorId);
+    }
+
+    function sendStatusNotification(connectorId) {
+      sendCall("StatusNotification", {
+        connectorId: Number(connectorId),
+        status: String($(`status${connectorId}`).value),
+        errorCode: "NoError",
+        info: "null",
+        timestamp: nowOcpp(),
+        vendorId: "",
+        vendorErrorCode: ""
+      }, {connectorId});
+    }
+
+    function changeAvailabilityFromRemote(connectorId, type) {
+      const normalized = Number(connectorId) || 1;
+      const status = type === "Operative" ? "Available" : "Unavailable";
+      $(`status${normalized}`).value = status;
+      sendStatusNotification(normalized);
+    }
+
+    function startMeterTimer(connectorId) {
+      stopMeterTimer(connectorId);
+      state.meterTimers[connectorId] = setInterval(() => prepareMeterValues(connectorId), METER_VALUES_INTERVAL);
+    }
+
+    function stopMeterTimer(connectorId) {
+      if (state.meterTimers[connectorId]) {
+        clearInterval(state.meterTimers[connectorId]);
+        state.meterTimers[connectorId] = null;
+      }
+    }
+
+    function startHeartbeat(interval) {
+      stopHeartbeat();
+      const safeInterval = Number.isFinite(interval) && interval > 0 ? interval : 30000;
+      log(`Setting heartbeat interval to ${safeInterval}ms`);
+      heartbeatTimer = setInterval(sendHeartbeat, safeInterval);
+    }
+
+    function stopHeartbeat() {
+      if (heartbeatTimer) {
+        clearInterval(heartbeatTimer);
+        heartbeatTimer = null;
+      }
+    }
+
+    function startPing() {
+      stopPing();
+      pingTimer = setInterval(() => {
+        if (ws && ws.readyState === WebSocket.OPEN) {
+          ws.send("ping");
+          log("Ping sent to the server");
+        }
+      }, 20000);
+    }
+
+    function stopPing() {
+      if (pingTimer) {
+        clearInterval(pingTimer);
+        pingTimer = null;
+      }
+    }
+
+    function configurationKeys() {
+      return [
+        {key: "ClockAlignedDataInterval", readonly: false, value: "0"},
+        {key: "MeterValuesAlignedData", readonly: false, value: ""},
+        {key: "StopTxnAlignedData", readonly: false, value: ""},
+        {key: "AllowOfflineTxForUnknownId", readonly: false, value: "False"},
+        {key: "AuthorizeRemoteTxRequests", readonly: false, value: "False"},
+        {key: "LocalAuthorizeOffline", readonly: false, value: "False"},
+        {key: "LocalPreAuthorize", readonly: false, value: "False"},
+        {key: "AuthorizationCacheEnabled", readonly: false, value: "False"},
+        {key: "SupportedFileTransferProtocols", readonly: true, value: "FTP"},
+        {key: "HeartbeatInterval", readonly: false, value: "30"},
+        {key: "WebSocketPingInterval", readonly: false, value: "30"},
+        {key: "MeterValuesSampledData", readonly: false, value: "Energy.Active.Import.Register,Power.Active.Import,SoC"},
+        {key: "MeterValueSampleInterval", readonly: false, value: "15"},
+        {key: "Identity", readonly: false, value: $("chargerId").value.trim()},
+        {key: "SecurityProfile", readonly: false, value: "2"},
+        {key: "NumberOfConnectors", readonly: true, value: "2"},
+        {key: "SupportedFeatureProfiles", readonly: true, value: "Core,FirmwareManagement,Reservation,LocalAuthListManagement,RemoteTrigger"},
+        {key: "ChargingScheduleAllowedChargingRateUnit", readonly: true, value: "Current"},
+        {key: "CentralMeterValueSampleInterval", readonly: false, value: "15"},
+        {key: "AuthorizationMethod", readonly: false, value: "RFID"},
+        {key: "Pricing-Currency", readonly: false, value: "EUR"}
+      ];
+    }
+
+    function init() {
+      for (const connectorId of [1, 2]) {
+        const select = $(`status${connectorId}`);
+        for (const status of statuses) {
+          const option = document.createElement("option");
+          option.value = status;
+          option.textContent = status;
+          select.appendChild(option);
+        }
+        select.value = "Available";
+        $(`soc${connectorId}`).addEventListener("input", () => {
+          const value = Number($(`soc${connectorId}`).value || 0);
+          state.initialSoc[connectorId] = value;
+          state.currentSoc[connectorId] = value;
+        });
+      }
+
+      $("connect").addEventListener("click", connect);
+      $("authorize").addEventListener("click", authorize);
+      $("heartbeat").addEventListener("click", sendHeartbeat);
+      $("start1").addEventListener("click", () => startTransaction(1));
+      $("start2").addEventListener("click", () => startTransaction(2));
+      $("stop1").addEventListener("click", () => stopTransaction(1));
+      $("stop2").addEventListener("click", () => stopTransaction(2));
+      $("meter1").addEventListener("click", () => prepareMeterValues(1));
+      $("meter2").addEventListener("click", () => prepareMeterValues(2));
+      $("sendStatus1").addEventListener("click", () => sendStatusNotification(1));
+      $("sendStatus2").addEventListener("click", () => sendStatusNotification(2));
+      $("clearConsole").addEventListener("click", () => $("console").innerHTML = "");
+      setConnected(false);
+    }
+
+    document.addEventListener("DOMContentLoaded", init);
+  </script>
+</body>
+</html>

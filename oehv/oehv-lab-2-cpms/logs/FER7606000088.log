@@ -1,0 +1,1625 @@
+[2026-06-05 18:34:34] RX [2,"1780677274798-1-1i2knym101ev9h","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 18:34:34] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 18:34:34] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T16:34:34Z","interval":30,"status":"Accepted"}
+[2026-06-05 18:34:34] TX [3,"1780677274798-1-1i2knym101ev9h",{"currentTime":"2026-06-05T16:34:34Z","interval":30,"status":"Accepted"}]
+[2026-06-05 18:34:34] RX [2,"1780677274798-2-1oln8bq1bcdxzw","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:34:34Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:34:34] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:34:34Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:34:34] Connector 1 status: Available
+[2026-06-05 18:34:34] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:34:34] TX [3,"1780677274798-2-1oln8bq1bcdxzw",{}]
+[2026-06-05 18:34:34] RX [2,"1780677274798-3-chk9ayfn1wjq","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:34:34Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:34:34] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:34:34Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:34:34] Connector 2 status: Available
+[2026-06-05 18:34:34] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:34:34] TX [3,"1780677274798-3-chk9ayfn1wjq",{}]
+[2026-06-05 18:35:05] RX [2,"1780677305625-4-9dk61210xfh6k","Heartbeat",{}]
+[2026-06-05 18:35:05] CALL Heartbeat: {}
+[2026-06-05 18:35:05] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:35:05Z"}
+[2026-06-05 18:35:05] TX [3,"1780677305625-4-9dk61210xfh6k",{"currentTime":"2026-06-05T16:35:05Z"}]
+[2026-06-05 18:35:36] RX [2,"1780677336045-5-3ozjpsu2ypr2","Heartbeat",{}]
+[2026-06-05 18:35:36] CALL Heartbeat: {}
+[2026-06-05 18:35:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:35:36Z"}
+[2026-06-05 18:35:36] TX [3,"1780677336045-5-3ozjpsu2ypr2",{"currentTime":"2026-06-05T16:35:36Z"}]
+[2026-06-05 18:36:06] RX [2,"1780677366180-6-1vruj69a61i9c","Heartbeat",{}]
+[2026-06-05 18:36:06] CALL Heartbeat: {}
+[2026-06-05 18:36:06] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:36:06Z"}
+[2026-06-05 18:36:06] TX [3,"1780677366180-6-1vruj69a61i9c",{"currentTime":"2026-06-05T16:36:06Z"}]
+[2026-06-05 18:36:12] RX [2,"1780677372228-7-vp0ru1r60lnb","Heartbeat",{}]
+[2026-06-05 18:36:12] CALL Heartbeat: {}
+[2026-06-05 18:36:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:36:12Z"}
+[2026-06-05 18:36:12] TX [3,"1780677372228-7-vp0ru1r60lnb",{"currentTime":"2026-06-05T16:36:12Z"}]
+[2026-06-05 18:36:31] RX [2,"1780677391043-8-1kzlgnt1iktdf0","Heartbeat",{}]
+[2026-06-05 18:36:31] CALL Heartbeat: {}
+[2026-06-05 18:36:31] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:36:31Z"}
+[2026-06-05 18:36:31] TX [3,"1780677391043-8-1kzlgnt1iktdf0",{"currentTime":"2026-06-05T16:36:31Z"}]
+[2026-06-05 18:36:36] RX [2,"1780677396185-9-1dm9vxr1f7phuj","Heartbeat",{}]
+[2026-06-05 18:36:36] CALL Heartbeat: {}
+[2026-06-05 18:36:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:36:36Z"}
+[2026-06-05 18:36:36] TX [3,"1780677396185-9-1dm9vxr1f7phuj",{"currentTime":"2026-06-05T16:36:36Z"}]
+[2026-06-05 18:37:07] RX [2,"1780677427069-10-1icxy5m1b4fy0e","Heartbeat",{}]
+[2026-06-05 18:37:07] CALL Heartbeat: {}
+[2026-06-05 18:37:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:37:07Z"}
+[2026-06-05 18:37:07] TX [3,"1780677427069-10-1icxy5m1b4fy0e",{"currentTime":"2026-06-05T16:37:07Z"}]
+[2026-06-05 18:37:37] RX [2,"1780677457223-11-1bs6nmc1hm482d","Heartbeat",{}]
+[2026-06-05 18:37:37] CALL Heartbeat: {}
+[2026-06-05 18:37:37] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:37:37Z"}
+[2026-06-05 18:37:37] TX [3,"1780677457223-11-1bs6nmc1hm482d",{"currentTime":"2026-06-05T16:37:37Z"}]
+[2026-06-05 18:38:07] RX [2,"1780677487420-12-m3zlxeenqynt","Heartbeat",{}]
+[2026-06-05 18:38:07] CALL Heartbeat: {}
+[2026-06-05 18:38:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:38:07Z"}
+[2026-06-05 18:38:07] TX [3,"1780677487420-12-m3zlxeenqynt",{"currentTime":"2026-06-05T16:38:07Z"}]
+[2026-06-05 18:38:37] RX [2,"1780677517655-13-w7n2dq1arpdkt","Heartbeat",{}]
+[2026-06-05 18:38:37] CALL Heartbeat: {}
+[2026-06-05 18:38:37] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:38:37Z"}
+[2026-06-05 18:38:37] TX [3,"1780677517655-13-w7n2dq1arpdkt",{"currentTime":"2026-06-05T16:38:37Z"}]
+[2026-06-05 18:39:07] RX [2,"1780677547813-14-1iyay131a2szr5","Heartbeat",{}]
+[2026-06-05 18:39:07] CALL Heartbeat: {}
+[2026-06-05 18:39:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:39:07Z"}
+[2026-06-05 18:39:07] TX [3,"1780677547813-14-1iyay131a2szr5",{"currentTime":"2026-06-05T16:39:07Z"}]
+[2026-06-05 18:39:38] RX [2,"1780677578025-15-zhqwpr2zppid","Heartbeat",{}]
+[2026-06-05 18:39:38] CALL Heartbeat: {}
+[2026-06-05 18:39:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:39:38Z"}
+[2026-06-05 18:39:38] TX [3,"1780677578025-15-zhqwpr2zppid",{"currentTime":"2026-06-05T16:39:38Z"}]
+[2026-06-05 18:40:08] RX [2,"1780677608161-16-93clwnt7phcg","Heartbeat",{}]
+[2026-06-05 18:40:08] CALL Heartbeat: {}
+[2026-06-05 18:40:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:40:08Z"}
+[2026-06-05 18:40:08] TX [3,"1780677608161-16-93clwnt7phcg",{"currentTime":"2026-06-05T16:40:08Z"}]
+[2026-06-05 18:40:38] RX [2,"1780677638342-17-1c3bij0ew7f30","Heartbeat",{}]
+[2026-06-05 18:40:38] CALL Heartbeat: {}
+[2026-06-05 18:40:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:40:38Z"}
+[2026-06-05 18:40:38] TX [3,"1780677638342-17-1c3bij0ew7f30",{"currentTime":"2026-06-05T16:40:38Z"}]
+[2026-06-05 18:41:08] RX [2,"1780677668588-18-1jx8pyh8tidr1","Heartbeat",{}]
+[2026-06-05 18:41:08] CALL Heartbeat: {}
+[2026-06-05 18:41:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:41:08Z"}
+[2026-06-05 18:41:08] TX [3,"1780677668588-18-1jx8pyh8tidr1",{"currentTime":"2026-06-05T16:41:08Z"}]
+[2026-06-05 18:41:38] RX [2,"1780677698741-19-1207mlzu0g5oj","Heartbeat",{}]
+[2026-06-05 18:41:38] CALL Heartbeat: {}
+[2026-06-05 18:41:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:41:38Z"}
+[2026-06-05 18:41:38] TX [3,"1780677698741-19-1207mlzu0g5oj",{"currentTime":"2026-06-05T16:41:38Z"}]
+[2026-06-05 18:42:08] RX [2,"1780677728916-20-isq2px92iiyb","Heartbeat",{}]
+[2026-06-05 18:42:08] CALL Heartbeat: {}
+[2026-06-05 18:42:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:42:08Z"}
+[2026-06-05 18:42:08] TX [3,"1780677728916-20-isq2px92iiyb",{"currentTime":"2026-06-05T16:42:08Z"}]
+[2026-06-05 18:42:39] RX [2,"1780677759060-21-1083kt019xwekn","Heartbeat",{}]
+[2026-06-05 18:42:39] CALL Heartbeat: {}
+[2026-06-05 18:42:39] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:42:39Z"}
+[2026-06-05 18:42:39] TX [3,"1780677759060-21-1083kt019xwekn",{"currentTime":"2026-06-05T16:42:39Z"}]
+[2026-06-05 18:43:09] RX [2,"1780677789395-22-q5jdgd1p76ora","Heartbeat",{}]
+[2026-06-05 18:43:09] CALL Heartbeat: {}
+[2026-06-05 18:43:09] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:43:09Z"}
+[2026-06-05 18:43:09] TX [3,"1780677789395-22-q5jdgd1p76ora",{"currentTime":"2026-06-05T16:43:09Z"}]
+[2026-06-05 18:43:15] RX [2,"1780677795756-23-u75bnl1idkpdu","Authorize",{"idTag":"TAG7606000088"}]
+[2026-06-05 18:43:15] CALL Authorize: {"idTag":"TAG7606000088"}
+[2026-06-05 18:43:15] CALL_RESULT Authorize: {"idTagInfo":{"status":"Invalid"}}
+[2026-06-05 18:43:15] TX [3,"1780677795756-23-u75bnl1idkpdu",{"idTagInfo":{"status":"Invalid"}}]
+[2026-06-05 18:43:40] RX [2,"1780677820021-24-vhuh1r19c8ohk","Heartbeat",{}]
+[2026-06-05 18:43:40] CALL Heartbeat: {}
+[2026-06-05 18:43:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:43:40Z"}
+[2026-06-05 18:43:40] TX [3,"1780677820021-24-vhuh1r19c8ohk",{"currentTime":"2026-06-05T16:43:40Z"}]
+[2026-06-05 18:44:10] RX [2,"1780677850145-25-1ugs9n8v6fb3","Heartbeat",{}]
+[2026-06-05 18:44:10] CALL Heartbeat: {}
+[2026-06-05 18:44:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:44:10Z"}
+[2026-06-05 18:44:10] TX [3,"1780677850145-25-1ugs9n8v6fb3",{"currentTime":"2026-06-05T16:44:10Z"}]
+[2026-06-05 18:44:40] RX [2,"1780677880339-26-ljfm8u16qm5ef","Heartbeat",{}]
+[2026-06-05 18:44:40] CALL Heartbeat: {}
+[2026-06-05 18:44:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:44:40Z"}
+[2026-06-05 18:44:40] TX [3,"1780677880339-26-ljfm8u16qm5ef",{"currentTime":"2026-06-05T16:44:40Z"}]
+[2026-06-05 18:45:10] RX [2,"1780677910727-1-1tdfj6bjm0i6n","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 18:45:10] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 18:45:10] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T16:45:10Z","interval":30,"status":"Accepted"}
+[2026-06-05 18:45:10] TX [3,"1780677910727-1-1tdfj6bjm0i6n",{"currentTime":"2026-06-05T16:45:10Z","interval":30,"status":"Accepted"}]
+[2026-06-05 18:45:10] RX [2,"1780677910727-2-mojto3spyrlu","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:45:10Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:45:10] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:45:10Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:45:10] Connector 1 status: Available
+[2026-06-05 18:45:10] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:45:10] TX [3,"1780677910727-2-mojto3spyrlu",{}]
+[2026-06-05 18:45:10] RX [2,"1780677910727-3-e1opbzsbrhre","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:45:10Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:45:10] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:45:10Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:45:10] Connector 2 status: Available
+[2026-06-05 18:45:10] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:45:10] TX [3,"1780677910727-3-e1opbzsbrhre",{}]
+[2026-06-05 18:45:13] RX [2,"1780677913041-4-1vczpslr7h8lq","Authorize",{"idTag":"TAG7606000088"}]
+[2026-06-05 18:45:13] CALL Authorize: {"idTag":"TAG7606000088"}
+[2026-06-05 18:45:13] CALL_RESULT Authorize: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:45:13] TX [3,"1780677913041-4-1vczpslr7h8lq",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:45:41] RX [2,"1780677941261-5-f5uifob6uit","Heartbeat",{}]
+[2026-06-05 18:45:41] CALL Heartbeat: {}
+[2026-06-05 18:45:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:45:41Z"}
+[2026-06-05 18:45:41] TX [3,"1780677941261-5-f5uifob6uit",{"currentTime":"2026-06-05T16:45:41Z"}]
+[2026-06-05 18:46:11] RX [2,"1780677971626-6-27re5j13ufmil","Heartbeat",{}]
+[2026-06-05 18:46:11] CALL Heartbeat: {}
+[2026-06-05 18:46:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:46:11Z"}
+[2026-06-05 18:46:11] TX [3,"1780677971626-6-27re5j13ufmil",{"currentTime":"2026-06-05T16:46:11Z"}]
+[2026-06-05 18:46:41] RX [2,"1780678001786-7-vhssvs1u9ll8y","Heartbeat",{}]
+[2026-06-05 18:46:41] CALL Heartbeat: {}
+[2026-06-05 18:46:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:46:41Z"}
+[2026-06-05 18:46:41] TX [3,"1780678001786-7-vhssvs1u9ll8y",{"currentTime":"2026-06-05T16:46:41Z"}]
+[2026-06-05 18:47:12] RX [2,"1780678032067-8-j6k51uiycs53","Heartbeat",{}]
+[2026-06-05 18:47:12] CALL Heartbeat: {}
+[2026-06-05 18:47:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:47:12Z"}
+[2026-06-05 18:47:12] TX [3,"1780678032067-8-j6k51uiycs53",{"currentTime":"2026-06-05T16:47:12Z"}]
+[2026-06-05 18:47:42] RX [2,"1780678062216-9-eg0qxc124g1mb","Heartbeat",{}]
+[2026-06-05 18:47:42] CALL Heartbeat: {}
+[2026-06-05 18:47:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:47:42Z"}
+[2026-06-05 18:47:42] TX [3,"1780678062216-9-eg0qxc124g1mb",{"currentTime":"2026-06-05T16:47:42Z"}]
+[2026-06-05 18:48:12] RX [2,"1780678092358-10-bz3o2x1p1zaq5","Heartbeat",{}]
+[2026-06-05 18:48:12] CALL Heartbeat: {}
+[2026-06-05 18:48:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:48:12Z"}
+[2026-06-05 18:48:12] TX [3,"1780678092358-10-bz3o2x1p1zaq5",{"currentTime":"2026-06-05T16:48:12Z"}]
+[2026-06-05 18:48:42] RX [2,"1780678122543-11-zpjh7zy5v8bb","Heartbeat",{}]
+[2026-06-05 18:48:42] CALL Heartbeat: {}
+[2026-06-05 18:48:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:48:42Z"}
+[2026-06-05 18:48:42] TX [3,"1780678122543-11-zpjh7zy5v8bb",{"currentTime":"2026-06-05T16:48:42Z"}]
+[2026-06-05 18:49:12] RX [2,"1780678152714-12-azs1oa1dgfllh","Heartbeat",{}]
+[2026-06-05 18:49:12] CALL Heartbeat: {}
+[2026-06-05 18:49:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:49:12Z"}
+[2026-06-05 18:49:12] TX [3,"1780678152714-12-azs1oa1dgfllh",{"currentTime":"2026-06-05T16:49:12Z"}]
+[2026-06-05 18:49:42] RX [2,"1780678182875-13-inhvnnz2kskw","Heartbeat",{}]
+[2026-06-05 18:49:42] CALL Heartbeat: {}
+[2026-06-05 18:49:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:49:42Z"}
+[2026-06-05 18:49:42] TX [3,"1780678182875-13-inhvnnz2kskw",{"currentTime":"2026-06-05T16:49:42Z"}]
+[2026-06-05 18:50:08] RX [2,"1780678208322-14-ibtvd7127ha4f","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:08Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:08] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:08Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:08] Connector 1 status: Available
+[2026-06-05 18:50:08] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:08] TX [3,"1780678208322-14-ibtvd7127ha4f",{}]
+[2026-06-05 18:50:12] RX [2,"1780678212881-15-8kuyngcvt5ut","Heartbeat",{}]
+[2026-06-05 18:50:12] CALL Heartbeat: {}
+[2026-06-05 18:50:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T16:50:12Z"}
+[2026-06-05 18:50:12] TX [3,"1780678212881-15-8kuyngcvt5ut",{"currentTime":"2026-06-05T16:50:12Z"}]
+[2026-06-05 18:50:13] RX [2,"1780678213138-16-12z7n2ctu1nol","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:13Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:13] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:13Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:13] Connector 1 status: Charging
+[2026-06-05 18:50:13] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:13] TX [3,"1780678213138-16-12z7n2ctu1nol",{}]
+[2026-06-05 18:50:13] RX [2,"1780678213139-17-r5hvvhbyg10n","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:13Z","meterStart":0,"reservationId":0}]
+[2026-06-05 18:50:13] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:13Z","meterStart":0,"reservationId":0}
+[2026-06-05 18:50:13] CALL_RESULT StartTransaction: {"transactionId":1780677911,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:13] TX [3,"1780678213139-17-r5hvvhbyg10n",{"transactionId":1780677911,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:13] RX [2,"1780678213143-18-1oc7wmkdse1co","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:13Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780677911}]
+[2026-06-05 18:50:13] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:13Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780677911}
+[2026-06-05 18:50:13] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:13] TX [3,"1780678213143-18-1oc7wmkdse1co",{}]
+[2026-06-05 18:50:16] RX [2,"1780678216988-19-obnr4hkaikcb","StopTransaction",{"transactionId":1780677911,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:16Z","meterStop":2000}]
+[2026-06-05 18:50:16] CALL StopTransaction: {"transactionId":1780677911,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:16Z","meterStop":2000}
+[2026-06-05 18:50:16] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:16] TX [3,"1780678216988-19-obnr4hkaikcb",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:16] RX [2,"1780678216988-20-1i4u2gq1sc7ud5","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:16Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:16] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:16Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:16] Connector 1 status: Available
+[2026-06-05 18:50:16] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:16] TX [3,"1780678216988-20-1i4u2gq1sc7ud5",{}]
+[2026-06-05 18:50:19] RX [2,"1780678219072-21-h2ytcoymd8dk","StopTransaction",{"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:19Z","meterStop":2000}]
+[2026-06-05 18:50:19] CALL StopTransaction: {"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:19Z","meterStop":2000}
+[2026-06-05 18:50:19] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:19] TX [3,"1780678219072-21-h2ytcoymd8dk",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:19] RX [2,"1780678219072-22-12bae6d1mp5e2b","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:19Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:19] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:19Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:19] Connector 1 status: Available
+[2026-06-05 18:50:19] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:19] TX [3,"1780678219072-22-12bae6d1mp5e2b",{}]
+[2026-06-05 18:50:19] RX [2,"1780678219923-23-19yjn23sm8zdk","StopTransaction",{"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:19Z","meterStop":2000}]
+[2026-06-05 18:50:19] CALL StopTransaction: {"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:19Z","meterStop":2000}
+[2026-06-05 18:50:19] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:19] TX [3,"1780678219923-23-19yjn23sm8zdk",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:19] RX [2,"1780678219925-24-wrl3i21vmjww7","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:19Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:19] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:19Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:19] Connector 1 status: Available
+[2026-06-05 18:50:19] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:19] TX [3,"1780678219925-24-wrl3i21vmjww7",{}]
+[2026-06-05 18:50:20] RX [2,"1780678220373-25-fjs0n1yoflp5","StopTransaction",{"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:20Z","meterStop":2000}]
+[2026-06-05 18:50:20] CALL StopTransaction: {"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:20Z","meterStop":2000}
+[2026-06-05 18:50:20] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:20] TX [3,"1780678220373-25-fjs0n1yoflp5",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:20] RX [2,"1780678220374-26-alau869wt7j1","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:20Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:20] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:20Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:20] Connector 1 status: Available
+[2026-06-05 18:50:20] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:20] TX [3,"1780678220374-26-alau869wt7j1",{}]
+[2026-06-05 18:50:21] RX [2,"1780678221322-27-5mw3kf13i0ap0","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:21Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}]}]
+[2026-06-05 18:50:21] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:21Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}]}
+[2026-06-05 18:50:21] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:21] TX [3,"1780678221322-27-5mw3kf13i0ap0",{}]
+[2026-06-05 18:50:22] RX [2,"1780678222145-28-12yx2o21nqem8s","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}]}]
+[2026-06-05 18:50:22] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}]}
+[2026-06-05 18:50:22] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:22] TX [3,"1780678222145-28-12yx2o21nqem8s",{}]
+[2026-06-05 18:50:22] RX [2,"1780678222388-29-1grbwa8bb2j30","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}]}]
+[2026-06-05 18:50:22] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}]}
+[2026-06-05 18:50:22] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:22] TX [3,"1780678222388-29-1grbwa8bb2j30",{}]
+[2026-06-05 18:50:22] RX [2,"1780678222622-30-fd0mfh1tlr7qb","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}]}]
+[2026-06-05 18:50:22] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:22Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}]}
+[2026-06-05 18:50:22] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:22] TX [3,"1780678222622-30-fd0mfh1tlr7qb",{}]
+[2026-06-05 18:50:25] RX [2,"1780678225605-31-s0mvgs1ek7xh4","StopTransaction",{"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:25Z","meterStop":2000}]
+[2026-06-05 18:50:25] CALL StopTransaction: {"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:25Z","meterStop":2000}
+[2026-06-05 18:50:25] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:25] TX [3,"1780678225605-31-s0mvgs1ek7xh4",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:25] RX [2,"1780678225605-32-qw1mv815ni0x5","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:25Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:25] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:25Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:25] Connector 1 status: Available
+[2026-06-05 18:50:25] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:25] TX [3,"1780678225605-32-qw1mv815ni0x5",{}]
+[2026-06-05 18:50:26] RX [2,"1780678226188-33-116012jji2ygv","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:26Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:26] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:26Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:26] Connector 1 status: Charging
+[2026-06-05 18:50:26] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:26] TX [3,"1780678226188-33-116012jji2ygv",{}]
+[2026-06-05 18:50:26] RX [2,"1780678226188-34-2j57io12c9uv6","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:26Z","meterStart":0,"reservationId":0}]
+[2026-06-05 18:50:26] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:26Z","meterStart":0,"reservationId":0}
+[2026-06-05 18:50:26] CALL_RESULT StartTransaction: {"transactionId":1780677912,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:26] TX [3,"1780678226188-34-2j57io12c9uv6",{"transactionId":1780677912,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:26] RX [2,"1780678226191-35-1487r4ciylyq7","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:26Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780677912}]
+[2026-06-05 18:50:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T16:50:26Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780677912}
+[2026-06-05 18:50:26] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:26] TX [3,"1780678226191-35-1487r4ciylyq7",{}]
+[2026-06-05 18:50:26] RX [2,"1780678226721-36-204qk5123s14w","StopTransaction",{"transactionId":1780677912,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:26Z","meterStop":2000}]
+[2026-06-05 18:50:26] CALL StopTransaction: {"transactionId":1780677912,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:26Z","meterStop":2000}
+[2026-06-05 18:50:26] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:26] TX [3,"1780678226721-36-204qk5123s14w",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:26] RX [2,"1780678226721-37-m2rwwy9csupk","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:26Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:26] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:26Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:26] Connector 1 status: Available
+[2026-06-05 18:50:26] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:26] TX [3,"1780678226721-37-m2rwwy9csupk",{}]
+[2026-06-05 18:50:27] RX [2,"1780678227776-38-7kd73k1y4ec2h","StopTransaction",{"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:27Z","meterStop":2000}]
+[2026-06-05 18:50:27] CALL StopTransaction: {"transactionId":0,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:27Z","meterStop":2000}
+[2026-06-05 18:50:27] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:27] TX [3,"1780678227776-38-7kd73k1y4ec2h",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:27] RX [2,"1780678227776-39-5i13281v5o4l3","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:27Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:27] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:27Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:27] Connector 2 status: Available
+[2026-06-05 18:50:27] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:27] TX [3,"1780678227776-39-5i13281v5o4l3",{}]
+[2026-06-05 18:50:28] RX [2,"1780678228505-40-1e4sp4xgfhjg9","StatusNotification",{"connectorId":2,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:28Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:28] CALL StatusNotification: {"connectorId":2,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:28Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:28] Connector 2 status: Charging
+[2026-06-05 18:50:28] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:28] TX [3,"1780678228505-40-1e4sp4xgfhjg9",{}]
+[2026-06-05 18:50:28] RX [2,"1780678228505-41-o7sl3u1aloz8h","StartTransaction",{"connectorId":2,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:28Z","meterStart":0,"reservationId":0}]
+[2026-06-05 18:50:28] CALL StartTransaction: {"connectorId":2,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:28Z","meterStart":0,"reservationId":0}
+[2026-06-05 18:50:28] CALL_RESULT StartTransaction: {"transactionId":1780677913,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:28] TX [3,"1780678228505-41-o7sl3u1aloz8h",{"transactionId":1780677913,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:28] RX [2,"1780678228508-42-gtfqdc1de1f5j","MeterValues",{"connectorId":2,"meterValue":[{"timestamp":"2026-06-05T16:50:28Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"63","measurand":"SoC"}]}],"transactionId":1780677913}]
+[2026-06-05 18:50:28] CALL MeterValues: {"connectorId":2,"meterValue":[{"timestamp":"2026-06-05T16:50:28Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"63","measurand":"SoC"}]}],"transactionId":1780677913}
+[2026-06-05 18:50:28] CALL_RESULT MeterValues: {}
+[2026-06-05 18:50:28] TX [3,"1780678228508-42-gtfqdc1de1f5j",{}]
+[2026-06-05 18:50:28] RX [2,"1780678228988-43-byeca5ag5hxr","StopTransaction",{"transactionId":1780677913,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:28Z","meterStop":2000}]
+[2026-06-05 18:50:28] CALL StopTransaction: {"transactionId":1780677913,"idTag":"TAG7606000088","timestamp":"2026-06-05T16:50:28Z","meterStop":2000}
+[2026-06-05 18:50:28] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 18:50:28] TX [3,"1780678228988-43-byeca5ag5hxr",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 18:50:28] RX [2,"1780678228988-44-1feiom8uxvy79","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:28Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 18:50:28] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T16:50:28Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 18:50:28] Connector 2 status: Available
+[2026-06-05 18:50:28] CALL_RESULT StatusNotification: {}
+[2026-06-05 18:50:28] TX [3,"1780678228988-44-1feiom8uxvy79",{}]
+[2026-06-05 19:11:02] RX [2,"1780679462640-1-1d6554u1q8gy86","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 19:11:02] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 19:11:02] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T17:11:02Z","interval":30,"status":"Accepted"}
+[2026-06-05 19:11:02] TX [3,"1780679462640-1-1d6554u1q8gy86",{"currentTime":"2026-06-05T17:11:02Z","interval":30,"status":"Accepted"}]
+[2026-06-05 19:11:02] RX [2,"1780679462640-2-1kqo8061xrwl9z","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:02Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:11:02] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:02Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:11:02] Connector 1 status: Available
+[2026-06-05 19:11:02] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:11:02] TX [3,"1780679462640-2-1kqo8061xrwl9z",{}]
+[2026-06-05 19:11:02] RX [2,"1780679462640-3-9w755d3a8hjy","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:02Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:11:02] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:02Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:11:02] Connector 2 status: Available
+[2026-06-05 19:11:02] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:11:02] TX [3,"1780679462640-3-9w755d3a8hjy",{}]
+[2026-06-05 19:11:10] RX [2,"1780679470903-4-sp21cr1dkhzlp","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:10Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}]}]
+[2026-06-05 19:11:10] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:10Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}]}
+[2026-06-05 19:11:10] CALL_RESULT MeterValues: {}
+[2026-06-05 19:11:10] TX [3,"1780679470903-4-sp21cr1dkhzlp",{}]
+[2026-06-05 19:11:25] RX [2,"1780679485669-5-87dqy6aaxq43","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:25Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:11:25] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:11:25Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:11:25] Connector 1 status: Charging
+[2026-06-05 19:11:25] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:11:25] TX [3,"1780679485669-5-87dqy6aaxq43",{}]
+[2026-06-05 19:11:25] RX [2,"1780679485671-6-1v5tg8curo8xu","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:11:25Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:11:25] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:11:25Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:11:25] CALL_RESULT StartTransaction: {"transactionId":1780679463,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:11:25] TX [3,"1780679485671-6-1v5tg8curo8xu",{"transactionId":1780679463,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:11:25] RX [2,"1780679485672-7-1faampqj1e471","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:25Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679463}]
+[2026-06-05 19:11:25] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:25Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679463}
+[2026-06-05 19:11:25] CALL_RESULT MeterValues: {}
+[2026-06-05 19:11:25] TX [3,"1780679485672-7-1faampqj1e471",{}]
+[2026-06-05 19:11:33] RX [2,"1780679493204-8-tqrlju1dk2dae","Heartbeat",{}]
+[2026-06-05 19:11:33] CALL Heartbeat: {}
+[2026-06-05 19:11:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:11:33Z"}
+[2026-06-05 19:11:33] TX [3,"1780679493204-8-tqrlju1dk2dae",{"currentTime":"2026-06-05T17:11:33Z"}]
+[2026-06-05 19:11:41] RX [2,"1780679501243-9-1vkcexmu39zva","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:41Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679463}]
+[2026-06-05 19:11:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:41Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679463}
+[2026-06-05 19:11:41] CALL_RESULT MeterValues: {}
+[2026-06-05 19:11:41] TX [3,"1780679501243-9-1vkcexmu39zva",{}]
+[2026-06-05 19:11:45] RX [2,"1780679505136-10-1akb1anwj93gs","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:45Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679463}]
+[2026-06-05 19:11:45] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:45Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679463}
+[2026-06-05 19:11:45] CALL_RESULT MeterValues: {}
+[2026-06-05 19:11:45] TX [3,"1780679505136-10-1akb1anwj93gs",{}]
+[2026-06-05 19:11:57] RX [2,"1780679517077-11-1be7j5w1ms7o7r","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:57Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679463}]
+[2026-06-05 19:11:57] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:11:57Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679463}
+[2026-06-05 19:11:57] CALL_RESULT MeterValues: {}
+[2026-06-05 19:11:57] TX [3,"1780679517077-11-1be7j5w1ms7o7r",{}]
+[2026-06-05 19:12:01] RX [2,"1780679521553-12-1imoa5m1s6q6iq","StopTransaction",{"transactionId":1780679463,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:12:01Z","meterStop":2000}]
+[2026-06-05 19:12:01] CALL StopTransaction: {"transactionId":1780679463,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:12:01Z","meterStop":2000}
+[2026-06-05 19:12:01] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:12:01] TX [3,"1780679521553-12-1imoa5m1s6q6iq",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:12:01] RX [2,"1780679521553-13-gq5mfv2u9f9","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:12:01Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:12:01] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:12:01Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:12:01] Connector 1 status: Available
+[2026-06-05 19:12:01] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:12:01] TX [3,"1780679521553-13-gq5mfv2u9f9",{}]
+[2026-06-05 19:12:03] RX [2,"1780679523216-14-gwj11f3ym4o1","Heartbeat",{}]
+[2026-06-05 19:12:03] CALL Heartbeat: {}
+[2026-06-05 19:12:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:12:03Z"}
+[2026-06-05 19:12:03] TX [3,"1780679523216-14-gwj11f3ym4o1",{"currentTime":"2026-06-05T17:12:03Z"}]
+[2026-06-05 19:12:33] RX [2,"1780679553861-15-o7207d1xhfxys","Heartbeat",{}]
+[2026-06-05 19:12:33] CALL Heartbeat: {}
+[2026-06-05 19:12:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:12:33Z"}
+[2026-06-05 19:12:33] TX [3,"1780679553861-15-o7207d1xhfxys",{"currentTime":"2026-06-05T17:12:33Z"}]
+[2026-06-05 19:13:04] RX [2,"1780679584094-16-hxakj515ft26y","Heartbeat",{}]
+[2026-06-05 19:13:04] CALL Heartbeat: {}
+[2026-06-05 19:13:04] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:13:04Z"}
+[2026-06-05 19:13:04] TX [3,"1780679584094-16-hxakj515ft26y",{"currentTime":"2026-06-05T17:13:04Z"}]
+[2026-06-05 19:13:34] RX [2,"1780679614244-17-1fbmhyj1j9dyhi","Heartbeat",{}]
+[2026-06-05 19:13:34] CALL Heartbeat: {}
+[2026-06-05 19:13:34] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:13:34Z"}
+[2026-06-05 19:13:34] TX [3,"1780679614244-17-1fbmhyj1j9dyhi",{"currentTime":"2026-06-05T17:13:34Z"}]
+[2026-06-05 19:14:04] RX [2,"1780679644825-18-yyyo1q1swi2hn","Heartbeat",{}]
+[2026-06-05 19:14:04] CALL Heartbeat: {}
+[2026-06-05 19:14:04] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:14:04Z"}
+[2026-06-05 19:14:04] TX [3,"1780679644825-18-yyyo1q1swi2hn",{"currentTime":"2026-06-05T17:14:04Z"}]
+[2026-06-05 19:14:44] RX [2,"1780679684372-1-zndxoypj7pz8","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 19:14:44] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 19:14:44] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T17:14:44Z","interval":30,"status":"Accepted"}
+[2026-06-05 19:14:44] TX [3,"1780679684372-1-zndxoypj7pz8",{"currentTime":"2026-06-05T17:14:44Z","interval":30,"status":"Accepted"}]
+[2026-06-05 19:14:44] RX [2,"1780679684372-2-c6b41hhnj7na","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:44Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:14:44] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:44Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:14:44] Connector 1 status: Available
+[2026-06-05 19:14:44] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:14:44] TX [3,"1780679684372-2-c6b41hhnj7na",{}]
+[2026-06-05 19:14:44] RX [2,"1780679684372-3-1wbhrss1iyrl0d","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:44Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:14:44] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:44Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:14:44] Connector 2 status: Available
+[2026-06-05 19:14:44] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:14:44] TX [3,"1780679684372-3-1wbhrss1iyrl0d",{}]
+[2026-06-05 19:14:49] RX [2,"1780679689787-4-hilnso1dbju80","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:49Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:14:49] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:14:49Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:14:49] Connector 1 status: Charging
+[2026-06-05 19:14:49] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:14:49] TX [3,"1780679689787-4-hilnso1dbju80",{}]
+[2026-06-05 19:14:49] RX [2,"1780679689789-5-oox1z51g9k64r","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:14:49Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:14:49] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:14:49Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:14:49] CALL_RESULT StartTransaction: {"transactionId":1780679685,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:14:49] TX [3,"1780679689789-5-oox1z51g9k64r",{"transactionId":1780679685,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:14:49] RX [2,"1780679689794-6-1z09i391s4vjsi","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:14:49Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780679685}]
+[2026-06-05 19:14:49] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:14:49Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780679685}
+[2026-06-05 19:14:49] CALL_RESULT MeterValues: {}
+[2026-06-05 19:14:49] TX [3,"1780679689794-6-1z09i391s4vjsi",{}]
+[2026-06-05 19:15:05] RX [2,"1780679705256-7-cprtdv1pvz0q5","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:15:05Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679685}]
+[2026-06-05 19:15:05] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:15:05Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679685}
+[2026-06-05 19:15:05] CALL_RESULT MeterValues: {}
+[2026-06-05 19:15:05] TX [3,"1780679705256-7-cprtdv1pvz0q5",{}]
+[2026-06-05 19:19:35] RX [2,"1780679975238-1-owfkjt1gupb87","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 19:19:35] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 19:19:35] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T17:19:35Z","interval":30,"status":"Accepted"}
+[2026-06-05 19:19:35] TX [3,"1780679975238-1-owfkjt1gupb87",{"currentTime":"2026-06-05T17:19:35Z","interval":30,"status":"Accepted"}]
+[2026-06-05 19:19:35] RX [2,"1780679975238-2-pugip37mh50i","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:35Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:19:35] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:35Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:19:35] Connector 1 status: Available
+[2026-06-05 19:19:35] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:19:35] TX [3,"1780679975238-2-pugip37mh50i",{}]
+[2026-06-05 19:19:35] RX [2,"1780679975238-3-1sfmc631av3b47","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:35Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:19:35] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:35Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:19:35] Connector 2 status: Available
+[2026-06-05 19:19:35] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:19:35] TX [3,"1780679975238-3-1sfmc631av3b47",{}]
+[2026-06-05 19:19:42] RX [2,"1780679982086-4-ngoaz1adscli","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:42Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:19:42] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:19:42Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:19:42] Connector 1 status: Charging
+[2026-06-05 19:19:42] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:19:42] TX [3,"1780679982086-4-ngoaz1adscli",{}]
+[2026-06-05 19:19:42] RX [2,"1780679982088-5-11rnylg1tfgez6","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:19:42Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:19:42] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:19:42Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:19:42] CALL_RESULT StartTransaction: {"transactionId":1780679976,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:19:42] TX [3,"1780679982088-5-11rnylg1tfgez6",{"transactionId":1780679976,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:19:42] RX [2,"1780679982092-6-lnedjwhvtod1","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:19:42Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780679976}]
+[2026-06-05 19:19:42] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:19:42Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780679976}
+[2026-06-05 19:19:42] CALL_RESULT MeterValues: {}
+[2026-06-05 19:19:42] TX [3,"1780679982092-6-lnedjwhvtod1",{}]
+[2026-06-05 19:19:57] RX [2,"1780679997096-7-1ezduvr1nefufq","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:19:57Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679976}]
+[2026-06-05 19:19:57] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:19:57Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679976}
+[2026-06-05 19:19:57] CALL_RESULT MeterValues: {}
+[2026-06-05 19:19:57] TX [3,"1780679997096-7-1ezduvr1nefufq",{}]
+[2026-06-05 19:20:05] RX [2,"1780680005332-8-1hxskyym5djg4","Heartbeat",{}]
+[2026-06-05 19:20:05] CALL Heartbeat: {}
+[2026-06-05 19:20:05] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:20:05Z"}
+[2026-06-05 19:20:05] TX [3,"1780680005332-8-1hxskyym5djg4",{"currentTime":"2026-06-05T17:20:05Z"}]
+[2026-06-05 19:20:12] RX [2,"1780680012372-9-57xlynlcxt6k","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:12Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679976}]
+[2026-06-05 19:20:12] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:12Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679976}
+[2026-06-05 19:20:12] CALL_RESULT MeterValues: {}
+[2026-06-05 19:20:12] TX [3,"1780680012372-9-57xlynlcxt6k",{}]
+[2026-06-05 19:20:15] RX [2,"1780680015101-10-ejgmxn9rcor9","StopTransaction",{"transactionId":1780679976,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:20:15Z","meterStop":2000}]
+[2026-06-05 19:20:15] CALL StopTransaction: {"transactionId":1780679976,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:20:15Z","meterStop":2000}
+[2026-06-05 19:20:15] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:20:15] TX [3,"1780680015101-10-ejgmxn9rcor9",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:20:15] RX [2,"1780680015101-11-nzvdr4rke1x6","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:20:15Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:20:15] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:20:15Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:20:15] Connector 1 status: Available
+[2026-06-05 19:20:15] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:20:15] TX [3,"1780680015101-11-nzvdr4rke1x6",{}]
+[2026-06-05 19:20:26] RX [2,"1780680026168-12-ziiomgwrwdol","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:20:26Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:20:26] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:20:26Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:20:26] Connector 1 status: Charging
+[2026-06-05 19:20:26] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:20:26] TX [3,"1780680026168-12-ziiomgwrwdol",{}]
+[2026-06-05 19:20:26] RX [2,"1780680026170-13-sy26jg6acjfp","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:20:26Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:20:26] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:20:26Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:20:26] CALL_RESULT StartTransaction: {"transactionId":1780679977,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:20:26] TX [3,"1780680026170-13-sy26jg6acjfp",{"transactionId":1780679977,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:20:26] RX [2,"1780680026174-14-1uc2ny51uh7913","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:26Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:20:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:26Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:20:26] CALL_RESULT MeterValues: {}
+[2026-06-05 19:20:26] TX [3,"1780680026174-14-1uc2ny51uh7913",{}]
+[2026-06-05 19:20:35] RX [2,"1780680035335-15-b7a6m21wsw24q","Heartbeat",{}]
+[2026-06-05 19:20:35] CALL Heartbeat: {}
+[2026-06-05 19:20:35] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:20:35Z"}
+[2026-06-05 19:20:35] TX [3,"1780680035335-15-b7a6m21wsw24q",{"currentTime":"2026-06-05T17:20:35Z"}]
+[2026-06-05 19:20:41] RX [2,"1780680041230-16-1u7477x54f3bk","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:41Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:20:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:41Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:20:41] CALL_RESULT MeterValues: {}
+[2026-06-05 19:20:41] TX [3,"1780680041230-16-1u7477x54f3bk",{}]
+[2026-06-05 19:20:56] RX [2,"1780680056330-17-2zpc8kn67mnt","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:56Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:20:56] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:20:56Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:20:56] CALL_RESULT MeterValues: {}
+[2026-06-05 19:20:56] TX [3,"1780680056330-17-2zpc8kn67mnt",{}]
+[2026-06-05 19:21:05] RX [2,"1780680065341-18-m5tjgdzi08lf","Heartbeat",{}]
+[2026-06-05 19:21:05] CALL Heartbeat: {}
+[2026-06-05 19:21:05] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:21:05Z"}
+[2026-06-05 19:21:05] TX [3,"1780680065341-18-m5tjgdzi08lf",{"currentTime":"2026-06-05T17:21:05Z"}]
+[2026-06-05 19:21:05] RX [2,"1780680065467-19-fv62ageo2zbp","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:05Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:21:05] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:05Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:21:05] CALL_RESULT MeterValues: {}
+[2026-06-05 19:21:05] TX [3,"1780680065467-19-fv62ageo2zbp",{}]
+[2026-06-05 19:21:12] RX [2,"1780680072215-20-1wvjrh16ba79m","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:12Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:21:12] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:12Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:21:12] CALL_RESULT MeterValues: {}
+[2026-06-05 19:21:12] TX [3,"1780680072215-20-1wvjrh16ba79m",{}]
+[2026-06-05 19:21:20] RX [2,"1780680080286-21-1tyg8gs1tjqa9l","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:21:20Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:21:20] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:21:20Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:21:20] Connector 1 status: Charging
+[2026-06-05 19:21:20] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:21:20] TX [3,"1780680080286-21-1tyg8gs1tjqa9l",{}]
+[2026-06-05 19:21:23] RX [2,"1780680083333-22-y3ewb77ef5n9","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:23Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:21:23] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:23Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:21:23] CALL_RESULT MeterValues: {}
+[2026-06-05 19:21:23] TX [3,"1780680083333-22-y3ewb77ef5n9",{}]
+[2026-06-05 19:21:27] RX [2,"1780680087219-23-1c5ydbkjnd5vg","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:27Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:21:27] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:27Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:21:27] CALL_RESULT MeterValues: {}
+[2026-06-05 19:21:27] TX [3,"1780680087219-23-1c5ydbkjnd5vg",{}]
+[2026-06-05 19:21:35] RX [2,"1780680095346-24-1yku88v1n3tjkx","Heartbeat",{}]
+[2026-06-05 19:21:35] CALL Heartbeat: {}
+[2026-06-05 19:21:35] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:21:35Z"}
+[2026-06-05 19:21:35] TX [3,"1780680095346-24-1yku88v1n3tjkx",{"currentTime":"2026-06-05T17:21:35Z"}]
+[2026-06-05 19:21:42] RX [2,"1780680102852-25-cooub11ccvt89","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:42Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780679977}]
+[2026-06-05 19:21:42] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:21:42Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780679977}
+[2026-06-05 19:21:42] CALL_RESULT MeterValues: {}
+[2026-06-05 19:21:42] TX [3,"1780680102852-25-cooub11ccvt89",{}]
+[2026-06-05 19:21:48] RX [2,"1780680108269-26-1ckxf6grg36uk","StopTransaction",{"transactionId":1780679977,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:21:48Z","meterStop":2000}]
+[2026-06-05 19:21:48] CALL StopTransaction: {"transactionId":1780679977,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:21:48Z","meterStop":2000}
+[2026-06-05 19:21:48] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:21:48] TX [3,"1780680108269-26-1ckxf6grg36uk",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:21:48] RX [2,"1780680108270-27-rxxe1a1b33oc","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:21:48Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:21:48] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:21:48Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:21:48] Connector 1 status: Available
+[2026-06-05 19:21:48] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:21:48] TX [3,"1780680108270-27-rxxe1a1b33oc",{}]
+[2026-06-05 19:22:05] RX [2,"1780680125894-28-1lfrtnlkret7o","Heartbeat",{}]
+[2026-06-05 19:22:05] CALL Heartbeat: {}
+[2026-06-05 19:22:05] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:22:05Z"}
+[2026-06-05 19:22:05] TX [3,"1780680125894-28-1lfrtnlkret7o",{"currentTime":"2026-06-05T17:22:05Z"}]
+[2026-06-05 19:22:36] RX [2,"1780680156046-29-p6y57ebvmd6k","Heartbeat",{}]
+[2026-06-05 19:22:36] CALL Heartbeat: {}
+[2026-06-05 19:22:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:22:36Z"}
+[2026-06-05 19:22:36] TX [3,"1780680156046-29-p6y57ebvmd6k",{"currentTime":"2026-06-05T17:22:36Z"}]
+[2026-06-05 19:23:06] RX [2,"1780680186182-30-4xmiwuw9cxs5","Heartbeat",{}]
+[2026-06-05 19:23:06] CALL Heartbeat: {}
+[2026-06-05 19:23:06] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:23:06Z"}
+[2026-06-05 19:23:06] TX [3,"1780680186182-30-4xmiwuw9cxs5",{"currentTime":"2026-06-05T17:23:06Z"}]
+[2026-06-05 19:23:11] RX [2,"1780680191700-31-1q86mxi1tzufp1","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:23:11Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:23:11] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:23:11Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:23:11] Connector 1 status: Charging
+[2026-06-05 19:23:11] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:23:11] TX [3,"1780680191700-31-1q86mxi1tzufp1",{}]
+[2026-06-05 19:23:11] RX [2,"1780680191701-32-1fhpurd1s8wydf","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:23:11Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:23:11] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:23:11Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:23:11] CALL_RESULT StartTransaction: {"transactionId":1780679978,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:23:11] TX [3,"1780680191701-32-1fhpurd1s8wydf",{"transactionId":1780679978,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:23:11] RX [2,"1780680191703-33-8qwrlcgqcn4c","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:11Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:23:11] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:11Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:23:11] CALL_RESULT MeterValues: {}
+[2026-06-05 19:23:11] TX [3,"1780680191703-33-8qwrlcgqcn4c",{}]
+[2026-06-05 19:23:26] RX [2,"1780680206798-34-1iktd031xzc7mx","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:26Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:23:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:26Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:23:26] CALL_RESULT MeterValues: {}
+[2026-06-05 19:23:26] TX [3,"1780680206798-34-1iktd031xzc7mx",{}]
+[2026-06-05 19:23:36] RX [2,"1780680216863-35-wr5dtai1yq38","Heartbeat",{}]
+[2026-06-05 19:23:36] CALL Heartbeat: {}
+[2026-06-05 19:23:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:23:36Z"}
+[2026-06-05 19:23:36] TX [3,"1780680216863-35-wr5dtai1yq38",{"currentTime":"2026-06-05T17:23:36Z"}]
+[2026-06-05 19:23:41] RX [2,"1780680221880-36-1cx3u97i8knvs","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:41Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:23:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:41Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:23:41] CALL_RESULT MeterValues: {}
+[2026-06-05 19:23:41] TX [3,"1780680221880-36-1cx3u97i8knvs",{}]
+[2026-06-05 19:23:57] RX [2,"1780680237126-37-uynyth1x51i9v","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:57Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:23:57] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:23:57Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:23:57] CALL_RESULT MeterValues: {}
+[2026-06-05 19:23:57] TX [3,"1780680237126-37-uynyth1x51i9v",{}]
+[2026-06-05 19:24:07] RX [2,"1780680247169-38-ljcguf3ryiax","Heartbeat",{}]
+[2026-06-05 19:24:07] CALL Heartbeat: {}
+[2026-06-05 19:24:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:24:07Z"}
+[2026-06-05 19:24:07] TX [3,"1780680247169-38-ljcguf3ryiax",{"currentTime":"2026-06-05T17:24:07Z"}]
+[2026-06-05 19:24:12] RX [2,"1780680252193-39-1b2kzh91hzt4or","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:24:12Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:24:12] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:24:12Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:24:12] CALL_RESULT MeterValues: {}
+[2026-06-05 19:24:12] TX [3,"1780680252193-39-1b2kzh91hzt4or",{}]
+[2026-06-05 19:24:27] RX [2,"1780680267318-40-5jg1p989dsad","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:24:27Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780679978}]
+[2026-06-05 19:24:27] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:24:27Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780679978}
+[2026-06-05 19:24:27] CALL_RESULT MeterValues: {}
+[2026-06-05 19:24:27] TX [3,"1780680267318-40-5jg1p989dsad",{}]
+[2026-06-05 19:24:59] RX [2,"1780680299325-1-mglhf2147qm5y","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 19:24:59] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 19:24:59] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T17:24:59Z","interval":30,"status":"Accepted"}
+[2026-06-05 19:24:59] TX [3,"1780680299325-1-mglhf2147qm5y",{"currentTime":"2026-06-05T17:24:59Z","interval":30,"status":"Accepted"}]
+[2026-06-05 19:24:59] RX [2,"1780680299326-2-lvpr0qhxkau5","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:24:59Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:24:59] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:24:59Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:24:59] Connector 1 status: Available
+[2026-06-05 19:24:59] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:24:59] TX [3,"1780680299326-2-lvpr0qhxkau5",{}]
+[2026-06-05 19:24:59] RX [2,"1780680299326-3-11a2sjvxsmu96","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:24:59Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:24:59] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:24:59Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:24:59] Connector 2 status: Available
+[2026-06-05 19:24:59] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:24:59] TX [3,"1780680299326-3-11a2sjvxsmu96",{}]
+[2026-06-05 19:25:06] RX [2,"1780680306785-4-1ws02es1b2our3","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:25:06Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:25:06] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:25:06Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:25:06] Connector 1 status: Charging
+[2026-06-05 19:25:06] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:25:06] TX [3,"1780680306785-4-1ws02es1b2our3",{}]
+[2026-06-05 19:25:06] RX [2,"1780680306786-5-6sprwt1na9rb4","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:25:06Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:25:06] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:25:06Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:25:06] CALL_RESULT StartTransaction: {"transactionId":1780680300,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:25:06] TX [3,"1780680306786-5-6sprwt1na9rb4",{"transactionId":1780680300,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:25:06] RX [2,"1780680306791-6-anezovt3syev","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:25:06Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780680300}]
+[2026-06-05 19:25:06] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:25:06Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780680300}
+[2026-06-05 19:25:06] CALL_RESULT MeterValues: {}
+[2026-06-05 19:25:06] TX [3,"1780680306791-6-anezovt3syev",{}]
+[2026-06-05 19:26:17] RX [2,"1780680377471-1-1t96jam10k2nxj","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 19:26:17] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 19:26:17] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T17:26:17Z","interval":30,"status":"Accepted"}
+[2026-06-05 19:26:17] TX [3,"1780680377471-1-1t96jam10k2nxj",{"currentTime":"2026-06-05T17:26:17Z","interval":30,"status":"Accepted"}]
+[2026-06-05 19:26:17] RX [2,"1780680377471-2-acopjvw909sy","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:17Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:26:17] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:17Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:26:17] Connector 1 status: Available
+[2026-06-05 19:26:17] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:26:17] TX [3,"1780680377471-2-acopjvw909sy",{}]
+[2026-06-05 19:26:17] RX [2,"1780680377471-3-qhedzw15rdwjl","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:17Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:26:17] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:17Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:26:17] Connector 2 status: Available
+[2026-06-05 19:26:17] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:26:17] TX [3,"1780680377471-3-qhedzw15rdwjl",{}]
+[2026-06-05 19:26:34] RX [2,"1780680394701-4-6zgd651wda4af","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:34Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:26:34] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:26:34Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:26:34] Connector 1 status: Charging
+[2026-06-05 19:26:34] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:26:34] TX [3,"1780680394701-4-6zgd651wda4af",{}]
+[2026-06-05 19:26:34] RX [2,"1780680394703-5-b99qpc7fph6q","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:26:34Z","meterStart":0,"reservationId":0}]
+[2026-06-05 19:26:34] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:26:34Z","meterStart":0,"reservationId":0}
+[2026-06-05 19:26:34] CALL_RESULT StartTransaction: {"transactionId":1780680378,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:26:34] TX [3,"1780680394703-5-b99qpc7fph6q",{"transactionId":1780680378,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:26:34] RX [2,"1780680394707-6-1oiemjc1rao7fq","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:26:34Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:26:34] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:26:34Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:26:34] CALL_RESULT MeterValues: {}
+[2026-06-05 19:26:34] TX [3,"1780680394707-6-1oiemjc1rao7fq",{}]
+[2026-06-05 19:26:48] RX [2,"1780680408207-7-ryod631xfnpvu","Heartbeat",{}]
+[2026-06-05 19:26:48] CALL Heartbeat: {}
+[2026-06-05 19:26:48] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:26:48Z"}
+[2026-06-05 19:26:48] TX [3,"1780680408207-7-ryod631xfnpvu",{"currentTime":"2026-06-05T17:26:48Z"}]
+[2026-06-05 19:26:50] RX [2,"1780680410221-8-1eqgt4fabkojv","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:26:50Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:26:50] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:26:50Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:26:50] CALL_RESULT MeterValues: {}
+[2026-06-05 19:26:50] TX [3,"1780680410221-8-1eqgt4fabkojv",{}]
+[2026-06-05 19:27:05] RX [2,"1780680425412-9-20xwnx179a1c9","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:05Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:27:05] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:05Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:27:05] CALL_RESULT MeterValues: {}
+[2026-06-05 19:27:05] TX [3,"1780680425412-9-20xwnx179a1c9",{}]
+[2026-06-05 19:27:18] RX [2,"1780680438212-10-1oszvoxvaqnqi","Heartbeat",{}]
+[2026-06-05 19:27:18] CALL Heartbeat: {}
+[2026-06-05 19:27:18] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:27:18Z"}
+[2026-06-05 19:27:18] TX [3,"1780680438212-10-1oszvoxvaqnqi",{"currentTime":"2026-06-05T17:27:18Z"}]
+[2026-06-05 19:27:21] RX [2,"1780680441086-11-15tvvb118iaei2","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:21Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:27:21] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:21Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:27:21] CALL_RESULT MeterValues: {}
+[2026-06-05 19:27:21] TX [3,"1780680441086-11-15tvvb118iaei2",{}]
+[2026-06-05 19:27:36] RX [2,"1780680456181-12-1tc9grx1csewp2","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:36Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:27:36] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:36Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:27:36] CALL_RESULT MeterValues: {}
+[2026-06-05 19:27:36] TX [3,"1780680456181-12-1tc9grx1csewp2",{}]
+[2026-06-05 19:27:48] RX [2,"1780680468332-13-18c78i5z9t2ex","Heartbeat",{}]
+[2026-06-05 19:27:48] CALL Heartbeat: {}
+[2026-06-05 19:27:48] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:27:48Z"}
+[2026-06-05 19:27:48] TX [3,"1780680468332-13-18c78i5z9t2ex",{"currentTime":"2026-06-05T17:27:48Z"}]
+[2026-06-05 19:27:51] RX [2,"1780680471345-14-1ujwh75tt9rna","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:51Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:27:51] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:27:51Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:27:51] CALL_RESULT MeterValues: {}
+[2026-06-05 19:27:51] TX [3,"1780680471345-14-1ujwh75tt9rna",{}]
+[2026-06-05 19:28:06] RX [2,"1780680486443-15-p3zqri1mk0aro","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:06Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:28:06] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:06Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:28:06] CALL_RESULT MeterValues: {}
+[2026-06-05 19:28:06] TX [3,"1780680486443-15-p3zqri1mk0aro",{}]
+[2026-06-05 19:28:18] RX [2,"1780680498503-16-ill90c17ske58","Heartbeat",{}]
+[2026-06-05 19:28:18] CALL Heartbeat: {}
+[2026-06-05 19:28:18] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:28:18Z"}
+[2026-06-05 19:28:18] TX [3,"1780680498503-16-ill90c17ske58",{"currentTime":"2026-06-05T17:28:18Z"}]
+[2026-06-05 19:28:21] RX [2,"1780680501518-17-g7xrjx1nrn769","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:21Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:28:21] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:21Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:28:21] CALL_RESULT MeterValues: {}
+[2026-06-05 19:28:21] TX [3,"1780680501518-17-g7xrjx1nrn769",{}]
+[2026-06-05 19:28:36] RX [2,"1780680516576-18-w3p67v47cfri","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:36Z","sampledValue":[{"value":"33.333333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.06666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:28:36] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:36Z","sampledValue":[{"value":"33.333333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.06666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:28:36] CALL_RESULT MeterValues: {}
+[2026-06-05 19:28:36] TX [3,"1780680516576-18-w3p67v47cfri",{}]
+[2026-06-05 19:28:48] RX [2,"1780680528624-19-146csht1y12p1l","Heartbeat",{}]
+[2026-06-05 19:28:48] CALL Heartbeat: {}
+[2026-06-05 19:28:48] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:28:48Z"}
+[2026-06-05 19:28:48] TX [3,"1780680528624-19-146csht1y12p1l",{"currentTime":"2026-06-05T17:28:48Z"}]
+[2026-06-05 19:28:51] RX [2,"1780680531680-20-12hi4l83rs3v4","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:51Z","sampledValue":[{"value":"37.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.075000000000003","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:28:51] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:28:51Z","sampledValue":[{"value":"37.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.075000000000003","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:28:51] CALL_RESULT MeterValues: {}
+[2026-06-05 19:28:51] TX [3,"1780680531680-20-12hi4l83rs3v4",{}]
+[2026-06-05 19:29:06] RX [2,"1780680546800-21-1bfgjqe9tm7l9","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:06Z","sampledValue":[{"value":"41.666666666666664","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.083333333333332","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:29:06] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:06Z","sampledValue":[{"value":"41.666666666666664","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.083333333333332","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:29:06] CALL_RESULT MeterValues: {}
+[2026-06-05 19:29:06] TX [3,"1780680546800-21-1bfgjqe9tm7l9",{}]
+[2026-06-05 19:29:18] RX [2,"1780680558844-22-128vpt6pc550v","Heartbeat",{}]
+[2026-06-05 19:29:18] CALL Heartbeat: {}
+[2026-06-05 19:29:18] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:29:18Z"}
+[2026-06-05 19:29:18] TX [3,"1780680558844-22-128vpt6pc550v",{"currentTime":"2026-06-05T17:29:18Z"}]
+[2026-06-05 19:29:21] RX [2,"1780680561865-23-1a2nnfd1bazje7","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:21Z","sampledValue":[{"value":"45.83333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.09166666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:29:21] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:21Z","sampledValue":[{"value":"45.83333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.09166666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:29:21] CALL_RESULT MeterValues: {}
+[2026-06-05 19:29:21] TX [3,"1780680561865-23-1a2nnfd1bazje7",{}]
+[2026-06-05 19:29:37] RX [2,"1780680577030-24-1o0fpsb14knrra","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:37Z","sampledValue":[{"value":"49.99999999999999","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.1","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:29:37] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:37Z","sampledValue":[{"value":"49.99999999999999","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.1","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:29:37] CALL_RESULT MeterValues: {}
+[2026-06-05 19:29:37] TX [3,"1780680577030-24-1o0fpsb14knrra",{}]
+[2026-06-05 19:29:49] RX [2,"1780680589102-25-1hlvmth1nu77r2","Heartbeat",{}]
+[2026-06-05 19:29:49] CALL Heartbeat: {}
+[2026-06-05 19:29:49] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:29:49Z"}
+[2026-06-05 19:29:49] TX [3,"1780680589102-25-1hlvmth1nu77r2",{"currentTime":"2026-06-05T17:29:49Z"}]
+[2026-06-05 19:29:52] RX [2,"1780680592115-26-1v28fhx1rb8wix","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:52Z","sampledValue":[{"value":"54.16666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.108333333333334","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:29:52] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:29:52Z","sampledValue":[{"value":"54.16666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.108333333333334","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:29:52] CALL_RESULT MeterValues: {}
+[2026-06-05 19:29:52] TX [3,"1780680592115-26-1v28fhx1rb8wix",{}]
+[2026-06-05 19:30:07] RX [2,"1780680607525-27-1m1s4ul1jvval7","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:07Z","sampledValue":[{"value":"58.33333333333332","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.116666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:30:07] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:07Z","sampledValue":[{"value":"58.33333333333332","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.116666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:30:07] CALL_RESULT MeterValues: {}
+[2026-06-05 19:30:07] TX [3,"1780680607525-27-1m1s4ul1jvval7",{}]
+[2026-06-05 19:30:19] RX [2,"1780680619710-28-1da2dkj195h8hz","Heartbeat",{}]
+[2026-06-05 19:30:19] CALL Heartbeat: {}
+[2026-06-05 19:30:19] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:30:19Z"}
+[2026-06-05 19:30:19] TX [3,"1780680619710-28-1da2dkj195h8hz",{"currentTime":"2026-06-05T17:30:19Z"}]
+[2026-06-05 19:30:22] RX [2,"1780680622730-29-82lon31yyesz4","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:22Z","sampledValue":[{"value":"62.499999999999986","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.125","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:30:22] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:22Z","sampledValue":[{"value":"62.499999999999986","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.125","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:30:22] CALL_RESULT MeterValues: {}
+[2026-06-05 19:30:22] TX [3,"1780680622730-29-82lon31yyesz4",{}]
+[2026-06-05 19:30:37] RX [2,"1780680637819-30-q6d9lp1lkvoih","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:37Z","sampledValue":[{"value":"66.66666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.13333333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:30:37] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:37Z","sampledValue":[{"value":"66.66666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.13333333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:30:37] CALL_RESULT MeterValues: {}
+[2026-06-05 19:30:37] TX [3,"1780680637819-30-q6d9lp1lkvoih",{}]
+[2026-06-05 19:30:49] RX [2,"1780680649886-31-1apu37v1yikanz","Heartbeat",{}]
+[2026-06-05 19:30:49] CALL Heartbeat: {}
+[2026-06-05 19:30:49] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:30:49Z"}
+[2026-06-05 19:30:49] TX [3,"1780680649886-31-1apu37v1yikanz",{"currentTime":"2026-06-05T17:30:49Z"}]
+[2026-06-05 19:30:52] RX [2,"1780680652896-32-1xt3fzaebxxtm","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:52Z","sampledValue":[{"value":"70.83333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.14166666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:30:52] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:30:52Z","sampledValue":[{"value":"70.83333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.14166666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:30:52] CALL_RESULT MeterValues: {}
+[2026-06-05 19:30:52] TX [3,"1780680652896-32-1xt3fzaebxxtm",{}]
+[2026-06-05 19:31:08] RX [2,"1780680668042-33-1ba5newpkn661","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:08Z","sampledValue":[{"value":"75","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.150000000000002","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:31:08] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:08Z","sampledValue":[{"value":"75","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.150000000000002","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:31:08] CALL_RESULT MeterValues: {}
+[2026-06-05 19:31:08] TX [3,"1780680668042-33-1ba5newpkn661",{}]
+[2026-06-05 19:31:20] RX [2,"1780680680116-34-dfc9woqiu3u2","Heartbeat",{}]
+[2026-06-05 19:31:20] CALL Heartbeat: {}
+[2026-06-05 19:31:20] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:31:20Z"}
+[2026-06-05 19:31:20] TX [3,"1780680680116-34-dfc9woqiu3u2",{"currentTime":"2026-06-05T17:31:20Z"}]
+[2026-06-05 19:31:23] RX [2,"1780680683135-35-us6x6511xqbfl","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:23Z","sampledValue":[{"value":"79.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.15833333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:31:23] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:23Z","sampledValue":[{"value":"79.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.15833333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:31:23] CALL_RESULT MeterValues: {}
+[2026-06-05 19:31:23] TX [3,"1780680683135-35-us6x6511xqbfl",{}]
+[2026-06-05 19:31:38] RX [2,"1780680698186-36-76zqn21x3tkif","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:38Z","sampledValue":[{"value":"83.33333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.166666666666668","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:31:38] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:38Z","sampledValue":[{"value":"83.33333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.166666666666668","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:31:38] CALL_RESULT MeterValues: {}
+[2026-06-05 19:31:38] TX [3,"1780680698186-36-76zqn21x3tkif",{}]
+[2026-06-05 19:31:50] RX [2,"1780680710290-37-qbx6091dtuxjx","Heartbeat",{}]
+[2026-06-05 19:31:50] CALL Heartbeat: {}
+[2026-06-05 19:31:50] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:31:50Z"}
+[2026-06-05 19:31:50] TX [3,"1780680710290-37-qbx6091dtuxjx",{"currentTime":"2026-06-05T17:31:50Z"}]
+[2026-06-05 19:31:53] RX [2,"1780680713309-38-gv4i721kpwx42","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:53Z","sampledValue":[{"value":"87.50000000000001","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.175","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:31:53] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:31:53Z","sampledValue":[{"value":"87.50000000000001","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.175","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:31:53] CALL_RESULT MeterValues: {}
+[2026-06-05 19:31:53] TX [3,"1780680713309-38-gv4i721kpwx42",{}]
+[2026-06-05 19:32:08] RX [2,"1780680728387-39-13mp5spdapmie","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:08Z","sampledValue":[{"value":"91.66666666666669","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.18333333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:32:08] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:08Z","sampledValue":[{"value":"91.66666666666669","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.18333333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:32:08] CALL_RESULT MeterValues: {}
+[2026-06-05 19:32:08] TX [3,"1780680728387-39-13mp5spdapmie",{}]
+[2026-06-05 19:32:20] RX [2,"1780680740461-40-q4nfhf1g536uv","Heartbeat",{}]
+[2026-06-05 19:32:20] CALL Heartbeat: {}
+[2026-06-05 19:32:20] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:32:20Z"}
+[2026-06-05 19:32:20] TX [3,"1780680740461-40-q4nfhf1g536uv",{"currentTime":"2026-06-05T17:32:20Z"}]
+[2026-06-05 19:32:23] RX [2,"1780680743476-41-1ycuh0p16ygv2s","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:23Z","sampledValue":[{"value":"95.83333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.19166666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:32:23] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:23Z","sampledValue":[{"value":"95.83333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.19166666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:32:23] CALL_RESULT MeterValues: {}
+[2026-06-05 19:32:23] TX [3,"1780680743476-41-1ycuh0p16ygv2s",{}]
+[2026-06-05 19:32:38] RX [2,"1780680758708-42-1g0rujf1k4juvh","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:38Z","sampledValue":[{"value":"100.00000000000003","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.200000000000003","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:32:38] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:38Z","sampledValue":[{"value":"100.00000000000003","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.200000000000003","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:32:38] CALL_RESULT MeterValues: {}
+[2026-06-05 19:32:38] TX [3,"1780680758708-42-1g0rujf1k4juvh",{}]
+[2026-06-05 19:32:50] RX [2,"1780680770755-43-19hmxcjfaaybi","Heartbeat",{}]
+[2026-06-05 19:32:50] CALL Heartbeat: {}
+[2026-06-05 19:32:50] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:32:50Z"}
+[2026-06-05 19:32:50] TX [3,"1780680770755-43-19hmxcjfaaybi",{"currentTime":"2026-06-05T17:32:50Z"}]
+[2026-06-05 19:32:53] RX [2,"1780680773771-44-gauii1b8asuj","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:53Z","sampledValue":[{"value":"104.1666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.208333333333332","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:32:53] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:32:53Z","sampledValue":[{"value":"104.1666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.208333333333332","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:32:53] CALL_RESULT MeterValues: {}
+[2026-06-05 19:32:53] TX [3,"1780680773771-44-gauii1b8asuj",{}]
+[2026-06-05 19:33:08] RX [2,"1780680788841-45-ccwfbj14g9pof","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:08Z","sampledValue":[{"value":"108.33333333333337","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.21666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:33:08] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:08Z","sampledValue":[{"value":"108.33333333333337","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.21666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:33:08] CALL_RESULT MeterValues: {}
+[2026-06-05 19:33:08] TX [3,"1780680788841-45-ccwfbj14g9pof",{}]
+[2026-06-05 19:33:20] RX [2,"1780680800906-46-1xxy69119zu82b","Heartbeat",{}]
+[2026-06-05 19:33:20] CALL Heartbeat: {}
+[2026-06-05 19:33:20] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:33:20Z"}
+[2026-06-05 19:33:20] TX [3,"1780680800906-46-1xxy69119zu82b",{"currentTime":"2026-06-05T17:33:20Z"}]
+[2026-06-05 19:33:23] RX [2,"1780680803923-47-qn9owu1o7ntfw","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:23Z","sampledValue":[{"value":"112.50000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.225","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:33:23] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:23Z","sampledValue":[{"value":"112.50000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.225","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:33:23] CALL_RESULT MeterValues: {}
+[2026-06-05 19:33:23] TX [3,"1780680803923-47-qn9owu1o7ntfw",{}]
+[2026-06-05 19:33:39] RX [2,"1780680819036-48-ec1vtyq9etus","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:39Z","sampledValue":[{"value":"116.66666666666671","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.23333333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:33:39] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:39Z","sampledValue":[{"value":"116.66666666666671","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.23333333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:33:39] CALL_RESULT MeterValues: {}
+[2026-06-05 19:33:39] TX [3,"1780680819036-48-ec1vtyq9etus",{}]
+[2026-06-05 19:33:51] RX [2,"1780680831093-49-s143814ttu3r","Heartbeat",{}]
+[2026-06-05 19:33:51] CALL Heartbeat: {}
+[2026-06-05 19:33:51] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:33:51Z"}
+[2026-06-05 19:33:51] TX [3,"1780680831093-49-s143814ttu3r",{"currentTime":"2026-06-05T17:33:51Z"}]
+[2026-06-05 19:33:54] RX [2,"1780680834132-50-3ygrja7awp3q","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:54Z","sampledValue":[{"value":"120.83333333333339","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.241666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:33:54] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:33:54Z","sampledValue":[{"value":"120.83333333333339","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.241666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:33:54] CALL_RESULT MeterValues: {}
+[2026-06-05 19:33:54] TX [3,"1780680834132-50-3ygrja7awp3q",{}]
+[2026-06-05 19:34:09] RX [2,"1780680849224-51-1attksv1cjs7wg","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:09Z","sampledValue":[{"value":"125.00000000000006","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.25","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:34:09] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:09Z","sampledValue":[{"value":"125.00000000000006","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.25","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:34:09] CALL_RESULT MeterValues: {}
+[2026-06-05 19:34:09] TX [3,"1780680849224-51-1attksv1cjs7wg",{}]
+[2026-06-05 19:34:21] RX [2,"1780680861293-52-45fsnmddvn0z","Heartbeat",{}]
+[2026-06-05 19:34:21] CALL Heartbeat: {}
+[2026-06-05 19:34:21] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:34:21Z"}
+[2026-06-05 19:34:21] TX [3,"1780680861293-52-45fsnmddvn0z",{"currentTime":"2026-06-05T17:34:21Z"}]
+[2026-06-05 19:34:24] RX [2,"1780680864421-53-zngwt7xreifh","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:24Z","sampledValue":[{"value":"129.1666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.25833333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:34:24] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:24Z","sampledValue":[{"value":"129.1666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.25833333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:34:24] CALL_RESULT MeterValues: {}
+[2026-06-05 19:34:24] TX [3,"1780680864421-53-zngwt7xreifh",{}]
+[2026-06-05 19:34:39] RX [2,"1780680879548-54-11lommw13yipmo","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:39Z","sampledValue":[{"value":"133.33333333333337","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.26666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:34:39] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:39Z","sampledValue":[{"value":"133.33333333333337","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.26666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:34:39] CALL_RESULT MeterValues: {}
+[2026-06-05 19:34:39] TX [3,"1780680879548-54-11lommw13yipmo",{}]
+[2026-06-05 19:34:51] RX [2,"1780680891591-55-rs2qwmp7ah1a","Heartbeat",{}]
+[2026-06-05 19:34:51] CALL Heartbeat: {}
+[2026-06-05 19:34:51] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:34:51Z"}
+[2026-06-05 19:34:51] TX [3,"1780680891591-55-rs2qwmp7ah1a",{"currentTime":"2026-06-05T17:34:51Z"}]
+[2026-06-05 19:34:54] RX [2,"1780680894610-56-1855u441vinpqt","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:54Z","sampledValue":[{"value":"137.50000000000003","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.275000000000002","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:34:54] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:34:54Z","sampledValue":[{"value":"137.50000000000003","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.275000000000002","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:34:54] CALL_RESULT MeterValues: {}
+[2026-06-05 19:34:54] TX [3,"1780680894610-56-1855u441vinpqt",{}]
+[2026-06-05 19:35:09] RX [2,"1780680909673-57-o6tuhk12a3g6w","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:09Z","sampledValue":[{"value":"141.66666666666669","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.28333333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:35:09] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:09Z","sampledValue":[{"value":"141.66666666666669","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.28333333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:35:09] CALL_RESULT MeterValues: {}
+[2026-06-05 19:35:09] TX [3,"1780680909673-57-o6tuhk12a3g6w",{}]
+[2026-06-05 19:35:21] RX [2,"1780680921727-58-9jqlud1c0hkzw","Heartbeat",{}]
+[2026-06-05 19:35:21] CALL Heartbeat: {}
+[2026-06-05 19:35:21] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:35:21Z"}
+[2026-06-05 19:35:21] TX [3,"1780680921727-58-9jqlud1c0hkzw",{"currentTime":"2026-06-05T17:35:21Z"}]
+[2026-06-05 19:35:24] RX [2,"1780680924740-59-100unkw1rhyo0b","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:24Z","sampledValue":[{"value":"145.83333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.291666666666668","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:35:24] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:24Z","sampledValue":[{"value":"145.83333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.291666666666668","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:35:24] CALL_RESULT MeterValues: {}
+[2026-06-05 19:35:24] TX [3,"1780680924740-59-100unkw1rhyo0b",{}]
+[2026-06-05 19:35:39] RX [2,"1780680939919-60-kxmkbpsy5shu","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:39Z","sampledValue":[{"value":"150","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.3","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:35:39] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:39Z","sampledValue":[{"value":"150","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.3","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:35:39] CALL_RESULT MeterValues: {}
+[2026-06-05 19:35:39] TX [3,"1780680939919-60-kxmkbpsy5shu",{}]
+[2026-06-05 19:35:51] RX [2,"1780680951977-61-1b8kg3zhtxyj3","Heartbeat",{}]
+[2026-06-05 19:35:51] CALL Heartbeat: {}
+[2026-06-05 19:35:51] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:35:51Z"}
+[2026-06-05 19:35:51] TX [3,"1780680951977-61-1b8kg3zhtxyj3",{"currentTime":"2026-06-05T17:35:51Z"}]
+[2026-06-05 19:35:55] RX [2,"1780680955042-62-1sb4uhy313r5y","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:55Z","sampledValue":[{"value":"154.16666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.30833333333333","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:35:55] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:35:55Z","sampledValue":[{"value":"154.16666666666666","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.30833333333333","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:35:55] CALL_RESULT MeterValues: {}
+[2026-06-05 19:35:55] TX [3,"1780680955042-62-1sb4uhy313r5y",{}]
+[2026-06-05 19:43:26] RX [2,"1780681406194-63-pyam0ta8f2mo","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:26Z","sampledValue":[{"value":"158.33333333333331","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.31666666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:43:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:26Z","sampledValue":[{"value":"158.33333333333331","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.31666666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:43:26] CALL_RESULT MeterValues: {}
+[2026-06-05 19:43:26] TX [3,"1780681406194-63-pyam0ta8f2mo",{}]
+[2026-06-05 19:43:38] RX [2,"1780681418254-64-ggsd8v1jcjzie","Heartbeat",{}]
+[2026-06-05 19:43:38] CALL Heartbeat: {}
+[2026-06-05 19:43:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:43:38Z"}
+[2026-06-05 19:43:38] TX [3,"1780681418254-64-ggsd8v1jcjzie",{"currentTime":"2026-06-05T17:43:38Z"}]
+[2026-06-05 19:43:41] RX [2,"1780681421271-65-1wne299lcpa6p","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:41Z","sampledValue":[{"value":"162.49999999999997","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.325000000000003","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:43:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:41Z","sampledValue":[{"value":"162.49999999999997","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.325000000000003","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:43:41] CALL_RESULT MeterValues: {}
+[2026-06-05 19:43:41] TX [3,"1780681421271-65-1wne299lcpa6p",{}]
+[2026-06-05 19:43:56] RX [2,"1780681436375-66-1wpk6nc1dla6vg","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:56Z","sampledValue":[{"value":"166.66666666666663","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.333333333333332","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:43:56] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:43:56Z","sampledValue":[{"value":"166.66666666666663","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.333333333333332","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:43:56] CALL_RESULT MeterValues: {}
+[2026-06-05 19:43:56] TX [3,"1780681436375-66-1wpk6nc1dla6vg",{}]
+[2026-06-05 19:44:08] RX [2,"1780681448455-67-15bbso8fj6twg","Heartbeat",{}]
+[2026-06-05 19:44:08] CALL Heartbeat: {}
+[2026-06-05 19:44:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:44:08Z"}
+[2026-06-05 19:44:08] TX [3,"1780681448455-67-15bbso8fj6twg",{"currentTime":"2026-06-05T17:44:08Z"}]
+[2026-06-05 19:44:11] RX [2,"1780681451472-68-1zmmfqw2dj3q","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:44:11Z","sampledValue":[{"value":"170.8333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.34166666666667","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:44:11] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:44:11Z","sampledValue":[{"value":"170.8333333333333","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.34166666666667","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:44:11] CALL_RESULT MeterValues: {}
+[2026-06-05 19:44:11] TX [3,"1780681451472-68-1zmmfqw2dj3q",{}]
+[2026-06-05 19:44:26] RX [2,"1780681466477-69-m4a6n9gce14v","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:44:26Z","sampledValue":[{"value":"174.99999999999994","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.35","measurand":"SoC"}]}],"transactionId":1780680378}]
+[2026-06-05 19:44:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T17:44:26Z","sampledValue":[{"value":"174.99999999999994","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.35","measurand":"SoC"}]}],"transactionId":1780680378}
+[2026-06-05 19:44:26] CALL_RESULT MeterValues: {}
+[2026-06-05 19:44:26] TX [3,"1780681466477-69-m4a6n9gce14v",{}]
+[2026-06-05 19:44:27] RX [2,"1780681467018-70-1vw78zxd83me8","StopTransaction",{"transactionId":1780680378,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:44:27Z","meterStop":2000}]
+[2026-06-05 19:44:27] CALL StopTransaction: {"transactionId":1780680378,"idTag":"TAG7606000088","timestamp":"2026-06-05T17:44:27Z","meterStop":2000}
+[2026-06-05 19:44:27] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 19:44:27] TX [3,"1780681467018-70-1vw78zxd83me8",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 19:44:27] RX [2,"1780681467018-71-1ww1nzj8xgcu0","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:44:27Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 19:44:27] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T17:44:27Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 19:44:27] Connector 1 status: Available
+[2026-06-05 19:44:27] CALL_RESULT StatusNotification: {}
+[2026-06-05 19:44:27] TX [3,"1780681467018-71-1ww1nzj8xgcu0",{}]
+[2026-06-05 19:44:38] RX [2,"1780681478799-72-1qtbn1y1t30pg4","Heartbeat",{}]
+[2026-06-05 19:44:38] CALL Heartbeat: {}
+[2026-06-05 19:44:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:44:38Z"}
+[2026-06-05 19:44:38] TX [3,"1780681478799-72-1qtbn1y1t30pg4",{"currentTime":"2026-06-05T17:44:38Z"}]
+[2026-06-05 19:45:09] RX [2,"1780681509065-73-7k5xpqlfuf38","Heartbeat",{}]
+[2026-06-05 19:45:09] CALL Heartbeat: {}
+[2026-06-05 19:45:09] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:45:09Z"}
+[2026-06-05 19:45:09] TX [3,"1780681509065-73-7k5xpqlfuf38",{"currentTime":"2026-06-05T17:45:09Z"}]
+[2026-06-05 19:45:39] RX [2,"1780681539195-74-gyve2x1l3n8f2","Heartbeat",{}]
+[2026-06-05 19:45:39] CALL Heartbeat: {}
+[2026-06-05 19:45:39] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:45:39Z"}
+[2026-06-05 19:45:39] TX [3,"1780681539195-74-gyve2x1l3n8f2",{"currentTime":"2026-06-05T17:45:39Z"}]
+[2026-06-05 19:46:09] RX [2,"1780681569354-75-f886imm1hlup","Heartbeat",{}]
+[2026-06-05 19:46:09] CALL Heartbeat: {}
+[2026-06-05 19:46:09] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:46:09Z"}
+[2026-06-05 19:46:09] TX [3,"1780681569354-75-f886imm1hlup",{"currentTime":"2026-06-05T17:46:09Z"}]
+[2026-06-05 19:46:39] RX [2,"1780681599606-76-1tiv9qxnac824","Heartbeat",{}]
+[2026-06-05 19:46:39] CALL Heartbeat: {}
+[2026-06-05 19:46:39] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:46:39Z"}
+[2026-06-05 19:46:39] TX [3,"1780681599606-76-1tiv9qxnac824",{"currentTime":"2026-06-05T17:46:39Z"}]
+[2026-06-05 19:47:09] RX [2,"1780681629785-77-dthek2z3er3n","Heartbeat",{}]
+[2026-06-05 19:47:09] CALL Heartbeat: {}
+[2026-06-05 19:47:09] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:47:09Z"}
+[2026-06-05 19:47:09] TX [3,"1780681629785-77-dthek2z3er3n",{"currentTime":"2026-06-05T17:47:09Z"}]
+[2026-06-05 19:47:39] RX [2,"1780681659939-78-nehx791auv72n","Heartbeat",{}]
+[2026-06-05 19:47:39] CALL Heartbeat: {}
+[2026-06-05 19:47:39] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:47:39Z"}
+[2026-06-05 19:47:39] TX [3,"1780681659939-78-nehx791auv72n",{"currentTime":"2026-06-05T17:47:39Z"}]
+[2026-06-05 19:48:10] RX [2,"1780681690087-79-15my5ov4rs6nw","Heartbeat",{}]
+[2026-06-05 19:48:10] CALL Heartbeat: {}
+[2026-06-05 19:48:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:48:10Z"}
+[2026-06-05 19:48:10] TX [3,"1780681690087-79-15my5ov4rs6nw",{"currentTime":"2026-06-05T17:48:10Z"}]
+[2026-06-05 19:48:40] RX [2,"1780681720260-80-10unj9m1g1yrx7","Heartbeat",{}]
+[2026-06-05 19:48:40] CALL Heartbeat: {}
+[2026-06-05 19:48:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:48:40Z"}
+[2026-06-05 19:48:40] TX [3,"1780681720260-80-10unj9m1g1yrx7",{"currentTime":"2026-06-05T17:48:40Z"}]
+[2026-06-05 19:49:10] RX [2,"1780681750474-81-1rs5bpqpwyro9","Heartbeat",{}]
+[2026-06-05 19:49:10] CALL Heartbeat: {}
+[2026-06-05 19:49:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:49:10Z"}
+[2026-06-05 19:49:10] TX [3,"1780681750474-81-1rs5bpqpwyro9",{"currentTime":"2026-06-05T17:49:10Z"}]
+[2026-06-05 19:49:40] RX [2,"1780681780618-82-1t7gwte1wewh7i","Heartbeat",{}]
+[2026-06-05 19:49:40] CALL Heartbeat: {}
+[2026-06-05 19:49:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:49:40Z"}
+[2026-06-05 19:49:40] TX [3,"1780681780618-82-1t7gwte1wewh7i",{"currentTime":"2026-06-05T17:49:40Z"}]
+[2026-06-05 19:50:10] RX [2,"1780681810781-83-10cm6001dcuytb","Heartbeat",{}]
+[2026-06-05 19:50:10] CALL Heartbeat: {}
+[2026-06-05 19:50:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:50:10Z"}
+[2026-06-05 19:50:10] TX [3,"1780681810781-83-10cm6001dcuytb",{"currentTime":"2026-06-05T17:50:10Z"}]
+[2026-06-05 19:50:40] RX [2,"1780681840914-84-1ihitzn9car9h","Heartbeat",{}]
+[2026-06-05 19:50:40] CALL Heartbeat: {}
+[2026-06-05 19:50:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:50:40Z"}
+[2026-06-05 19:50:40] TX [3,"1780681840914-84-1ihitzn9car9h",{"currentTime":"2026-06-05T17:50:40Z"}]
+[2026-06-05 19:51:11] RX [2,"1780681871093-85-1mt82wu12l82mi","Heartbeat",{}]
+[2026-06-05 19:51:11] CALL Heartbeat: {}
+[2026-06-05 19:51:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:51:11Z"}
+[2026-06-05 19:51:11] TX [3,"1780681871093-85-1mt82wu12l82mi",{"currentTime":"2026-06-05T17:51:11Z"}]
+[2026-06-05 19:51:41] RX [2,"1780681901286-86-14poh6e18cx9hu","Heartbeat",{}]
+[2026-06-05 19:51:41] CALL Heartbeat: {}
+[2026-06-05 19:51:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:51:41Z"}
+[2026-06-05 19:51:41] TX [3,"1780681901286-86-14poh6e18cx9hu",{"currentTime":"2026-06-05T17:51:41Z"}]
+[2026-06-05 19:52:11] RX [2,"1780681931465-87-1npd2nebgjh2m","Heartbeat",{}]
+[2026-06-05 19:52:11] CALL Heartbeat: {}
+[2026-06-05 19:52:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:52:11Z"}
+[2026-06-05 19:52:11] TX [3,"1780681931465-87-1npd2nebgjh2m",{"currentTime":"2026-06-05T17:52:11Z"}]
+[2026-06-05 19:52:41] RX [2,"1780681961567-88-1ca47sif4r5xl","Heartbeat",{}]
+[2026-06-05 19:52:41] CALL Heartbeat: {}
+[2026-06-05 19:52:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:52:41Z"}
+[2026-06-05 19:52:41] TX [3,"1780681961567-88-1ca47sif4r5xl",{"currentTime":"2026-06-05T17:52:41Z"}]
+[2026-06-05 19:53:11] RX [2,"1780681991687-89-nu5wt41sdoekk","Heartbeat",{}]
+[2026-06-05 19:53:11] CALL Heartbeat: {}
+[2026-06-05 19:53:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:53:11Z"}
+[2026-06-05 19:53:11] TX [3,"1780681991687-89-nu5wt41sdoekk",{"currentTime":"2026-06-05T17:53:11Z"}]
+[2026-06-05 19:53:41] RX [2,"1780682021820-90-1wd4p0d1og5i6k","Heartbeat",{}]
+[2026-06-05 19:53:41] CALL Heartbeat: {}
+[2026-06-05 19:53:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:53:41Z"}
+[2026-06-05 19:53:41] TX [3,"1780682021820-90-1wd4p0d1og5i6k",{"currentTime":"2026-06-05T17:53:41Z"}]
+[2026-06-05 19:54:11] RX [2,"1780682051989-91-1jfx0521jgsvfb","Heartbeat",{}]
+[2026-06-05 19:54:11] CALL Heartbeat: {}
+[2026-06-05 19:54:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:54:11Z"}
+[2026-06-05 19:54:11] TX [3,"1780682051989-91-1jfx0521jgsvfb",{"currentTime":"2026-06-05T17:54:11Z"}]
+[2026-06-05 19:54:42] RX [2,"1780682082128-92-lexga31x19kjo","Heartbeat",{}]
+[2026-06-05 19:54:42] CALL Heartbeat: {}
+[2026-06-05 19:54:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:54:42Z"}
+[2026-06-05 19:54:42] TX [3,"1780682082128-92-lexga31x19kjo",{"currentTime":"2026-06-05T17:54:42Z"}]
+[2026-06-05 19:55:12] RX [2,"1780682112268-93-kl9it49cktbo","Heartbeat",{}]
+[2026-06-05 19:55:12] CALL Heartbeat: {}
+[2026-06-05 19:55:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:55:12Z"}
+[2026-06-05 19:55:12] TX [3,"1780682112268-93-kl9it49cktbo",{"currentTime":"2026-06-05T17:55:12Z"}]
+[2026-06-05 19:55:42] RX [2,"1780682142530-94-armicaegn8gq","Heartbeat",{}]
+[2026-06-05 19:55:42] CALL Heartbeat: {}
+[2026-06-05 19:55:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:55:42Z"}
+[2026-06-05 19:55:42] TX [3,"1780682142530-94-armicaegn8gq",{"currentTime":"2026-06-05T17:55:42Z"}]
+[2026-06-05 19:56:12] RX [2,"1780682172672-95-r0bnszqjv9o","Heartbeat",{}]
+[2026-06-05 19:56:12] CALL Heartbeat: {}
+[2026-06-05 19:56:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:56:12Z"}
+[2026-06-05 19:56:12] TX [3,"1780682172672-95-r0bnszqjv9o",{"currentTime":"2026-06-05T17:56:12Z"}]
+[2026-06-05 19:56:42] RX [2,"1780682202840-96-5mgn1o12cpqp4","Heartbeat",{}]
+[2026-06-05 19:56:42] CALL Heartbeat: {}
+[2026-06-05 19:56:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:56:42Z"}
+[2026-06-05 19:56:42] TX [3,"1780682202840-96-5mgn1o12cpqp4",{"currentTime":"2026-06-05T17:56:42Z"}]
+[2026-06-05 19:57:13] RX [2,"1780682233036-97-1xwbnbr1mb8zwz","Heartbeat",{}]
+[2026-06-05 19:57:13] CALL Heartbeat: {}
+[2026-06-05 19:57:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:57:13Z"}
+[2026-06-05 19:57:13] TX [3,"1780682233036-97-1xwbnbr1mb8zwz",{"currentTime":"2026-06-05T17:57:13Z"}]
+[2026-06-05 19:57:43] RX [2,"1780682263198-98-yksc4v4623s","Heartbeat",{}]
+[2026-06-05 19:57:43] CALL Heartbeat: {}
+[2026-06-05 19:57:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:57:43Z"}
+[2026-06-05 19:57:43] TX [3,"1780682263198-98-yksc4v4623s",{"currentTime":"2026-06-05T17:57:43Z"}]
+[2026-06-05 19:58:13] RX [2,"1780682293324-99-1vzwufh15v4pmw","Heartbeat",{}]
+[2026-06-05 19:58:13] CALL Heartbeat: {}
+[2026-06-05 19:58:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:58:13Z"}
+[2026-06-05 19:58:13] TX [3,"1780682293324-99-1vzwufh15v4pmw",{"currentTime":"2026-06-05T17:58:13Z"}]
+[2026-06-05 19:58:43] RX [2,"1780682323531-100-17mf8q417ydx92","Heartbeat",{}]
+[2026-06-05 19:58:43] CALL Heartbeat: {}
+[2026-06-05 19:58:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:58:43Z"}
+[2026-06-05 19:58:43] TX [3,"1780682323531-100-17mf8q417ydx92",{"currentTime":"2026-06-05T17:58:43Z"}]
+[2026-06-05 19:59:13] RX [2,"1780682353659-101-491n1e1jbs0rv","Heartbeat",{}]
+[2026-06-05 19:59:13] CALL Heartbeat: {}
+[2026-06-05 19:59:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:59:13Z"}
+[2026-06-05 19:59:13] TX [3,"1780682353659-101-491n1e1jbs0rv",{"currentTime":"2026-06-05T17:59:13Z"}]
+[2026-06-05 19:59:43] RX [2,"1780682383877-102-sn461eq2kfed","Heartbeat",{}]
+[2026-06-05 19:59:43] CALL Heartbeat: {}
+[2026-06-05 19:59:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T17:59:43Z"}
+[2026-06-05 19:59:43] TX [3,"1780682383877-102-sn461eq2kfed",{"currentTime":"2026-06-05T17:59:43Z"}]
+[2026-06-05 20:00:14] RX [2,"1780682414225-103-cv5ump1oej3l8","Heartbeat",{}]
+[2026-06-05 20:00:14] CALL Heartbeat: {}
+[2026-06-05 20:00:14] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:00:14Z"}
+[2026-06-05 20:00:14] TX [3,"1780682414225-103-cv5ump1oej3l8",{"currentTime":"2026-06-05T18:00:14Z"}]
+[2026-06-05 20:00:44] RX [2,"1780682444358-104-kkzmfq46zlha","Heartbeat",{}]
+[2026-06-05 20:00:44] CALL Heartbeat: {}
+[2026-06-05 20:00:44] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:00:44Z"}
+[2026-06-05 20:00:44] TX [3,"1780682444358-104-kkzmfq46zlha",{"currentTime":"2026-06-05T18:00:44Z"}]
+[2026-06-05 20:01:14] RX [2,"1780682474512-105-1lj43k1aae161","Heartbeat",{}]
+[2026-06-05 20:01:14] CALL Heartbeat: {}
+[2026-06-05 20:01:14] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:01:14Z"}
+[2026-06-05 20:01:14] TX [3,"1780682474512-105-1lj43k1aae161",{"currentTime":"2026-06-05T18:01:14Z"}]
+[2026-06-05 20:01:44] RX [2,"1780682504684-106-1wxim6igztu1","Heartbeat",{}]
+[2026-06-05 20:01:44] CALL Heartbeat: {}
+[2026-06-05 20:01:44] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:01:44Z"}
+[2026-06-05 20:01:44] TX [3,"1780682504684-106-1wxim6igztu1",{"currentTime":"2026-06-05T18:01:44Z"}]
+[2026-06-05 20:02:14] RX [2,"1780682534837-107-owfvkycsw62q","Heartbeat",{}]
+[2026-06-05 20:02:14] CALL Heartbeat: {}
+[2026-06-05 20:02:14] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:02:14Z"}
+[2026-06-05 20:02:14] TX [3,"1780682534837-107-owfvkycsw62q",{"currentTime":"2026-06-05T18:02:14Z"}]
+[2026-06-05 20:02:45] RX [2,"1780682565025-108-z41hlh1c45npv","Heartbeat",{}]
+[2026-06-05 20:02:45] CALL Heartbeat: {}
+[2026-06-05 20:02:45] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:02:45Z"}
+[2026-06-05 20:02:45] TX [3,"1780682565025-108-z41hlh1c45npv",{"currentTime":"2026-06-05T18:02:45Z"}]
+[2026-06-05 20:03:15] RX [2,"1780682595228-109-57hjfhn4f8xr","Heartbeat",{}]
+[2026-06-05 20:03:15] CALL Heartbeat: {}
+[2026-06-05 20:03:15] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:03:15Z"}
+[2026-06-05 20:03:15] TX [3,"1780682595228-109-57hjfhn4f8xr",{"currentTime":"2026-06-05T18:03:15Z"}]
+[2026-06-05 20:03:45] RX [2,"1780682625541-110-19iqaf8fwrsmg","Heartbeat",{}]
+[2026-06-05 20:03:45] CALL Heartbeat: {}
+[2026-06-05 20:03:45] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:03:45Z"}
+[2026-06-05 20:03:45] TX [3,"1780682625541-110-19iqaf8fwrsmg",{"currentTime":"2026-06-05T18:03:45Z"}]
+[2026-06-05 20:04:15] RX [2,"1780682655923-111-1evfr79v97dtg","Heartbeat",{}]
+[2026-06-05 20:04:15] CALL Heartbeat: {}
+[2026-06-05 20:04:15] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:04:15Z"}
+[2026-06-05 20:04:15] TX [3,"1780682655923-111-1evfr79v97dtg",{"currentTime":"2026-06-05T18:04:15Z"}]
+[2026-06-05 20:04:46] RX [2,"1780682686202-112-1b7kkeo85mksv","Heartbeat",{}]
+[2026-06-05 20:04:46] CALL Heartbeat: {}
+[2026-06-05 20:04:46] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:04:46Z"}
+[2026-06-05 20:04:46] TX [3,"1780682686202-112-1b7kkeo85mksv",{"currentTime":"2026-06-05T18:04:46Z"}]
+[2026-06-05 20:05:16] RX [2,"1780682716417-113-1sxfjq5nouuh7","Heartbeat",{}]
+[2026-06-05 20:05:16] CALL Heartbeat: {}
+[2026-06-05 20:05:16] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:05:16Z"}
+[2026-06-05 20:05:16] TX [3,"1780682716417-113-1sxfjq5nouuh7",{"currentTime":"2026-06-05T18:05:16Z"}]
+[2026-06-05 20:05:46] RX [2,"1780682746597-114-1pwwgn9121ygh","Heartbeat",{}]
+[2026-06-05 20:05:46] CALL Heartbeat: {}
+[2026-06-05 20:05:46] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:05:46Z"}
+[2026-06-05 20:05:46] TX [3,"1780682746597-114-1pwwgn9121ygh",{"currentTime":"2026-06-05T18:05:46Z"}]
+[2026-06-05 20:06:16] RX [2,"1780682776609-115-tpe7s91gjl6mr","Heartbeat",{}]
+[2026-06-05 20:06:16] CALL Heartbeat: {}
+[2026-06-05 20:06:16] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:06:16Z"}
+[2026-06-05 20:06:16] TX [3,"1780682776609-115-tpe7s91gjl6mr",{"currentTime":"2026-06-05T18:06:16Z"}]
+[2026-06-05 20:06:46] RX [2,"1780682806810-116-g1wt0n15smlqb","Heartbeat",{}]
+[2026-06-05 20:06:46] CALL Heartbeat: {}
+[2026-06-05 20:06:46] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:06:46Z"}
+[2026-06-05 20:06:46] TX [3,"1780682806810-116-g1wt0n15smlqb",{"currentTime":"2026-06-05T18:06:46Z"}]
+[2026-06-05 20:07:16] RX [2,"1780682836974-117-f0xl401qaib20","Heartbeat",{}]
+[2026-06-05 20:07:16] CALL Heartbeat: {}
+[2026-06-05 20:07:16] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:07:16Z"}
+[2026-06-05 20:07:16] TX [3,"1780682836974-117-f0xl401qaib20",{"currentTime":"2026-06-05T18:07:16Z"}]
+[2026-06-05 20:07:47] RX [2,"1780682867357-118-1e75nnk13sgf3u","Heartbeat",{}]
+[2026-06-05 20:07:47] CALL Heartbeat: {}
+[2026-06-05 20:07:47] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:07:47Z"}
+[2026-06-05 20:07:47] TX [3,"1780682867357-118-1e75nnk13sgf3u",{"currentTime":"2026-06-05T18:07:47Z"}]
+[2026-06-05 20:08:17] RX [2,"1780682897607-119-g4al4lnkfzzx","Heartbeat",{}]
+[2026-06-05 20:08:17] CALL Heartbeat: {}
+[2026-06-05 20:08:17] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:08:17Z"}
+[2026-06-05 20:08:17] TX [3,"1780682897607-119-g4al4lnkfzzx",{"currentTime":"2026-06-05T18:08:17Z"}]
+[2026-06-05 20:08:47] RX [2,"1780682927752-120-mjbe2c1jlrc3c","Heartbeat",{}]
+[2026-06-05 20:08:47] CALL Heartbeat: {}
+[2026-06-05 20:08:47] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:08:47Z"}
+[2026-06-05 20:08:47] TX [3,"1780682927752-120-mjbe2c1jlrc3c",{"currentTime":"2026-06-05T18:08:47Z"}]
+[2026-06-05 20:09:17] RX [2,"1780682957899-121-k64vobb66we3","Heartbeat",{}]
+[2026-06-05 20:09:17] CALL Heartbeat: {}
+[2026-06-05 20:09:17] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:09:17Z"}
+[2026-06-05 20:09:17] TX [3,"1780682957899-121-k64vobb66we3",{"currentTime":"2026-06-05T18:09:17Z"}]
+[2026-06-05 20:09:48] RX [2,"1780682988090-122-194lkuh1qjgnby","Heartbeat",{}]
+[2026-06-05 20:09:48] CALL Heartbeat: {}
+[2026-06-05 20:09:48] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:09:48Z"}
+[2026-06-05 20:09:48] TX [3,"1780682988090-122-194lkuh1qjgnby",{"currentTime":"2026-06-05T18:09:48Z"}]
+[2026-06-05 20:10:18] RX [2,"1780683018221-123-14d9g9noss2aq","Heartbeat",{}]
+[2026-06-05 20:10:18] CALL Heartbeat: {}
+[2026-06-05 20:10:18] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:10:18Z"}
+[2026-06-05 20:10:18] TX [3,"1780683018221-123-14d9g9noss2aq",{"currentTime":"2026-06-05T18:10:18Z"}]
+[2026-06-05 20:10:48] RX [2,"1780683048370-124-1x3sdnu1gwl423","Heartbeat",{}]
+[2026-06-05 20:10:48] CALL Heartbeat: {}
+[2026-06-05 20:10:48] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:10:48Z"}
+[2026-06-05 20:10:48] TX [3,"1780683048370-124-1x3sdnu1gwl423",{"currentTime":"2026-06-05T18:10:48Z"}]
+[2026-06-05 20:11:19] RX [2,"1780683079211-125-8duwu21nwxs2u","Heartbeat",{}]
+[2026-06-05 20:11:19] CALL Heartbeat: {}
+[2026-06-05 20:11:19] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:11:19Z"}
+[2026-06-05 20:11:19] TX [3,"1780683079211-125-8duwu21nwxs2u",{"currentTime":"2026-06-05T18:11:19Z"}]
+[2026-06-05 20:11:50] RX [2,"1780683110060-126-1ezrqwt6fenhs","Heartbeat",{}]
+[2026-06-05 20:11:50] CALL Heartbeat: {}
+[2026-06-05 20:11:50] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:11:50Z"}
+[2026-06-05 20:11:50] TX [3,"1780683110060-126-1ezrqwt6fenhs",{"currentTime":"2026-06-05T18:11:50Z"}]
+[2026-06-05 20:12:20] RX [2,"1780683140392-127-1bdjxh5nuq4z8","Heartbeat",{}]
+[2026-06-05 20:12:20] CALL Heartbeat: {}
+[2026-06-05 20:12:20] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:12:20Z"}
+[2026-06-05 20:12:20] TX [3,"1780683140392-127-1bdjxh5nuq4z8",{"currentTime":"2026-06-05T18:12:20Z"}]
+[2026-06-05 20:12:50] RX [2,"1780683170553-128-1w8ofh1vr978g","Heartbeat",{}]
+[2026-06-05 20:12:50] CALL Heartbeat: {}
+[2026-06-05 20:12:50] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:12:50Z"}
+[2026-06-05 20:12:50] TX [3,"1780683170553-128-1w8ofh1vr978g",{"currentTime":"2026-06-05T18:12:50Z"}]
+[2026-06-05 20:13:20] RX [2,"1780683200764-129-yah5l8e9pd4u","Heartbeat",{}]
+[2026-06-05 20:13:20] CALL Heartbeat: {}
+[2026-06-05 20:13:20] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:13:20Z"}
+[2026-06-05 20:13:20] TX [3,"1780683200764-129-yah5l8e9pd4u",{"currentTime":"2026-06-05T18:13:20Z"}]
+[2026-06-05 20:13:50] RX [2,"1780683230984-130-956dl78pxzlo","Heartbeat",{}]
+[2026-06-05 20:13:50] CALL Heartbeat: {}
+[2026-06-05 20:13:50] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:13:50Z"}
+[2026-06-05 20:13:50] TX [3,"1780683230984-130-956dl78pxzlo",{"currentTime":"2026-06-05T18:13:50Z"}]
+[2026-06-05 20:14:21] RX [2,"1780683261160-131-1dcn1ey1rdeiiy","Heartbeat",{}]
+[2026-06-05 20:14:21] CALL Heartbeat: {}
+[2026-06-05 20:14:21] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:14:21Z"}
+[2026-06-05 20:14:21] TX [3,"1780683261160-131-1dcn1ey1rdeiiy",{"currentTime":"2026-06-05T18:14:21Z"}]
+[2026-06-05 20:14:51] RX [2,"1780683291269-132-1scocvk14b0u4d","Heartbeat",{}]
+[2026-06-05 20:14:51] CALL Heartbeat: {}
+[2026-06-05 20:14:51] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:14:51Z"}
+[2026-06-05 20:14:51] TX [3,"1780683291269-132-1scocvk14b0u4d",{"currentTime":"2026-06-05T18:14:51Z"}]
+[2026-06-05 20:15:21] RX [2,"1780683321515-133-1os5ykg1wymb73","Heartbeat",{}]
+[2026-06-05 20:15:21] CALL Heartbeat: {}
+[2026-06-05 20:15:21] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:15:21Z"}
+[2026-06-05 20:15:21] TX [3,"1780683321515-133-1os5ykg1wymb73",{"currentTime":"2026-06-05T18:15:21Z"}]
+[2026-06-05 20:15:51] RX [2,"1780683351654-134-o5u9021kfnghk","Heartbeat",{}]
+[2026-06-05 20:15:51] CALL Heartbeat: {}
+[2026-06-05 20:15:51] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:15:51Z"}
+[2026-06-05 20:15:51] TX [3,"1780683351654-134-o5u9021kfnghk",{"currentTime":"2026-06-05T18:15:51Z"}]
+[2026-06-05 20:16:21] RX [2,"1780683381943-135-5bdsbh1lqogq9","Heartbeat",{}]
+[2026-06-05 20:16:21] CALL Heartbeat: {}
+[2026-06-05 20:16:21] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:16:21Z"}
+[2026-06-05 20:16:21] TX [3,"1780683381943-135-5bdsbh1lqogq9",{"currentTime":"2026-06-05T18:16:21Z"}]
+[2026-06-05 20:16:52] RX [2,"1780683412142-136-c06bnv1jnh051","Heartbeat",{}]
+[2026-06-05 20:16:52] CALL Heartbeat: {}
+[2026-06-05 20:16:52] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:16:52Z"}
+[2026-06-05 20:16:52] TX [3,"1780683412142-136-c06bnv1jnh051",{"currentTime":"2026-06-05T18:16:52Z"}]
+[2026-06-05 20:17:22] RX [2,"1780683442265-137-12at2iz1gkymig","Heartbeat",{}]
+[2026-06-05 20:17:22] CALL Heartbeat: {}
+[2026-06-05 20:17:22] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:17:22Z"}
+[2026-06-05 20:17:22] TX [3,"1780683442265-137-12at2iz1gkymig",{"currentTime":"2026-06-05T18:17:22Z"}]
+[2026-06-05 20:17:52] RX [2,"1780683472445-138-1wk1qdu168mc4","Heartbeat",{}]
+[2026-06-05 20:17:52] CALL Heartbeat: {}
+[2026-06-05 20:17:52] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:17:52Z"}
+[2026-06-05 20:17:52] TX [3,"1780683472445-138-1wk1qdu168mc4",{"currentTime":"2026-06-05T18:17:52Z"}]
+[2026-06-05 20:18:22] RX [2,"1780683502693-139-1yt6biwg0aykf","Heartbeat",{}]
+[2026-06-05 20:18:22] CALL Heartbeat: {}
+[2026-06-05 20:18:22] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:18:22Z"}
+[2026-06-05 20:18:22] TX [3,"1780683502693-139-1yt6biwg0aykf",{"currentTime":"2026-06-05T18:18:22Z"}]
+[2026-06-05 20:18:52] RX [2,"1780683532905-140-87vdwncx8czc","Heartbeat",{}]
+[2026-06-05 20:18:52] CALL Heartbeat: {}
+[2026-06-05 20:18:52] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:18:52Z"}
+[2026-06-05 20:18:52] TX [3,"1780683532905-140-87vdwncx8czc",{"currentTime":"2026-06-05T18:18:52Z"}]
+[2026-06-05 20:19:23] RX [2,"1780683563052-141-jqcr9q1t2pz6t","Heartbeat",{}]
+[2026-06-05 20:19:23] CALL Heartbeat: {}
+[2026-06-05 20:19:23] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:19:23Z"}
+[2026-06-05 20:19:23] TX [3,"1780683563052-141-jqcr9q1t2pz6t",{"currentTime":"2026-06-05T18:19:23Z"}]
+[2026-06-05 20:19:53] RX [2,"1780683593299-142-1l6qt3ttybn79","Heartbeat",{}]
+[2026-06-05 20:19:53] CALL Heartbeat: {}
+[2026-06-05 20:19:53] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:19:53Z"}
+[2026-06-05 20:19:53] TX [3,"1780683593299-142-1l6qt3ttybn79",{"currentTime":"2026-06-05T18:19:53Z"}]
+[2026-06-05 20:20:23] RX [2,"1780683623580-143-1s479qp1vghcl0","Heartbeat",{}]
+[2026-06-05 20:20:23] CALL Heartbeat: {}
+[2026-06-05 20:20:23] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:20:23Z"}
+[2026-06-05 20:20:23] TX [3,"1780683623580-143-1s479qp1vghcl0",{"currentTime":"2026-06-05T18:20:23Z"}]
+[2026-06-05 20:20:53] RX [2,"1780683653713-144-1i1aa2b1q64le8","Heartbeat",{}]
+[2026-06-05 20:20:53] CALL Heartbeat: {}
+[2026-06-05 20:20:53] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:20:53Z"}
+[2026-06-05 20:20:53] TX [3,"1780683653713-144-1i1aa2b1q64le8",{"currentTime":"2026-06-05T18:20:53Z"}]
+[2026-06-05 20:21:23] RX [2,"1780683683855-145-14i0pbg13a7pro","Heartbeat",{}]
+[2026-06-05 20:21:23] CALL Heartbeat: {}
+[2026-06-05 20:21:23] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:21:23Z"}
+[2026-06-05 20:21:23] TX [3,"1780683683855-145-14i0pbg13a7pro",{"currentTime":"2026-06-05T18:21:23Z"}]
+[2026-06-05 20:22:24] RX [2,"1780683744869-146-1erg2dbs6822p","Heartbeat",{}]
+[2026-06-05 20:22:24] CALL Heartbeat: {}
+[2026-06-05 20:22:24] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:22:24Z"}
+[2026-06-05 20:22:24] TX [3,"1780683744869-146-1erg2dbs6822p",{"currentTime":"2026-06-05T18:22:24Z"}]
+[2026-06-05 20:22:55] RX [2,"1780683775017-147-jy99bj9y91z2","Heartbeat",{}]
+[2026-06-05 20:22:55] CALL Heartbeat: {}
+[2026-06-05 20:22:55] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:22:55Z"}
+[2026-06-05 20:22:55] TX [3,"1780683775017-147-jy99bj9y91z2",{"currentTime":"2026-06-05T18:22:55Z"}]
+[2026-06-05 20:23:25] RX [2,"1780683805165-148-442o6uyso3w","Heartbeat",{}]
+[2026-06-05 20:23:25] CALL Heartbeat: {}
+[2026-06-05 20:23:25] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:23:25Z"}
+[2026-06-05 20:23:25] TX [3,"1780683805165-148-442o6uyso3w",{"currentTime":"2026-06-05T18:23:25Z"}]
+[2026-06-05 20:23:55] RX [2,"1780683835428-149-1a8uxtu34zuu","Heartbeat",{}]
+[2026-06-05 20:23:55] CALL Heartbeat: {}
+[2026-06-05 20:23:55] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:23:55Z"}
+[2026-06-05 20:23:55] TX [3,"1780683835428-149-1a8uxtu34zuu",{"currentTime":"2026-06-05T18:23:55Z"}]
+[2026-06-05 20:24:25] RX [2,"1780683865588-150-iopt2n1i7dzlv","Heartbeat",{}]
+[2026-06-05 20:24:25] CALL Heartbeat: {}
+[2026-06-05 20:24:25] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:24:25Z"}
+[2026-06-05 20:24:25] TX [3,"1780683865588-150-iopt2n1i7dzlv",{"currentTime":"2026-06-05T18:24:25Z"}]
+[2026-06-05 20:24:55] RX [2,"1780683895914-151-1alra871y97s2t","Heartbeat",{}]
+[2026-06-05 20:24:55] CALL Heartbeat: {}
+[2026-06-05 20:24:55] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:24:55Z"}
+[2026-06-05 20:24:55] TX [3,"1780683895914-151-1alra871y97s2t",{"currentTime":"2026-06-05T18:24:55Z"}]
+[2026-06-05 20:25:26] RX [2,"1780683926062-152-1exue251tc7le0","Heartbeat",{}]
+[2026-06-05 20:25:26] CALL Heartbeat: {}
+[2026-06-05 20:25:26] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:25:26Z"}
+[2026-06-05 20:25:26] TX [3,"1780683926062-152-1exue251tc7le0",{"currentTime":"2026-06-05T18:25:26Z"}]
+[2026-06-05 20:25:56] RX [2,"1780683956194-153-1xyfz4z1txtsun","Heartbeat",{}]
+[2026-06-05 20:25:56] CALL Heartbeat: {}
+[2026-06-05 20:25:56] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:25:56Z"}
+[2026-06-05 20:25:56] TX [3,"1780683956194-153-1xyfz4z1txtsun",{"currentTime":"2026-06-05T18:25:56Z"}]
+[2026-06-05 20:26:26] RX [2,"1780683986471-154-14qfn8vybr927","Heartbeat",{}]
+[2026-06-05 20:26:26] CALL Heartbeat: {}
+[2026-06-05 20:26:26] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:26:26Z"}
+[2026-06-05 20:26:26] TX [3,"1780683986471-154-14qfn8vybr927",{"currentTime":"2026-06-05T18:26:26Z"}]
+[2026-06-05 20:26:56] RX [2,"1780684016635-155-fkgg351dzfct9","Heartbeat",{}]
+[2026-06-05 20:26:56] CALL Heartbeat: {}
+[2026-06-05 20:26:56] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:26:56Z"}
+[2026-06-05 20:26:56] TX [3,"1780684016635-155-fkgg351dzfct9",{"currentTime":"2026-06-05T18:26:56Z"}]
+[2026-06-05 20:27:26] RX [2,"1780684046783-156-z0mflp1t77f38","Heartbeat",{}]
+[2026-06-05 20:27:26] CALL Heartbeat: {}
+[2026-06-05 20:27:26] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:27:26Z"}
+[2026-06-05 20:27:26] TX [3,"1780684046783-156-z0mflp1t77f38",{"currentTime":"2026-06-05T18:27:26Z"}]
+[2026-06-05 20:27:59] RX [2,"1780684079784-157-q0tz0m1pqw9h0","Heartbeat",{}]
+[2026-06-05 20:27:59] CALL Heartbeat: {}
+[2026-06-05 20:27:59] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:27:59Z"}
+[2026-06-05 20:27:59] TX [3,"1780684079784-157-q0tz0m1pqw9h0",{"currentTime":"2026-06-05T18:27:59Z"}]
+[2026-06-05 20:28:30] RX [2,"1780684110785-158-1bjxz4qwqmlcu","Heartbeat",{}]
+[2026-06-05 20:28:30] CALL Heartbeat: {}
+[2026-06-05 20:28:30] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:28:30Z"}
+[2026-06-05 20:28:30] TX [3,"1780684110785-158-1bjxz4qwqmlcu",{"currentTime":"2026-06-05T18:28:30Z"}]
+[2026-06-05 20:29:01] RX [2,"1780684141168-159-ih1ets1p6xv6c","Heartbeat",{}]
+[2026-06-05 20:29:01] CALL Heartbeat: {}
+[2026-06-05 20:29:01] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:29:01Z"}
+[2026-06-05 20:29:01] TX [3,"1780684141168-159-ih1ets1p6xv6c",{"currentTime":"2026-06-05T18:29:01Z"}]
+[2026-06-05 20:29:59] RX [2,"1780684199915-160-q90xyaqjike3","Heartbeat",{}]
+[2026-06-05 20:29:59] CALL Heartbeat: {}
+[2026-06-05 20:29:59] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:29:59Z"}
+[2026-06-05 20:29:59] TX [3,"1780684199915-160-q90xyaqjike3",{"currentTime":"2026-06-05T18:29:59Z"}]
+[2026-06-05 20:31:03] RX [2,"1780684263129-161-1fab16l10l9fli","Heartbeat",{}]
+[2026-06-05 20:31:03] CALL Heartbeat: {}
+[2026-06-05 20:31:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:31:03Z"}
+[2026-06-05 20:31:03] TX [3,"1780684263129-161-1fab16l10l9fli",{"currentTime":"2026-06-05T18:31:03Z"}]
+[2026-06-05 20:31:33] RX [2,"1780684293438-162-19yllqp1yr9tnx","Heartbeat",{}]
+[2026-06-05 20:31:33] CALL Heartbeat: {}
+[2026-06-05 20:31:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:31:33Z"}
+[2026-06-05 20:31:33] TX [3,"1780684293438-162-19yllqp1yr9tnx",{"currentTime":"2026-06-05T18:31:33Z"}]
+[2026-06-05 20:32:27] RX [2,"1780684347877-163-13oymcv1g74bnx","Heartbeat",{}]
+[2026-06-05 20:32:27] CALL Heartbeat: {}
+[2026-06-05 20:32:27] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:32:27Z"}
+[2026-06-05 20:32:27] TX [3,"1780684347877-163-13oymcv1g74bnx",{"currentTime":"2026-06-05T18:32:27Z"}]
+[2026-06-05 20:32:58] RX [2,"1780684378163-164-1oygumi1b65tf1","Heartbeat",{}]
+[2026-06-05 20:32:58] CALL Heartbeat: {}
+[2026-06-05 20:32:58] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:32:58Z"}
+[2026-06-05 20:32:58] TX [3,"1780684378163-164-1oygumi1b65tf1",{"currentTime":"2026-06-05T18:32:58Z"}]
+[2026-06-05 20:38:03] RX [2,"1780684683608-165-15a9ai31ykjgv","Heartbeat",{}]
+[2026-06-05 20:38:03] CALL Heartbeat: {}
+[2026-06-05 20:38:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:38:03Z"}
+[2026-06-05 20:38:03] TX [3,"1780684683608-165-15a9ai31ykjgv",{"currentTime":"2026-06-05T18:38:03Z"}]
+[2026-06-05 20:38:33] RX [2,"1780684713813-166-1ua91161r6ujps","Heartbeat",{}]
+[2026-06-05 20:38:33] CALL Heartbeat: {}
+[2026-06-05 20:38:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:38:33Z"}
+[2026-06-05 20:38:33] TX [3,"1780684713813-166-1ua91161r6ujps",{"currentTime":"2026-06-05T18:38:33Z"}]
+[2026-06-05 20:39:03] RX [2,"1780684743963-167-i3ay7p1f24gbh","Heartbeat",{}]
+[2026-06-05 20:39:03] CALL Heartbeat: {}
+[2026-06-05 20:39:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:39:03Z"}
+[2026-06-05 20:39:03] TX [3,"1780684743963-167-i3ay7p1f24gbh",{"currentTime":"2026-06-05T18:39:03Z"}]
+[2026-06-05 20:39:34] RX [2,"1780684774106-168-1fs6ugv1f7zc1y","Heartbeat",{}]
+[2026-06-05 20:39:34] CALL Heartbeat: {}
+[2026-06-05 20:39:34] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:39:34Z"}
+[2026-06-05 20:39:34] TX [3,"1780684774106-168-1fs6ugv1f7zc1y",{"currentTime":"2026-06-05T18:39:34Z"}]
+[2026-06-05 20:40:04] RX [2,"1780684804405-169-376puluvp5lz","Heartbeat",{}]
+[2026-06-05 20:40:04] CALL Heartbeat: {}
+[2026-06-05 20:40:04] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:40:04Z"}
+[2026-06-05 20:40:04] TX [3,"1780684804405-169-376puluvp5lz",{"currentTime":"2026-06-05T18:40:04Z"}]
+[2026-06-05 20:40:34] RX [2,"1780684834533-170-1nmgebe1hzrxzv","Heartbeat",{}]
+[2026-06-05 20:40:34] CALL Heartbeat: {}
+[2026-06-05 20:40:34] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:40:34Z"}
+[2026-06-05 20:40:34] TX [3,"1780684834533-170-1nmgebe1hzrxzv",{"currentTime":"2026-06-05T18:40:34Z"}]
+[2026-06-05 20:41:04] RX [2,"1780684864858-171-a32qwuogaue4","Heartbeat",{}]
+[2026-06-05 20:41:04] CALL Heartbeat: {}
+[2026-06-05 20:41:04] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:41:04Z"}
+[2026-06-05 20:41:04] TX [3,"1780684864858-171-a32qwuogaue4",{"currentTime":"2026-06-05T18:41:04Z"}]
+[2026-06-05 20:41:35] RX [2,"1780684895030-172-1hmjbt71wnnha6","Heartbeat",{}]
+[2026-06-05 20:41:35] CALL Heartbeat: {}
+[2026-06-05 20:41:35] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:41:35Z"}
+[2026-06-05 20:41:35] TX [3,"1780684895030-172-1hmjbt71wnnha6",{"currentTime":"2026-06-05T18:41:35Z"}]
+[2026-06-05 20:42:08] RX [2,"1780684928890-173-i9fhou1dhte6g","Heartbeat",{}]
+[2026-06-05 20:42:08] CALL Heartbeat: {}
+[2026-06-05 20:42:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:42:08Z"}
+[2026-06-05 20:42:08] TX [3,"1780684928890-173-i9fhou1dhte6g",{"currentTime":"2026-06-05T18:42:08Z"}]
+[2026-06-05 20:43:02] RX [2,"1780684982563-174-1qyznmg1uwsgkr","Heartbeat",{}]
+[2026-06-05 20:43:02] CALL Heartbeat: {}
+[2026-06-05 20:43:02] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:43:02Z"}
+[2026-06-05 20:43:02] TX [3,"1780684982563-174-1qyznmg1uwsgkr",{"currentTime":"2026-06-05T18:43:02Z"}]
+[2026-06-05 20:43:32] RX [2,"1780685012776-175-1mm7i717oc0e","Heartbeat",{}]
+[2026-06-05 20:43:32] CALL Heartbeat: {}
+[2026-06-05 20:43:32] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:43:32Z"}
+[2026-06-05 20:43:32] TX [3,"1780685012776-175-1mm7i717oc0e",{"currentTime":"2026-06-05T18:43:32Z"}]
+[2026-06-05 20:44:02] RX [2,"1780685042971-176-1ragd164fer7z","Heartbeat",{}]
+[2026-06-05 20:44:02] CALL Heartbeat: {}
+[2026-06-05 20:44:02] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:44:02Z"}
+[2026-06-05 20:44:02] TX [3,"1780685042971-176-1ragd164fer7z",{"currentTime":"2026-06-05T18:44:02Z"}]
+[2026-06-05 20:44:33] RX [2,"1780685073226-177-16ko0bz12juzuq","Heartbeat",{}]
+[2026-06-05 20:44:33] CALL Heartbeat: {}
+[2026-06-05 20:44:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:44:33Z"}
+[2026-06-05 20:44:33] TX [3,"1780685073226-177-16ko0bz12juzuq",{"currentTime":"2026-06-05T18:44:33Z"}]
+[2026-06-05 20:45:03] RX [2,"1780685103402-178-1pr7lbw15utniw","Heartbeat",{}]
+[2026-06-05 20:45:03] CALL Heartbeat: {}
+[2026-06-05 20:45:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:45:03Z"}
+[2026-06-05 20:45:03] TX [3,"1780685103402-178-1pr7lbw15utniw",{"currentTime":"2026-06-05T18:45:03Z"}]
+[2026-06-05 20:45:33] RX [2,"1780685133555-179-ath07a1fwpcz6","Heartbeat",{}]
+[2026-06-05 20:45:33] CALL Heartbeat: {}
+[2026-06-05 20:45:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:45:33Z"}
+[2026-06-05 20:45:33] TX [3,"1780685133555-179-ath07a1fwpcz6",{"currentTime":"2026-06-05T18:45:33Z"}]
+[2026-06-05 20:46:03] RX [2,"1780685163772-180-o0xmp0paswwl","Heartbeat",{}]
+[2026-06-05 20:46:03] CALL Heartbeat: {}
+[2026-06-05 20:46:03] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:46:03Z"}
+[2026-06-05 20:46:03] TX [3,"1780685163772-180-o0xmp0paswwl",{"currentTime":"2026-06-05T18:46:03Z"}]
+[2026-06-05 20:46:33] RX [2,"1780685193936-181-oqgisw8eymox","Heartbeat",{}]
+[2026-06-05 20:46:33] CALL Heartbeat: {}
+[2026-06-05 20:46:33] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:46:33Z"}
+[2026-06-05 20:46:33] TX [3,"1780685193936-181-oqgisw8eymox",{"currentTime":"2026-06-05T18:46:33Z"}]
+[2026-06-05 20:47:04] RX [2,"1780685224164-182-1l1ncxd97gnsj","Heartbeat",{}]
+[2026-06-05 20:47:04] CALL Heartbeat: {}
+[2026-06-05 20:47:04] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:47:04Z"}
+[2026-06-05 20:47:04] TX [3,"1780685224164-182-1l1ncxd97gnsj",{"currentTime":"2026-06-05T18:47:04Z"}]
+[2026-06-05 20:48:40] RX [2,"1780685320092-1-7vzw7k14awlrn","BootNotification",{"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}]
+[2026-06-05 20:48:40] CALL BootNotification: {"chargePointVendor":"AVT-Company","chargePointModel":"AVT-Express","chargePointSerialNumber":"avt.001.13.1","chargeBoxSerialNumber":"avt.001.13.1.01","firmwareVersion":"0.9.87","iccid":"","imsi":"","meterType":"AVT NQC-ACDC","meterSerialNumber":"avt.001.13.1.01"}
+[2026-06-05 20:48:40] CALL_RESULT BootNotification: {"currentTime":"2026-06-05T18:48:40Z","interval":30,"status":"Accepted"}
+[2026-06-05 20:48:40] TX [3,"1780685320092-1-7vzw7k14awlrn",{"currentTime":"2026-06-05T18:48:40Z","interval":30,"status":"Accepted"}]
+[2026-06-05 20:48:40] RX [2,"1780685320092-2-1l8a9mto2dgv2","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:40Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 20:48:40] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:40Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 20:48:40] Connector 1 status: Available
+[2026-06-05 20:48:40] CALL_RESULT StatusNotification: {}
+[2026-06-05 20:48:40] TX [3,"1780685320092-2-1l8a9mto2dgv2",{}]
+[2026-06-05 20:48:40] RX [2,"1780685320092-3-11m472x1tks2iw","StatusNotification",{"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:40Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 20:48:40] CALL StatusNotification: {"connectorId":2,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:40Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 20:48:40] Connector 2 status: Available
+[2026-06-05 20:48:40] CALL_RESULT StatusNotification: {}
+[2026-06-05 20:48:40] TX [3,"1780685320092-3-11m472x1tks2iw",{}]
+[2026-06-05 20:48:55] TX [2,"server-1780685335787-1-b216e8","RemoteStartTransaction",{"connectorId":1,"idTag":"TAG7606000088"}]
+[2026-06-05 20:48:55] RX [3,"server-1780685335787-1-b216e8",{"status":"Accepted"}]
+[2026-06-05 20:48:55] CALL_RESULT from charger: [3,"server-1780685335787-1-b216e8",{"status":"Accepted"}]
+[2026-06-05 20:48:55] RX [2,"1780685335791-4-1v7lk3msva80d","StatusNotification",{"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:55Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 20:48:55] CALL StatusNotification: {"connectorId":1,"status":"Charging","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:48:55Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 20:48:55] Connector 1 status: Charging
+[2026-06-05 20:48:55] CALL_RESULT StatusNotification: {}
+[2026-06-05 20:48:55] TX [3,"1780685335791-4-1v7lk3msva80d",{}]
+[2026-06-05 20:48:55] RX [2,"1780685335793-5-64ni1bsd3s5s","StartTransaction",{"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T18:48:55Z","meterStart":0,"reservationId":0}]
+[2026-06-05 20:48:55] CALL StartTransaction: {"connectorId":1,"idTag":"TAG7606000088","timestamp":"2026-06-05T18:48:55Z","meterStart":0,"reservationId":0}
+[2026-06-05 20:48:55] CALL_RESULT StartTransaction: {"transactionId":1780685321,"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 20:48:55] TX [3,"1780685335793-5-64ni1bsd3s5s",{"transactionId":1780685321,"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 20:48:55] RX [2,"1780685335798-6-1fezpa1rxyfo","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:48:55Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:48:55] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:48:55Z","sampledValue":[{"value":"0","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:48:55] CALL_RESULT MeterValues: {}
+[2026-06-05 20:48:55] TX [3,"1780685335798-6-1fezpa1rxyfo",{}]
+[2026-06-05 20:49:10] RX [2,"1780685350126-7-6678u91i21t69","Heartbeat",{}]
+[2026-06-05 20:49:10] CALL Heartbeat: {}
+[2026-06-05 20:49:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:49:10Z"}
+[2026-06-05 20:49:10] TX [3,"1780685350126-7-6678u91i21t69",{"currentTime":"2026-06-05T18:49:10Z"}]
+[2026-06-05 20:49:11] RX [2,"1780685351353-8-sd969w12t4334","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:11Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:49:11] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:11Z","sampledValue":[{"value":"4.166666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.008333333333333","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:49:11] CALL_RESULT MeterValues: {}
+[2026-06-05 20:49:11] TX [3,"1780685351353-8-sd969w12t4334",{}]
+[2026-06-05 20:49:26] RX [2,"1780685366460-9-jbvc5f1ftiots","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:26Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:49:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:26Z","sampledValue":[{"value":"8.333333333333334","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.01666666666667","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:49:26] CALL_RESULT MeterValues: {}
+[2026-06-05 20:49:26] TX [3,"1780685366460-9-jbvc5f1ftiots",{}]
+[2026-06-05 20:49:40] RX [2,"1780685380530-10-1s6d8i3u6z86g","Heartbeat",{}]
+[2026-06-05 20:49:40] CALL Heartbeat: {}
+[2026-06-05 20:49:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:49:40Z"}
+[2026-06-05 20:49:40] TX [3,"1780685380530-10-1s6d8i3u6z86g",{"currentTime":"2026-06-05T18:49:40Z"}]
+[2026-06-05 20:49:41] RX [2,"1780685381535-11-ni96hksn4fuu","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:41Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:49:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:41Z","sampledValue":[{"value":"12.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.025000000000002","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:49:41] CALL_RESULT MeterValues: {}
+[2026-06-05 20:49:41] TX [3,"1780685381535-11-ni96hksn4fuu",{}]
+[2026-06-05 20:49:56] RX [2,"1780685396758-12-1cac10lpw67rc","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:56Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:49:56] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:49:56Z","sampledValue":[{"value":"16.666666666666668","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.033333333333335","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:49:56] CALL_RESULT MeterValues: {}
+[2026-06-05 20:49:56] TX [3,"1780685396758-12-1cac10lpw67rc",{}]
+[2026-06-05 20:50:10] RX [2,"1780685410823-13-15vi6xb1626kpc","Heartbeat",{}]
+[2026-06-05 20:50:10] CALL Heartbeat: {}
+[2026-06-05 20:50:10] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:50:10Z"}
+[2026-06-05 20:50:10] TX [3,"1780685410823-13-15vi6xb1626kpc",{"currentTime":"2026-06-05T18:50:10Z"}]
+[2026-06-05 20:50:11] RX [2,"1780685411828-14-1xzu71l1qgl6n1","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:11Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:50:11] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:11Z","sampledValue":[{"value":"20.833333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.041666666666668","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:50:11] CALL_RESULT MeterValues: {}
+[2026-06-05 20:50:11] TX [3,"1780685411828-14-1xzu71l1qgl6n1",{}]
+[2026-06-05 20:50:26] RX [2,"1780685426900-15-4xrqawfqc005","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:26Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:50:26] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:26Z","sampledValue":[{"value":"25.000000000000004","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.05","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:50:26] CALL_RESULT MeterValues: {}
+[2026-06-05 20:50:26] TX [3,"1780685426900-15-4xrqawfqc005",{}]
+[2026-06-05 20:50:40] RX [2,"1780685440965-16-j8x9x81mbjt","Heartbeat",{}]
+[2026-06-05 20:50:40] CALL Heartbeat: {}
+[2026-06-05 20:50:40] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:50:40Z"}
+[2026-06-05 20:50:40] TX [3,"1780685440965-16-j8x9x81mbjt",{"currentTime":"2026-06-05T18:50:40Z"}]
+[2026-06-05 20:50:41] RX [2,"1780685441973-17-1ovlos01ud10tk","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:41Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:50:41] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:41Z","sampledValue":[{"value":"29.16666666666667","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.058333333333334","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:50:41] CALL_RESULT MeterValues: {}
+[2026-06-05 20:50:41] TX [3,"1780685441973-17-1ovlos01ud10tk",{}]
+[2026-06-05 20:50:57] RX [2,"1780685457117-18-c40mlogyrtys","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:57Z","sampledValue":[{"value":"33.333333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.06666666666667","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:50:57] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:50:57Z","sampledValue":[{"value":"33.333333333333336","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.06666666666667","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:50:57] CALL_RESULT MeterValues: {}
+[2026-06-05 20:50:57] TX [3,"1780685457117-18-c40mlogyrtys",{}]
+[2026-06-05 20:51:11] RX [2,"1780685471186-19-11s3qas1mvukv1","Heartbeat",{}]
+[2026-06-05 20:51:11] CALL Heartbeat: {}
+[2026-06-05 20:51:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:51:11Z"}
+[2026-06-05 20:51:11] TX [3,"1780685471186-19-11s3qas1mvukv1",{"currentTime":"2026-06-05T18:51:11Z"}]
+[2026-06-05 20:51:12] RX [2,"1780685472190-20-1bz4fonsil2uj","MeterValues",{"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:51:12Z","sampledValue":[{"value":"37.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.075000000000003","measurand":"SoC"}]}],"transactionId":1780685321}]
+[2026-06-05 20:51:12] CALL MeterValues: {"connectorId":1,"meterValue":[{"timestamp":"2026-06-05T18:51:12Z","sampledValue":[{"value":"37.5","measurand":"Energy.Active.Import.Register"},{"value":"1000","measurand":"Power.Active.Import"},{"value":"23.075000000000003","measurand":"SoC"}]}],"transactionId":1780685321}
+[2026-06-05 20:51:12] CALL_RESULT MeterValues: {}
+[2026-06-05 20:51:12] TX [3,"1780685472190-20-1bz4fonsil2uj",{}]
+[2026-06-05 20:51:21] RX [2,"1780685481012-21-cxmbevqsupri","StopTransaction",{"transactionId":1780685321,"idTag":"TAG7606000088","timestamp":"2026-06-05T18:51:21Z","meterStop":2000}]
+[2026-06-05 20:51:21] CALL StopTransaction: {"transactionId":1780685321,"idTag":"TAG7606000088","timestamp":"2026-06-05T18:51:21Z","meterStop":2000}
+[2026-06-05 20:51:21] CALL_RESULT StopTransaction: {"idTagInfo":{"status":"Accepted"}}
+[2026-06-05 20:51:21] TX [3,"1780685481012-21-cxmbevqsupri",{"idTagInfo":{"status":"Accepted"}}]
+[2026-06-05 20:51:21] RX [2,"1780685481013-22-7xh9j81gzj4rq","StatusNotification",{"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:51:21Z","vendorId":"","vendorErrorCode":""}]
+[2026-06-05 20:51:21] CALL StatusNotification: {"connectorId":1,"status":"Available","errorCode":"NoError","info":"null","timestamp":"2026-06-05T18:51:21Z","vendorId":"","vendorErrorCode":""}
+[2026-06-05 20:51:21] Connector 1 status: Available
+[2026-06-05 20:51:21] CALL_RESULT StatusNotification: {}
+[2026-06-05 20:51:21] TX [3,"1780685481013-22-7xh9j81gzj4rq",{}]
+[2026-06-05 20:51:41] RX [2,"1780685501805-23-1rvtc4u16fc81o","Heartbeat",{}]
+[2026-06-05 20:51:41] CALL Heartbeat: {}
+[2026-06-05 20:51:41] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:51:41Z"}
+[2026-06-05 20:51:41] TX [3,"1780685501805-23-1rvtc4u16fc81o",{"currentTime":"2026-06-05T18:51:41Z"}]
+[2026-06-05 20:52:11] RX [2,"1780685531971-24-1he0i95bdye4h","Heartbeat",{}]
+[2026-06-05 20:52:11] CALL Heartbeat: {}
+[2026-06-05 20:52:11] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:52:11Z"}
+[2026-06-05 20:52:11] TX [3,"1780685531971-24-1he0i95bdye4h",{"currentTime":"2026-06-05T18:52:11Z"}]
+[2026-06-05 20:52:42] RX [2,"1780685562261-25-nbfg06173y6i1","Heartbeat",{}]
+[2026-06-05 20:52:42] CALL Heartbeat: {}
+[2026-06-05 20:52:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:52:42Z"}
+[2026-06-05 20:52:42] TX [3,"1780685562261-25-nbfg06173y6i1",{"currentTime":"2026-06-05T18:52:42Z"}]
+[2026-06-05 20:53:12] RX [2,"1780685592457-26-yojzoxjo8ps4","Heartbeat",{}]
+[2026-06-05 20:53:12] CALL Heartbeat: {}
+[2026-06-05 20:53:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:53:12Z"}
+[2026-06-05 20:53:12] TX [3,"1780685592457-26-yojzoxjo8ps4",{"currentTime":"2026-06-05T18:53:12Z"}]
+[2026-06-05 20:53:42] RX [2,"1780685622635-27-10wce3u1jqoi36","Heartbeat",{}]
+[2026-06-05 20:53:42] CALL Heartbeat: {}
+[2026-06-05 20:53:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:53:42Z"}
+[2026-06-05 20:53:42] TX [3,"1780685622635-27-10wce3u1jqoi36",{"currentTime":"2026-06-05T18:53:42Z"}]
+[2026-06-05 20:54:12] RX [2,"1780685652776-28-1yxak0si2w01m","Heartbeat",{}]
+[2026-06-05 20:54:12] CALL Heartbeat: {}
+[2026-06-05 20:54:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:54:12Z"}
+[2026-06-05 20:54:12] TX [3,"1780685652776-28-1yxak0si2w01m",{"currentTime":"2026-06-05T18:54:12Z"}]
+[2026-06-05 20:54:42] RX [2,"1780685682914-29-z5lvgm7gl7uv","Heartbeat",{}]
+[2026-06-05 20:54:42] CALL Heartbeat: {}
+[2026-06-05 20:54:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:54:42Z"}
+[2026-06-05 20:54:42] TX [3,"1780685682914-29-z5lvgm7gl7uv",{"currentTime":"2026-06-05T18:54:42Z"}]
+[2026-06-05 20:55:13] RX [2,"1780685713159-30-1xhlp9s99921x","Heartbeat",{}]
+[2026-06-05 20:55:13] CALL Heartbeat: {}
+[2026-06-05 20:55:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:55:13Z"}
+[2026-06-05 20:55:13] TX [3,"1780685713159-30-1xhlp9s99921x",{"currentTime":"2026-06-05T18:55:13Z"}]
+[2026-06-05 20:57:43] RX [2,"1780685863782-31-fo0nm81s5qa60","Heartbeat",{}]
+[2026-06-05 20:57:43] CALL Heartbeat: {}
+[2026-06-05 20:57:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:57:43Z"}
+[2026-06-05 20:57:43] TX [3,"1780685863782-31-fo0nm81s5qa60",{"currentTime":"2026-06-05T18:57:43Z"}]
+[2026-06-05 20:58:13] RX [2,"1780685893911-32-pe9ity1nzdzo7","Heartbeat",{}]
+[2026-06-05 20:58:13] CALL Heartbeat: {}
+[2026-06-05 20:58:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:58:13Z"}
+[2026-06-05 20:58:13] TX [3,"1780685893911-32-pe9ity1nzdzo7",{"currentTime":"2026-06-05T18:58:13Z"}]
+[2026-06-05 20:58:44] RX [2,"1780685924275-33-3o3u0o1vinynq","Heartbeat",{}]
+[2026-06-05 20:58:44] CALL Heartbeat: {}
+[2026-06-05 20:58:44] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:58:44Z"}
+[2026-06-05 20:58:44] TX [3,"1780685924275-33-3o3u0o1vinynq",{"currentTime":"2026-06-05T18:58:44Z"}]
+[2026-06-05 20:59:14] RX [2,"1780685954533-34-15wgdew1kjal0b","Heartbeat",{}]
+[2026-06-05 20:59:14] CALL Heartbeat: {}
+[2026-06-05 20:59:14] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:59:14Z"}
+[2026-06-05 20:59:14] TX [3,"1780685954533-34-15wgdew1kjal0b",{"currentTime":"2026-06-05T18:59:14Z"}]
+[2026-06-05 20:59:44] RX [2,"1780685984869-35-ubzvhc14rc4a8","Heartbeat",{}]
+[2026-06-05 20:59:44] CALL Heartbeat: {}
+[2026-06-05 20:59:44] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T18:59:44Z"}
+[2026-06-05 20:59:44] TX [3,"1780685984869-35-ubzvhc14rc4a8",{"currentTime":"2026-06-05T18:59:44Z"}]
+[2026-06-05 21:00:15] RX [2,"1780686015018-36-hzi0g21ha55ku","Heartbeat",{}]
+[2026-06-05 21:00:15] CALL Heartbeat: {}
+[2026-06-05 21:00:15] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:00:15Z"}
+[2026-06-05 21:00:15] TX [3,"1780686015018-36-hzi0g21ha55ku",{"currentTime":"2026-06-05T19:00:15Z"}]
+[2026-06-05 21:00:45] RX [2,"1780686045126-37-sy988vmm4csc","Heartbeat",{}]
+[2026-06-05 21:00:45] CALL Heartbeat: {}
+[2026-06-05 21:00:45] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:00:45Z"}
+[2026-06-05 21:00:45] TX [3,"1780686045126-37-sy988vmm4csc",{"currentTime":"2026-06-05T19:00:45Z"}]
+[2026-06-05 21:01:15] RX [2,"1780686075304-38-1k6tf791o7c4oy","Heartbeat",{}]
+[2026-06-05 21:01:15] CALL Heartbeat: {}
+[2026-06-05 21:01:15] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:01:15Z"}
+[2026-06-05 21:01:15] TX [3,"1780686075304-38-1k6tf791o7c4oy",{"currentTime":"2026-06-05T19:01:15Z"}]
+[2026-06-05 21:04:35] RX [2,"1780686275907-39-19g3zo71onum6i","Heartbeat",{}]
+[2026-06-05 21:04:35] CALL Heartbeat: {}
+[2026-06-05 21:04:35] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:04:35Z"}
+[2026-06-05 21:04:35] TX [3,"1780686275907-39-19g3zo71onum6i",{"currentTime":"2026-06-05T19:04:35Z"}]
+[2026-06-05 21:05:06] RX [2,"1780686306061-40-1tonbn21gb5o6j","Heartbeat",{}]
+[2026-06-05 21:05:06] CALL Heartbeat: {}
+[2026-06-05 21:05:06] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:05:06Z"}
+[2026-06-05 21:05:06] TX [3,"1780686306061-40-1tonbn21gb5o6j",{"currentTime":"2026-06-05T19:05:06Z"}]
+[2026-06-05 21:05:36] RX [2,"1780686336306-41-9ssz4416l6ai7","Heartbeat",{}]
+[2026-06-05 21:05:36] CALL Heartbeat: {}
+[2026-06-05 21:05:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:05:36Z"}
+[2026-06-05 21:05:36] TX [3,"1780686336306-41-9ssz4416l6ai7",{"currentTime":"2026-06-05T19:05:36Z"}]
+[2026-06-05 21:06:06] RX [2,"1780686366440-42-17u5ru21r2ksfh","Heartbeat",{}]
+[2026-06-05 21:06:06] CALL Heartbeat: {}
+[2026-06-05 21:06:06] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:06:06Z"}
+[2026-06-05 21:06:06] TX [3,"1780686366440-42-17u5ru21r2ksfh",{"currentTime":"2026-06-05T19:06:06Z"}]
+[2026-06-05 21:06:36] RX [2,"1780686396614-43-4m3259itctax","Heartbeat",{}]
+[2026-06-05 21:06:36] CALL Heartbeat: {}
+[2026-06-05 21:06:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:06:36Z"}
+[2026-06-05 21:06:36] TX [3,"1780686396614-43-4m3259itctax",{"currentTime":"2026-06-05T19:06:36Z"}]
+[2026-06-05 21:07:06] RX [2,"1780686426810-44-1rrazr8139ccby","Heartbeat",{}]
+[2026-06-05 21:07:06] CALL Heartbeat: {}
+[2026-06-05 21:07:06] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:07:06Z"}
+[2026-06-05 21:07:06] TX [3,"1780686426810-44-1rrazr8139ccby",{"currentTime":"2026-06-05T19:07:06Z"}]
+[2026-06-05 21:07:36] RX [2,"1780686456943-45-6dse7egvqmg7","Heartbeat",{}]
+[2026-06-05 21:07:36] CALL Heartbeat: {}
+[2026-06-05 21:07:36] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:07:36Z"}
+[2026-06-05 21:07:36] TX [3,"1780686456943-45-6dse7egvqmg7",{"currentTime":"2026-06-05T19:07:36Z"}]
+[2026-06-05 21:08:07] RX [2,"1780686487091-46-p4nupe75dege","Heartbeat",{}]
+[2026-06-05 21:08:07] CALL Heartbeat: {}
+[2026-06-05 21:08:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:08:07Z"}
+[2026-06-05 21:08:07] TX [3,"1780686487091-46-p4nupe75dege",{"currentTime":"2026-06-05T19:08:07Z"}]
+[2026-06-05 21:08:37] RX [2,"1780686517345-47-fznjqq1415zws","Heartbeat",{}]
+[2026-06-05 21:08:37] CALL Heartbeat: {}
+[2026-06-05 21:08:37] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:08:37Z"}
+[2026-06-05 21:08:37] TX [3,"1780686517345-47-fznjqq1415zws",{"currentTime":"2026-06-05T19:08:37Z"}]
+[2026-06-05 21:09:07] RX [2,"1780686547495-48-1jqxaj5njopq0","Heartbeat",{}]
+[2026-06-05 21:09:07] CALL Heartbeat: {}
+[2026-06-05 21:09:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:09:07Z"}
+[2026-06-05 21:09:07] TX [3,"1780686547495-48-1jqxaj5njopq0",{"currentTime":"2026-06-05T19:09:07Z"}]
+[2026-06-05 21:09:37] RX [2,"1780686577617-49-eq3e60e34327","Heartbeat",{}]
+[2026-06-05 21:09:37] CALL Heartbeat: {}
+[2026-06-05 21:09:37] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:09:37Z"}
+[2026-06-05 21:09:37] TX [3,"1780686577617-49-eq3e60e34327",{"currentTime":"2026-06-05T19:09:37Z"}]
+[2026-06-05 21:10:07] RX [2,"1780686607828-50-1wkof7d1q24lzv","Heartbeat",{}]
+[2026-06-05 21:10:07] CALL Heartbeat: {}
+[2026-06-05 21:10:07] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:10:07Z"}
+[2026-06-05 21:10:07] TX [3,"1780686607828-50-1wkof7d1q24lzv",{"currentTime":"2026-06-05T19:10:07Z"}]
+[2026-06-05 21:10:37] RX [2,"1780686637999-51-tw6lon1pb3ify","Heartbeat",{}]
+[2026-06-05 21:10:38] CALL Heartbeat: {}
+[2026-06-05 21:10:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:10:38Z"}
+[2026-06-05 21:10:38] TX [3,"1780686637999-51-tw6lon1pb3ify",{"currentTime":"2026-06-05T19:10:38Z"}]
+[2026-06-05 21:11:08] RX [2,"1780686668155-52-1mliqa7138duu7","Heartbeat",{}]
+[2026-06-05 21:11:08] CALL Heartbeat: {}
+[2026-06-05 21:11:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:11:08Z"}
+[2026-06-05 21:11:08] TX [3,"1780686668155-52-1mliqa7138duu7",{"currentTime":"2026-06-05T19:11:08Z"}]
+[2026-06-05 21:11:38] RX [2,"1780686698407-53-qnvzg92ljzvi","Heartbeat",{}]
+[2026-06-05 21:11:38] CALL Heartbeat: {}
+[2026-06-05 21:11:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:11:38Z"}
+[2026-06-05 21:11:38] TX [3,"1780686698407-53-qnvzg92ljzvi",{"currentTime":"2026-06-05T19:11:38Z"}]
+[2026-06-05 21:12:08] RX [2,"1780686728566-54-1irlju5weutvb","Heartbeat",{}]
+[2026-06-05 21:12:08] CALL Heartbeat: {}
+[2026-06-05 21:12:08] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:12:08Z"}
+[2026-06-05 21:12:08] TX [3,"1780686728566-54-1irlju5weutvb",{"currentTime":"2026-06-05T19:12:08Z"}]
+[2026-06-05 21:12:38] RX [2,"1780686758735-55-15eo94ygli0y5","Heartbeat",{}]
+[2026-06-05 21:12:38] CALL Heartbeat: {}
+[2026-06-05 21:12:38] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:12:38Z"}
+[2026-06-05 21:12:38] TX [3,"1780686758735-55-15eo94ygli0y5",{"currentTime":"2026-06-05T19:12:38Z"}]
+[2026-06-05 21:21:00] RX [2,"1780687260774-56-dljc11168c4fa","Heartbeat",{}]
+[2026-06-05 21:21:00] CALL Heartbeat: {}
+[2026-06-05 21:21:00] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:21:00Z"}
+[2026-06-05 21:21:00] TX [3,"1780687260774-56-dljc11168c4fa",{"currentTime":"2026-06-05T19:21:00Z"}]
+[2026-06-05 21:21:30] RX [2,"1780687290920-57-1xbaljz1hnzd2z","Heartbeat",{}]
+[2026-06-05 21:21:30] CALL Heartbeat: {}
+[2026-06-05 21:21:30] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:21:30Z"}
+[2026-06-05 21:21:30] TX [3,"1780687290920-57-1xbaljz1hnzd2z",{"currentTime":"2026-06-05T19:21:30Z"}]
+[2026-06-05 21:22:01] RX [2,"1780687321097-58-1eufwx01ol8bwq","Heartbeat",{}]
+[2026-06-05 21:22:01] CALL Heartbeat: {}
+[2026-06-05 21:22:01] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:22:01Z"}
+[2026-06-05 21:22:01] TX [3,"1780687321097-58-1eufwx01ol8bwq",{"currentTime":"2026-06-05T19:22:01Z"}]
+[2026-06-05 21:22:31] RX [2,"1780687351331-59-1sqs4d71mxj2g1","Heartbeat",{}]
+[2026-06-05 21:22:31] CALL Heartbeat: {}
+[2026-06-05 21:22:31] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:22:31Z"}
+[2026-06-05 21:22:31] TX [3,"1780687351331-59-1sqs4d71mxj2g1",{"currentTime":"2026-06-05T19:22:31Z"}]
+[2026-06-05 21:23:01] RX [2,"1780687381537-60-afd39x1t939zc","Heartbeat",{}]
+[2026-06-05 21:23:01] CALL Heartbeat: {}
+[2026-06-05 21:23:01] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:23:01Z"}
+[2026-06-05 21:23:01] TX [3,"1780687381537-60-afd39x1t939zc",{"currentTime":"2026-06-05T19:23:01Z"}]
+[2026-06-05 21:26:42] RX [2,"1780687602406-61-yf1f4flmx23m","Heartbeat",{}]
+[2026-06-05 21:26:42] CALL Heartbeat: {}
+[2026-06-05 21:26:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:26:42Z"}
+[2026-06-05 21:26:42] TX [3,"1780687602406-61-yf1f4flmx23m",{"currentTime":"2026-06-05T19:26:42Z"}]
+[2026-06-05 21:27:12] RX [2,"1780687632554-62-1r3b59fdze9aq","Heartbeat",{}]
+[2026-06-05 21:27:12] CALL Heartbeat: {}
+[2026-06-05 21:27:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:27:12Z"}
+[2026-06-05 21:27:12] TX [3,"1780687632554-62-1r3b59fdze9aq",{"currentTime":"2026-06-05T19:27:12Z"}]
+[2026-06-05 21:27:42] RX [2,"1780687662720-63-k9hdgv12umonu","Heartbeat",{}]
+[2026-06-05 21:27:42] CALL Heartbeat: {}
+[2026-06-05 21:27:42] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:27:42Z"}
+[2026-06-05 21:27:42] TX [3,"1780687662720-63-k9hdgv12umonu",{"currentTime":"2026-06-05T19:27:42Z"}]
+[2026-06-05 21:28:12] RX [2,"1780687692917-64-w8npsdth5q4p","Heartbeat",{}]
+[2026-06-05 21:28:12] CALL Heartbeat: {}
+[2026-06-05 21:28:12] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:28:12Z"}
+[2026-06-05 21:28:12] TX [3,"1780687692917-64-w8npsdth5q4p",{"currentTime":"2026-06-05T19:28:12Z"}]
+[2026-06-05 21:28:43] RX [2,"1780687723055-65-wv9fpjtpydpo","Heartbeat",{}]
+[2026-06-05 21:28:43] CALL Heartbeat: {}
+[2026-06-05 21:28:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:28:43Z"}
+[2026-06-05 21:28:43] TX [3,"1780687723055-65-wv9fpjtpydpo",{"currentTime":"2026-06-05T19:28:43Z"}]
+[2026-06-05 21:29:13] RX [2,"1780687753205-66-1kgs6g3kbpurd","Heartbeat",{}]
+[2026-06-05 21:29:13] CALL Heartbeat: {}
+[2026-06-05 21:29:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:29:13Z"}
+[2026-06-05 21:29:13] TX [3,"1780687753205-66-1kgs6g3kbpurd",{"currentTime":"2026-06-05T19:29:13Z"}]
+[2026-06-05 21:29:43] RX [2,"1780687783421-67-1lps5x01k0m8t","Heartbeat",{}]
+[2026-06-05 21:29:43] CALL Heartbeat: {}
+[2026-06-05 21:29:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:29:43Z"}
+[2026-06-05 21:29:43] TX [3,"1780687783421-67-1lps5x01k0m8t",{"currentTime":"2026-06-05T19:29:43Z"}]
+[2026-06-05 21:30:13] RX [2,"1780687813561-68-1omxygo149pjzo","Heartbeat",{}]
+[2026-06-05 21:30:13] CALL Heartbeat: {}
+[2026-06-05 21:30:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:30:13Z"}
+[2026-06-05 21:30:13] TX [3,"1780687813561-68-1omxygo149pjzo",{"currentTime":"2026-06-05T19:30:13Z"}]
+[2026-06-05 21:30:43] RX [2,"1780687843684-69-6b6bz1r79ff7","Heartbeat",{}]
+[2026-06-05 21:30:43] CALL Heartbeat: {}
+[2026-06-05 21:30:43] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:30:43Z"}
+[2026-06-05 21:30:43] TX [3,"1780687843684-69-6b6bz1r79ff7",{"currentTime":"2026-06-05T19:30:43Z"}]
+[2026-06-05 21:31:13] RX [2,"1780687873867-70-1wmdtg01yqtycr","Heartbeat",{}]
+[2026-06-05 21:31:13] CALL Heartbeat: {}
+[2026-06-05 21:31:13] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:31:13Z"}
+[2026-06-05 21:31:13] TX [3,"1780687873867-70-1wmdtg01yqtycr",{"currentTime":"2026-06-05T19:31:13Z"}]
+[2026-06-05 21:31:44] RX [2,"1780687904012-71-e7f0vfhd0btf","Heartbeat",{}]
+[2026-06-05 21:31:44] CALL Heartbeat: {}
+[2026-06-05 21:31:44] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:31:44Z"}
+[2026-06-05 21:31:44] TX [3,"1780687904012-71-e7f0vfhd0btf",{"currentTime":"2026-06-05T19:31:44Z"}]
+[2026-06-05 21:32:14] RX [2,"1780687934200-72-1crt2i041q4bg","Heartbeat",{}]
+[2026-06-05 21:32:14] CALL Heartbeat: {}
+[2026-06-05 21:32:14] CALL_RESULT Heartbeat: {"currentTime":"2026-06-05T19:32:14Z"}
+[2026-06-05 21:32:14] TX [3,"1780687934200-72-1crt2i041q4bg",{"currentTime":"2026-06-05T19:32:14Z"}]
