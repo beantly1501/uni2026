@@ -4,3 +4,7 @@ charger id: FER7606000088
 password: 7606000088
 rfid tag: TAG7606000088
 remote tag id: TAG8800006067
+
+S = 35
+P1 = 35000W
+P2 = 70000W
